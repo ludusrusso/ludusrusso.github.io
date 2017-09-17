@@ -1,5 +1,5 @@
 ---
-title: "Benvenuti nel mio nuovo Blog"
+title: "Vi presento il mio nuovo Blog"
 layout: post
 date: 2017-09-17
 image: /assets/screen-shot.png
@@ -10,7 +10,6 @@ category: blog
 author: ludusrusso
 description: Vi presento il mio nuovo Blog!
 ---
-
 
 Ciao a tutti,
 chi mi segue si è accorto che da un po' di tempo la mia attività sul blog
