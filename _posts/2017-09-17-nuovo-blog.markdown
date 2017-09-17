@@ -26,6 +26,6 @@ Ho quindi deciso di sviluppare questo sito in [Jekyll](https://jekyllrb.com/) su
 due progetti che permettono di sviluppare un blog in modo semplice (e quasi gratuito).
 Se siete interessati, potrei quindi approfondire l'utilizzo di tali soluzioni per lo sviluppo di un Blog Personale.
 
-La cosa interessante? Il sito è direttamente hostato da GitHub, e la repository di questo blog è pubblica ed è disponibile su [github.com/ludusrusso.github.io](http://github.com/ludusrusso.github.io). Se trovare errori potete segnarli direttamente da GitHub, o correggerli direttamente voi e sottometterli tramite un pull request!
+La cosa interessante? Il sito è direttamente hostato da GitHub, e la repository di questo blog è pubblica ed è disponibile sul [mio GitHub](http://github.com/ludusrusso/ludusrusso.github.io). Se trovare errori potete segnarli direttamente da GitHub, o correggerli direttamente voi e sottometterli tramite un pull request!
 
 A presto :D
