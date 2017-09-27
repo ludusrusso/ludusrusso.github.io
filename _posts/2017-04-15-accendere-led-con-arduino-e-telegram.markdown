@@ -10,6 +10,8 @@ tag:
  - Telegram
  - Python
 category: blog
+redirect_from:
+ - /posts/2017-04-15-accendere-led-con-arduino-e-telegram
 author: ludusrusso
 description: Un bot telegram in grado di controllare Arduino realizzato da 3 ragazzi del Liceo Stampacchia
 ---

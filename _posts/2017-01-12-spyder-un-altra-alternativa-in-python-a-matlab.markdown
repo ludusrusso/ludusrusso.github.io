@@ -9,6 +9,8 @@ tag:
  - Python
  - Scientific
 category: blog
+redirect_from:
+ - /posts/2017-01-12-spyder-un-altra-alternativa-in-python-a-matlab
 author: ludusrusso
 description: Una velocissima prova del tool interattivo Spyder per l'analisi scientifica in Python
 ---

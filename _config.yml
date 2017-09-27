@@ -16,6 +16,7 @@ picture: assets/images/profile.jpg
 # resume-external: true
 # resume-url: https://google.com/?q=my+resume
 
+
 url: http://ludusrusso.cc
 # your url: http://USERNAME.github.io
 
@@ -99,6 +100,7 @@ plugins:
   - jekyll-gist
   - jekyll-feed
   - jemoji
+  - jekyll-redirect-from
 
 jekyll-mentions:
     base_url: https://github.com

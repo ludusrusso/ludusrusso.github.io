@@ -9,6 +9,8 @@ tag:
  - Python
  - Tutorials
 category: blog
+redirect_from:
+ - /posts/2017-01-08-implementiamo-un-blog-in-python-e-flask-parte-3
 author: ludusrusso
 description: Terza parte del tutorial su Python e Flask. Creazione del Database e delle pagine di gestione!
 ---

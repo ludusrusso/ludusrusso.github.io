@@ -9,6 +9,8 @@ tag:
  - Blog
  - Tutorial
 category: blog
+redirect_from:
+ - /posts/2017-05-11-implementiamo-un-blog-in-python-e-flask-parte-7-codice-css-e-javascript
 author: ludusrusso
 description: 
 ---

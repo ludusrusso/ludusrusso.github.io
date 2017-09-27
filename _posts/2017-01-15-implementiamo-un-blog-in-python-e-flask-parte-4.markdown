@@ -9,6 +9,8 @@ tag:
  - Flask
  - Tutorials
 category: blog
+redirect_from:
+ - /posts/2017-01-15-implementiamo-un-blog-in-python-e-flask-parte-4
 author: ludusrusso
 description: Eccomi qui con la quarta parte del mio tutorial su Python e Flask! Finalmente abbiamo un'applicazione quasi utilizzabile, in cui possiamo creare e visualizzare i post del nostro blog!
 ---

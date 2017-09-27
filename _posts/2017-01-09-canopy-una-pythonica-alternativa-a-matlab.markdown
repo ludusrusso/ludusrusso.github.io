@@ -9,6 +9,8 @@ tag:
  - Canopy
  - Tutorials
 category: blog
+redirect_from:
+ - /posts/2017-01-09-canopy-una-pythonica-alternativa-a-matlab
 author: ludusrusso
 description: Presento questo interessante tool python che può essere considerato una buona alternativa a Matlab per l'analisi dei dati!
 ---

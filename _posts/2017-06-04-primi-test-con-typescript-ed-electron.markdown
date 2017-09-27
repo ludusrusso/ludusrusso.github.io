@@ -1,5 +1,5 @@
 ---
-title: Primi test con TypeScript ed Electron
+title: "Primi test con TypeScript ed Electron"
 layout: post
 date: 2017-06-04
 image: https://github.com/ludusrusso/images/blob/master/ludoblog/electron-ts/ts_elec.png?raw=true
@@ -9,13 +9,15 @@ tag:
  - Typescript
  - Webapp
 category: blog
+redirect_from:
+ - /posts/2017-06-04-primi-test-con-typescript-ed-electron
 author: ludusrusso
 description: Un tutorial per iniziare a sviluppare applicazioni native desktop usando tecnologi Web ed il nuovo linguaggio di programmazione Typescript
 ---
 
 Mi sono avvicinato alle tecnologie Web per caso qualche anno fa, e mi si è aperto un mondo che molto spesso non sono riuscito ad approfondire, un po' per questioni di tempo, un po' perchè il linguaggio Javascript (il principale linguaggio per la programmazione di WebApp) non mi ha mai appassionato tanto.
 
-![Typescript + Electron](/assets/imgs/2017-06-04-primi-test-con-typescript-ed-electron.markdown/ts_elec.png)
+![Typescript + Electron](/assets/imgs/2017-06-04-primi-test-con-typescript-ed-electron.markdown/ts_elec.png?raw=true)
 
 Recentemente ho iniziato ad approfondire invece un linguaggio di programma ideato da Mycrosoft chiamato [**TypeScript**](https://www.typescriptlang.org/). Da definizione, TypeScript è un "superset" di JavaScript, cioè un'estensione di JavaScript, ed include una serie di caratteristiche dei linguaggi di programmazione moderni, quali classi, interfacce, ecc., rendendolo un linguaggio di programmazione degno di questo nome.
 
@@ -27,7 +29,7 @@ Vediamo in seguito come fare!
 
 Per utilizzare electron, è necessario installare node.js sul nostro computer. Per farlo, accedete al [sito nodejs.org](https://nodejs.org/it/) e scaricate l'ultima versione disponibile (consiglio la versione LTS), scaricate e seguite le istruzioni di installazione.
 
-![Typescript + Electron](/assets/imgs/2017-06-04-primi-test-con-typescript-ed-electron.markdown/node.png)
+![Typescript + Electron](/assets/imgs/2017-06-04-primi-test-con-typescript-ed-electron.markdown/node.png?raw=true)
 
 
 Una volta installato node, avremmo a disposizione il comando npm per la gestione dei pacchetti javascript. Dobbiamo installare sul nostro computer il compilatore **typescript**. Per farlo, basterà aprire il terminale e digitare
@@ -101,7 +103,7 @@ Sviluppiamo adesso una semplice applicazione che mostra, all'interno di una fine
 
 Creiamo un file chiamato `main.ts`. Questo è un file in cui andremo a sviluppare il core dell'app usando typescript.
 
-Creiamo anche un file `index.html`, in cui implementeremo la schermata dall'applicazione.
+Creiamo anche un file `index.html`, in cui implementeremo la schermata dall'applicazione. 
 
 All'interno del file `index.html`, implementiamo semplicemente un tag `h1` con il testo *Hello, World!*
 
@@ -194,7 +196,7 @@ npm run electron
 
 Se tutto va bene, la nuova applicazione si aprirà e vedremo una schermata come questa.
 
-![Typescript + Electron](/assets/imgs/2017-06-04-primi-test-con-typescript-ed-electron.markdown/app.png)
+![Typescript + Electron](/assets/imgs/2017-06-04-primi-test-con-typescript-ed-electron.markdown/app.png?raw=true)
 
 ## Conclusioni
 

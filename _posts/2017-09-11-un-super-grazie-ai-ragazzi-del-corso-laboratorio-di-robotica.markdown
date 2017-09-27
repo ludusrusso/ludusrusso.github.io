@@ -1,14 +1,16 @@
 ---
-title: Un super grazie ai ragazzi del corso "Laboratorio di Robotica"
+title: "Un super grazie ai ragazzi del corso \"Laboratorio di Robotica\""
 layout: post
 date: 2017-09-11
 image: https://raw.githubusercontent.com/ludusrusso/images/master/stampacchia/robotica/5.jpg
 headerImage: false
 tag:
- - Corsi
+ - Corso
  - Robotica
  - Stampacchia
 category: blog
+redirect_from:
+ - /posts/2017-09-11-un-super-grazie-ai-ragazzi-del-corso-laboratorio-di-robotica
 author: ludusrusso
 description:
 ---

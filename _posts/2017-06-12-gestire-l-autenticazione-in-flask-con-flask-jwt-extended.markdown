@@ -1,5 +1,5 @@
 ---
-title: Gestire l'autenticazione in Flask con flask-jwt-extended
+title: "Gestire l'autenticazione in Flask con flask-jwt-extended"
 layout: post
 date: 2017-06-12
 image: https://github.com/ludusrusso/images/blob/master/ludoblog/jwt-flask/login1.png?raw=true
@@ -9,12 +9,14 @@ tag:
  - Flask
  - Restful
 category: blog
+redirect_from:
+ - /posts/2017-06-12-gestire-l-autenticazione-in-flask-con-flask-jwt-extended
 author: ludusrusso
 description: Un breve tutorial che mostra come gestire l'autenticazione JWT in Flask
 ---
 
 Recentemente mi sto spostando sempre di più verso lo sviluppo di applicazioni Web single-page. A differenza del metodo classico che ho molto esplorato [in questo blog](http://www.ludusrusso.cc/tutorial/python/ludoblog/index.html), in questo tipo di architettura l'intera applicazione web viene scaricata la prima volta, quando si accede all'url principale del sito internet.
-In questo modo, il nostro server principale può scambiare solo i dati da visualizzare all'interno dell'applicazione, invece che dover mandare l'intera pagina da renderizzare ogni volta.
+In questo modo, il nostro server principale può scambiare solo i dati da visualizzare all'interno dell'applicazione, invece che dover mandare l'intera pagina da renderizzare ogni volta. 
 
 Questo, come è possibile immaginare, semplifica e alleggerisce notevolmente il lavoro del server, rendendo di fatto le applicazioni più scalabili e più semplici da gestire. Inoltre, gestendo lo scambio dati con API basate su standard come JSON, è anche possibile poi sviluppare applicazioni Desktop/Mobile native che comunicano con le stesse API della webapp.
 
@@ -33,7 +35,7 @@ Il token JWT è diviso in tre parti: l'*header*, il *payload* e la *firma*.
  - La *firma* serve per controllare che il token non sia stato modificato, e contiene le informazioni precedenti ma codificate usando una chiave segreta nota solo al server.
 
 Queste tre informazioni vengono codificate in *base64* e quindi il token viene generato concatenandole in ordine separate da punti:
-
+ 
 ```
 token = encode(header) + "." + encode(payload) + "." + encode(firma)
 ```
@@ -129,7 +131,7 @@ def login():
         ret = {'access_token': create_access_token(identity=username)}
         return jsonify(ret), 200
     return jsonify({"msg": "Bad username or password"}), 401
-```
+``` 
 In questo caso, abbiamo creato un endpoint (pubblico) sull'url `/login` che risponde al metodo `GET`. Per prima cosa, accediamo a username e password contenute nella richiesta, con le righe
 
 ```python
@@ -200,7 +202,7 @@ Per prima cosa, vediamo se l'applicazione risponde correttamente all'url `/unpro
 }
 ```
 
-![](/assets/imgs/2017-06-12-gestire-l-autenticazione-in-flask-con-flask-jwt-extended.markdown/unprotected.png)
+![](/assets/imgs/2017-06-12-gestire-l-autenticazione-in-flask-con-flask-jwt-extended.markdown/unprotected.png?raw=true)
 
 
 Se proviamo, similmente, a mandare una richiesta sul metodo `/protected`, invece, dovremmo ottenere la risposta di errore di autenticazione:
@@ -210,7 +212,7 @@ Se proviamo, similmente, a mandare una richiesta sul metodo `/protected`, invece
 	"msg": "Missing Authorization Header"
 }
 ```
-![](/assets/imgs/2017-06-12-gestire-l-autenticazione-in-flask-con-flask-jwt-extended.markdown/protected_error.png)
+![](/assets/imgs/2017-06-12-gestire-l-autenticazione-in-flask-con-flask-jwt-extended.markdown/protected_error.png?raw=true)
 
 Per accedere all'url `/protected`, dobbiamo prima di tutto ottenere un token, per farlo, mandiamo una richiesta `POST` all'url `/login` con un json contenente username e password:
 
@@ -228,7 +230,7 @@ Se il login non è corretto, otterremo come risultato
 }
 ```
 
-![](/assets/imgs/2017-06-12-gestire-l-autenticazione-in-flask-con-flask-jwt-extended.markdown/login2.png)
+![](/assets/imgs/2017-06-12-gestire-l-autenticazione-in-flask-con-flask-jwt-extended.markdown/login2.png?raw=true)
 
 altrimenti avremmo finalmente il nostro token:
 
@@ -237,7 +239,7 @@ altrimenti avremmo finalmente il nostro token:
 	"access_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2NsYWltcyI6e30sImp0aSI6ImMxOGE3MWMxLTM4Y2EtNGYwNi1hNzYwLWY0YTVlOGUxMGZhMiIsImV4cCI6MTQ5NzI2MjQ3NiwiZnJlc2giOmZhbHNlLCJpYXQiOjE0OTcyNjE1NzYsInR5cGUiOiJhY2Nlc3MiLCJuYmYiOjE0OTcyNjE1NzYsImlkZW50aXR5IjoibHVkb3ZpY28ifQ.Eru4JFykJzqkNx7epmUkxRW82JfYUN5b2OdrG_osGe4"
 }
 ```
-![](/assets/imgs/2017-06-12-gestire-l-autenticazione-in-flask-con-flask-jwt-extended.markdown/login1.png)
+![](/assets/imgs/2017-06-12-gestire-l-autenticazione-in-flask-con-flask-jwt-extended.markdown/login1.png?raw=true)
 
 A questo punto, possiamo finalmente fare una richiesta sull'url `/protected`. Ricordatevi di risettare il metodo a `GET`, prima di fare la richiesta, accediamo al tab `Auth` e settiamo come metodo di autenticazione `Bearer Token`, settiamo il token ottenuto e quindi facciamo la richiesta. Dovremmo ottenere come risultato:
 
@@ -247,7 +249,7 @@ A questo punto, possiamo finalmente fare una richiesta sull'url `/protected`. Ri
 }
 ```
 
-![](/assets/imgs/2017-06-12-gestire-l-autenticazione-in-flask-con-flask-jwt-extended.markdown/protected.png)
+![](/assets/imgs/2017-06-12-gestire-l-autenticazione-in-flask-con-flask-jwt-extended.markdown/protected.png?raw=true)
 
 ## Conclusioni
 

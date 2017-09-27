@@ -7,6 +7,8 @@ headerImage: false
 tag:
  - Pycon
 category: blog
+redirect_from:
+ - /posts/2017-03-14-ci-vediamo-a-pycon-8
 author: ludusrusso
 description: Mi troverete a PyCon 8 a Firenze per due workshop interattivi tra il 6 e il 9 Aprile
 ---

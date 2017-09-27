@@ -9,6 +9,8 @@ tag:
  - Tutorial
  - Linux
 category: blog
+redirect_from:
+ - /posts/2017-04-25-introduzione-a-vagrant
 author: ludusrusso
 description: Scrivo questo post come introduzione all'utilizzo di Vagrant per la gestione di Macchine virtuali. Ho scoperto Vagrant qualche mese fa e mi è subito sembrato un ottimissimo tool per gestione progetti e per muovere i primi passi con Linux senza necessariam
 ---

@@ -10,6 +10,8 @@ tag:
  - Python
  - Esopianeti
 category: blog
+redirect_from:
+ - /posts/2017-03-26-come-vengono-scoperti-gli-esopianeti-un-semplice-esperimento-con-arduino-e-python
 author: ludusrusso
 description: 
 ---

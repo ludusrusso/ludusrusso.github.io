@@ -1,5 +1,5 @@
 ---
-title: Sviluppiamo un'app in Electron per controllare la scheda Arduino - parte 1
+title: "Sviluppiamo un'app in Electron per controllare la scheda Arduino - parte 1"
 layout: post
 date: 2017-06-26
 image: https://raw.githubusercontent.com/ludusrusso/electron-arduino/master/img/gui_def.png
@@ -9,8 +9,10 @@ tag:
  - Electron
  - Arduino
 category: blog
+redirect_from:
+ - /posts/2017-06-26-sviluppiamo-un-app-in-electron-per-controllare-la-scheda-arduino-parte-1
 author: ludusrusso
-description:
+description: 
 ---
 
 In un mio [precedente post](http://www.ludusrusso.cc/posts/2017-06-04-primi-test-con-typescript-ed-electron) vi ho parlato di come creare una semplicissima applicazione sfruttando Electron e il nuovo linguaggio di programmazione TypeScript. In questo periodo, ho approfondito un po' queste tecnologie, ed oggi vi propongo qui un tutorial completo su come sviluppare un'applicazione in Electron per il controllo di una scheda Arduino connessa via USB al computer su cui gira l'applicazione.
@@ -87,7 +89,7 @@ import {app, BrowserWindow} from 'electron'
 `app` reppresenta l'istanza dell'applicazione che stiamo creando, mentre `BrowserWindow` è una classe necessaria per la creazione di finestre grafiche.
 
 A questo punto, è necessario aspettare che l'applicazione venga correttamente caricata prima di fare qualsiasi operazione. Per farlo, possiamo usare la funzione `app.on`, che crea una callback in base ad alcuni eventi del ciclo vita dell'applicazione. A noi, in particolare, interessa l'evento `ready`, che viene eseguito quando l'app è stata correttamente caricata:
-
+ 
 ```typescript
 app.on('ready', () => {
   // codice da implementare
@@ -126,7 +128,7 @@ app.on('ready', () => {
 ```
 
 ### Il file `index.html`
-Mentre il file `app.ts` rimarrà invariato da qui alla fine del tutorial, il file `index.html` sarà un po' più complicato e ci lavoreremo molto.
+Mentre il file `app.ts` rimarrà invariato da qui alla fine del tutorial, il file `index.html` sarà un po' più complicato e ci lavoreremo molto. 
 Per il momento, per arrivare il prima possibile a far girare l'applicazione, sviluppiamo un file più semplice possibile :D
 
 Apriamo il file `index.html` e scriviamo questo codice:
@@ -171,7 +173,7 @@ Una volta salvato il file, lanciamo il comando `npm start` per avviare l'applica
 
 ### Il file `index.ts`
 
-A differenza del file `app.ts`, che serve semplicemente per far partire l'applicazione, il file `index.ts` conterrà l'*intelligenza* dell'applicazione stessa, cioè il codice che ne decide il comportamento. Questo file è separato dal primo in quanto è associato alla finestra della nostra app, e quindi al file `index.html` (non è un caso che entrambi i file abbiano lo stesso nome).
+A differenza del file `app.ts`, che serve semplicemente per far partire l'applicazione, il file `index.ts` conterrà l'*intelligenza* dell'applicazione stessa, cioè il codice che ne decide il comportamento. Questo file è separato dal primo in quanto è associato alla finestra della nostra app, e quindi al file `index.html` (non è un caso che entrambi i file abbiano lo stesso nome). 
 
 In gergo, il file `main.ts` viene chiamato **main process**, mentre il file `index.ts` è detto **render process**.
 
@@ -191,13 +193,13 @@ Come è possibile immaginare, prima di testare l'applicazione, dobbiamo modifica
 
  - Aggiungere l'id *title_id* all'elemento `h1`, modificando la riga corrispondente come segue: `<h1 id="title_id">Funziona</h1>`;
  - Importare lo script `index.ts` alla fine del file, aggiungendo le seguenti linee prima della chiusura del tag `html`:
-
+ 
   ```html
     <script>
         require('./index.ts')
     </script>
   ```
-
+  
 Il file `index.html` dovrà quindi avere la seguente forma:
 
 ```html
@@ -338,4 +340,4 @@ Lanciamo il programma ed otterremo questo risultato:
 L'app, sviluppata fino a questo punto, è disponibile [qui](https://github.com/ludusrusso/electron-arduino/tree/5fc13acf71c0c7b9744ca9e7660f5d91cdcb59ab).
 ## Fine prima parte
 
-Come vedete, in questa prima parte abbiamo tirato su, usando Electron e Typescript, una prima applicazione! Nella prossima parte della guida, vedremo come interfacciare Arduino all'app per leggere i dati.
+Come vedete, in questa prima parte abbiamo tirato su, usando Electron e Typescript, una prima applicazione! Nella prossima parte della guida, vedremo come interfacciare Arduino all'app per leggere i dati. 

@@ -9,6 +9,8 @@ tag:
  - Algebra
  - Python
 category: blog
+redirect_from:
+ - /posts/2017-05-31-algebra-linare-in-python-con-numpy
 author: ludusrusso
 description: 
 ---

@@ -10,6 +10,8 @@ tag:
  - Arduino
  - 3Dprint
 category: blog
+redirect_from:
+ - /posts/2017-03-20-pasqua-al-liceo-stampacchia-di-tricase-corsi-di-arduino-e-stampa-3d
 author: ludusrusso
 description: In occasione delle vacanze di Pasqua 2017, il Liceo G. Stampacchia organizza due corsi tenuti da me su Arduino e stampa 3D.
 ---

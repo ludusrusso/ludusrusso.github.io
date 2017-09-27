@@ -10,6 +10,8 @@ tag:
  - Scientific
  - Spyder
 category: blog
+redirect_from:
+ - /posts/2017-01-13-simuliamo-il-moto-parabolico-in-python-e-spyder
 author: ludusrusso
 description: Un piccolo tutorial per iniziare ad utilizzare Spyder con Python
 ---

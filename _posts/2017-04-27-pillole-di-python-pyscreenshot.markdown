@@ -9,6 +9,8 @@ tag:
  - Pillole
  - Pyscreenshot
 category: blog
+redirect_from:
+ - /posts/2017-04-27-pillole-di-python-pyscreenshot
 author: ludusrusso
 description: Una semplice tutorial che mostra il funzionamento della libreria pyscreenshot
 ---

@@ -10,6 +10,8 @@ tag:
  - Nanpy
  - Tutorial
 category: blog
+redirect_from:
+ - /posts/2017-02-19-python-arduino-nanpy
 author: ludusrusso
 description: Programmare Arduino in Python con Nanpy
 ---

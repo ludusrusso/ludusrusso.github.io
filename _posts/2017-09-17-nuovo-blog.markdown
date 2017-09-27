@@ -19,7 +19,7 @@ chi mi segue si è accorto che da un po' di tempo la mia attività sul blog
  - La gestione del blog inizia a diventare molto complicata, perché le imperfezioni del mio blog scritto in Flask iniziano a farsi sentire.
 
 Per questi motivi, ho deciso di spostarmi completamente su un manager diverso e più testato,
-ovviamente seguendo la fisolofia OpenSource del vecchio blog.
+ovviamente seguendo la filosofia OpenSource del vecchio blog.
 
 Ho quindi deciso di sviluppare questo sito in [Jekyll](https://jekyllrb.com/) su [GitHub Pages](https://pages.github.com/),
 due progetti che permettono di sviluppare un blog in modo semplice (e quasi gratuito).
