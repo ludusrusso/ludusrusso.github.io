@@ -12,7 +12,7 @@ description: Tutorial su come implementare, a partire da zero, un blog personale
 
 ##Chiuso un tutorial se ne fa un altro.
 
-![](http://www.ludusrusso.cc/tutorial/_images/indexnav.png)
+![](/assets/imgs/tutorial-blog-intro.markdown/indexnav.png)
 Dopo aver finito il [primo tutorial da me scritto](http://www.ludusrusso.cc/tutorial/python/flask/intro.html) sfrutto subito questo periodo di pausa per scriverne un secondo.
 La cosa molto interessante è che la scrittura di questo secondo tutorial mi ha costretto a fare in modo organico e ragionato alcune cose che avevo implementato velocemente ma che sarebbero state poi difficili da modificare in futuro.
 

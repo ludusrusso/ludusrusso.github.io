@@ -21,7 +21,7 @@ description: In occasione delle vacanze di Pasqua 2017, il Liceo G. Stampacchia 
 In occasione delle vacanze di Pasqua 2017, il Liceo G. Stampacchia organizza due corsi tenuti da me su Arduino e stampa 3D.
 Si è scelto di creare due corsi distinti in modo da dare la libertà a chiunque di partecipare solamente alle tematiche che più gli interessano, considerando anche il poco tempo a disposizione e il periodo. Ciò non toglie che gli interessati possano partecipare ad entrambi i corsi.
 
-![Locandina Corso](https://res.cloudinary.com/hbr/image/upload/c_scale,w_1038/v1490038852/Schermata_2017-03-20_alle_20.40.18_w7axia.png)
+![Locandina Corso](/assets/imgs/2017-03-20-pasqua-al-liceo-stampacchia-di-tricase-corsi-di-arduino-e-stampa-3d.markdown/Schermata_2017-03-20_alle_20.40.18_w7axia.png)
 *Per info scrivete a ludus.russo@gmail.com*
 
 **Corso Introduttivo ad Arduino e Physical Computing 

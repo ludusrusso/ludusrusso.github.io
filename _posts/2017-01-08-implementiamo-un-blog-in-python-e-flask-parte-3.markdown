@@ -13,7 +13,7 @@ author: ludusrusso
 description: Terza parte del tutorial su Python e Flask. Creazione del Database e delle pagine di gestione!
 ---
 
-![Blog Flask Admin Navbar](http://www.ludusrusso.cc/tutorial/_images/adminnav.png)
+![Blog Flask Admin Navbar](/assets/imgs/2017-01-08-implementiamo-un-blog-in-python-e-flask-parte-3.markdown/adminnav.png)
 
 Sono finalmente riuscito a trovare il tempo per scrivere la terza parte del mio tutorial su Python e Flask. È certamente la parte più complicata del tutorial scritta fino ad ora, perché richiedeva la creazione del database e le pagine di gestione. Trovate il tutorial a questo [link](http://www.ludusrusso.cc/tutorial/python/ludoblog/models.html).
 

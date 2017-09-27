@@ -19,7 +19,7 @@ description:
 
 Eccomi qui per la terza ed ultima parte di questo tutorial sulla misura della costante di Planck utilizzando dei led colorati, Arduino e Python.
 
-![Misura della caratteristica di Led](http://res.cloudinary.com/hbr/image/upload/v1490138990/WhatsApp_Image_2017-03-22_at_00.29.13_qmfajj.jpg)
+![Misura della caratteristica di Led](/assets/imgs/2017-03-23-misurare-la-costante-di-planck-con-arduino-e-python-parte-3.markdown/WhatsApp_Image_2017-03-22_at_00.29.13_qmfajj.jpg)
 
 Se vi siete persi le parti precedenti, le trovate ai seguenti link:
 
@@ -41,7 +41,7 @@ Tramite l'immagine disegnata in *iPython* o *Spyder*, possiamo misurare in modo 
 
 Andiamo quindi a posizionare il mouse nel punto del grafico in cui la curva inizia a salire e prendiamo nota del valore $x$ indicato in basso a destra, come segnalato nella figura seguente
 
-![Misura di VD](http://res.cloudinary.com/hbr/image/upload/v1490306345/readVd_vekogd.png)
+![Misura di VD](/assets/imgs/2017-03-23-misurare-la-costante-di-planck-con-arduino-e-python-parte-3.markdown/readVd_vekogd.png)
 
 Come da immagine, possiamo segnare la tensione $V_x = 2.52996V$.
 
@@ -97,7 +97,7 @@ plot(v, diode_approx(v, VD, RD))
 
 Se tutto va bene, otterrete un'immagine come la seguente
 
-![Diodo approssimazione](http://res.cloudinary.com/hbr/image/upload/v1490307043/approx_diodo_reale_mectuj.png)
+![Diodo approssimazione](/assets/imgs/2017-03-23-misurare-la-costante-di-planck-con-arduino-e-python-parte-3.markdown/approx_diodo_reale_mectuj.png)
 
 Dato che i due grafici si sovrappongono perfettamente nella parte di crescita, possiamo salvare il valore $V_D$ ottenuto. Nel mio caso, ho visurato $V_D= 2.52V$.
 
@@ -139,7 +139,7 @@ Confrontando questo valore sperimentale con uno delle misure più precise dispon
 
 Possiamo eseguire la stessa procedura su tutti gli altri Led colorati che abbiamo a dispozione. Dai miei esperimenti, ho ottenuto i seguenti valori:
 
-![Tabella valori](http://res.cloudinary.com/hbr/image/upload/v1490311359/Schermata_2017-03-24_alle_00.22.19_mrjd5a.png)
+![Tabella valori](/assets/imgs/2017-03-23-misurare-la-costante-di-planck-con-arduino-e-python-parte-3.markdown/Schermata_2017-03-24_alle_00.22.19_mrjd5a.png)
 
 Notare che, rispetto al led blu (che per caso è stato il primo led con cui ho eseguito il calcolo), le altre misure risultano più lontane rispetto alla stima precisa della costante di Planck. Tuttavia, tutte le misure rientrano all'interno di un errore minore del 20%, che non è decisamente male considerando gli strumenti utilizzati.
 

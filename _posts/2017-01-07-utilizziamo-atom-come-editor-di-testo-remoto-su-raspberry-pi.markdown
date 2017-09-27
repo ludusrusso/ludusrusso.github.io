@@ -25,15 +25,15 @@ Per questo motivo cerco spesso varie soluzioni per la programmazione remota del 
 
 Per prima cosa, è necessario installare Remote-Atom, per farlo, accediamo al pannello Packages > Settings Views > Install Packages/Themes
 
-![](https://raw.githubusercontent.com/ludusrusso/images/master/ratom/install.png)
+![](/assets/imgs/2017-01-07-utilizziamo-atom-come-editor-di-testo-remoto-su-raspberry-pi.markdown/install.png)
 
 e cerchiamo e installiamo il pacchetto **remote-atom**.
 
-![](https://raw.githubusercontent.com/ludusrusso/images/master/ratom/open-install.png)
+![](/assets/imgs/2017-01-07-utilizziamo-atom-come-editor-di-testo-remoto-su-raspberry-pi.markdown/open-install.png)
 
 Una volta installato, dobbiamo attivare il server andando su Packages > Remote Atom > Start Server.
 
-![](https://raw.githubusercontent.com/ludusrusso/images/master/ratom/start-server.png)
+![](/assets/imgs/2017-01-07-utilizziamo-atom-come-editor-di-testo-remoto-su-raspberry-pi.markdown/start-server.png)
 
 ##Configurazione Raspberry Pi
 
@@ -63,4 +63,4 @@ ratom <filename>
 
 e vedremo magicamente aprirsi il file in un nuovo pannello di Atom sul nostro desktop (che deve essere già aperto).
 
-![](https://raw.githubusercontent.com/ludusrusso/images/master/ratom/example.png)
+![](/assets/imgs/2017-01-07-utilizziamo-atom-come-editor-di-testo-remoto-su-raspberry-pi.markdown/example.png)

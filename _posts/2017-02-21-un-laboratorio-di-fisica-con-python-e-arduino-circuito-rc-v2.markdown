@@ -18,7 +18,7 @@ description:
 
 Come premesso, ripropongo oggi l'esperimento sul circuito $RC$ presentato in [questo post](http://www.ludusrusso.cc/posts/2017-01-04-arduino-python-lab-fisica-1) e rivisto utilizzando l'IDE di programmazione scientifica **Spyder** e la libreria per sviluppare programmi Arduino in Python **nanpy**.
 
-![Spyder + Nanpy + RC](http://res.cloudinary.com/hbr/image/upload/v1487643026/Schermata_2017-02-21_alle_03.09.44_gxveep.png)
+![Spyder + Nanpy + RC](/assets/imgs/2017-02-21-un-laboratorio-di-fisica-con-python-e-arduino-circuito-rc-v2.markdown/Schermata_2017-02-21_alle_03.09.44_gxveep.png)
 
 Per info sull'accoppiata e su come installare il tutto, rimando al mio [precedente post](http://www.ludusrusso.cc/posts/2017-02-19-python-arduino-nanpy). 
 
@@ -66,7 +66,7 @@ Il materiale utilizzato è qui riportato:
 
 Importante: dato che Arduino (specialmente quando comunica in seriale) non è capace di acquisire dati ad una frequenza molto elevata, per riuscire a prendere un numero adeguato di dati conviene scegliere valori di $R$ e $C$ abbastanza elevati, in modo da avere constanti di tempo dell'ordine di qualche di qualche decina di millisecondi. Nel mio caso, ho scelto $\tau=RC=0.02s$ nominale.
 
-![RC-Scheme](https://raw.githubusercontent.com/ludusrusso/images/master/RC.png)
+![RC-Scheme](/assets/imgs/2017-02-21-un-laboratorio-di-fisica-con-python-e-arduino-circuito-rc-v2.markdown/RC.png)
  
 Essendo il condensatore che ho utilizzato elettrolitico, i suoi terminali sono polarizzati, ossia è necessario collegare il terminale positivo (anodo) ad un punto del circuito avente potenziale più elevato rispetto al punto di collegamento del terminale negativo (catodo). Nel caso si utilizzi un condensatore ceramico, non è importante la polarità!
 
@@ -111,7 +111,7 @@ plot(t, v_s(t, tau_M),'k--')
 
 Il cui output sarà il seguente
 
-![Simulazione RC](http://res.cloudinary.com/hbr/image/upload/v1487643025/sim_rc_rwjncu.png)
+![Simulazione RC](/assets/imgs/2017-02-21-un-laboratorio-di-fisica-con-python-e-arduino-circuito-rc-v2.markdown/sim_rc_rwjncu.png)
 
 Si noti che la simulazione viene fatta fino a $0.2s$. Questo valore è calcolato in modo da essere molto più grande (circa 10 volte) la costante di tempo stimata. 
 
@@ -156,7 +156,7 @@ Questo semplice script, dopo aver scaricato il condensatore, prevede a misurare 
 
 Alla fine, plotta i valori misura nel tempo, ottenendo questo risultato.
 
-![Misura RC](http://res.cloudinary.com/hbr/image/upload/v1487643025/meas_rc_qdrv39.png)
+![Misura RC](/assets/imgs/2017-02-21-un-laboratorio-di-fisica-con-python-e-arduino-circuito-rc-v2.markdown/meas_rc_qdrv39.png)
 
 Come si può vedere dal grafico, l'andamento dei campioni è molto simile ad una curva esponenziale negativa.
 
@@ -166,7 +166,7 @@ Come sopra, abbiamo fatto in modo che il campionamento vada avanti per circa 10 
 
 Non ci resta che verificare se la legge fisica di carica del condensatore è effettivamente verificata. Per fare questo, per prima cosa è necessario verificare che i campioni siano all'interno delle due curve simulate con i valori limite di $\tau$ considerando le tolleranze. Per fare questo, basta eseguire di seguito i due script ripostati sopra in modo da sovrapporre i plot, ottenendo un risultato simile a questo:
 
-![Verifica RC](http://res.cloudinary.com/hbr/image/upload/v1487643026/ver_rc_qz1svo.png)
+![Verifica RC](/assets/imgs/2017-02-21-un-laboratorio-di-fisica-con-python-e-arduino-circuito-rc-v2.markdown/ver_rc_qz1svo.png)
 
 In cui si può effettivamente vedere che l'andamento stimato è rispettato.
 
@@ -195,7 +195,7 @@ Otteniamo quindi
 
 Che producono la curva rossa nel seguente grafico
 
-![Stima tau RC](http://res.cloudinary.com/hbr/image/upload/v1487643025/all_rc_fepxbe.png)
+![Stima tau RC](/assets/imgs/2017-02-21-un-laboratorio-di-fisica-con-python-e-arduino-circuito-rc-v2.markdown/all_rc_fepxbe.png)
 
 ##Codice Completo
 

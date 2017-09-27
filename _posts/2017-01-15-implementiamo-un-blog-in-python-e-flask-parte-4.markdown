@@ -13,7 +13,7 @@ author: ludusrusso
 description: Eccomi qui con la quarta parte del mio tutorial su Python e Flask! Finalmente abbiamo un'applicazione quasi utilizzabile, in cui possiamo creare e visualizzare i post del nostro blog!
 ---
 
-![Creiamo un Blog in Python e Flask - Parte 4](http://www.ludusrusso.cc/tutorial/_images/post_view.png)
+![Creiamo un Blog in Python e Flask - Parte 4](/assets/imgs/2017-01-15-implementiamo-un-blog-in-python-e-flask-parte-4.markdown/post_view.png)
 
 Eccomi qui con la quarta parte del mio tutorial su Python e Flask! Finalmente abbiamo un'applicazione quasi utilizzabile, in cui possiamo creare e visualizzare i post del nostro blog!
 

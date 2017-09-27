@@ -16,7 +16,7 @@ Chi mi segue, conosce la mia grande passione per il mondo dei Makers e per la pr
 Da un po' di tempo, sto cercando di fondere le mie passioni, aprendo il [mio blog](http://www.ludusrusso.cc/) e con la mia startup [HotBlack Robotics](http://www.hotblackrobotics.com/).
 Cosa c'è di meglio quindi di una conferenza su Python per diffondere i miei interessi e per conoscerci?
 
-![PyCon 8](https://res.cloudinary.com/hbr/image/upload/v1489533821/Schermata_2017-03-15_alle_00.23.13_y0hexu.png) 
+![PyCon 8](/assets/imgs/2017-03-14-ci-vediamo-a-pycon-8.markdown/Schermata_2017-03-15_alle_00.23.13_y0hexu.png) 
 
 Mi troverete quest'anno a [PyCon 8](http://www.pycon.it) con ben due trainig.
 

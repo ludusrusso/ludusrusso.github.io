@@ -19,7 +19,7 @@ Eccomi qui con un brevissimo tutorial su come possiamo utilizzare [**Spyder**](h
 Come primo esperimento ho scelto di lavorare sul moto parabolico, classico problema di fisica  del liceo che voglio provare a risolvere e simulare in Python utilizzando il tool **Spyder**.
 
 
-![finestra di Spyder](https://raw.githubusercontent.com/ludusrusso/images/master/spyder/parabolico.png)
+![finestra di Spyder](/assets/imgs/2017-01-13-simuliamo-il-moto-parabolico-in-python-e-spyder.markdown/parabolico.png)
 
 ##Scopo del tutorial
 
@@ -77,7 +77,7 @@ Non mi voglio addentrare su considerazioni fisiche e meccaniche e su semplificaz
 
 Una volta scaricato e installato [**Spyder**](https://pythonhosted.org/spyder/installation.html) ci troveremo davanti ad una finestra simile a questa.
 
-![finestra di Spyder](https://raw.githubusercontent.com/ludusrusso/images/master/spyder/home.png)
+![finestra di Spyder](/assets/imgs/2017-01-13-simuliamo-il-moto-parabolico-in-python-e-spyder.markdown/home.png)
 
 Nella finestra indicata come *Editor* (a me è mostrata sulla destra), possiamo andare ad implementare il codice che poi verrà eseguito da python. Sulla finistra indicata come *Console* potremo interagine utilizzando la console dinamica iPython. Per il momento, limitiamoci ad utilizzare l'editor di testo per rendere il programma più leggibile.
 
@@ -185,7 +185,7 @@ plot(xt,yt)
 
 Una volta implementato il codice, possiamo lanciare il programma premento sulla freccina verde in alto all'editor **Spyder**. Una volta fatto, se non ci sono errori, vedremo apparire il grafico della simulazione sulla *console* del nostro programma.
 
-![lanciamo il programma in Spyder](https://raw.githubusercontent.com/ludusrusso/images/master/spyder/exec.png)
+![lanciamo il programma in Spyder](/assets/imgs/2017-01-13-simuliamo-il-moto-parabolico-in-python-e-spyder.markdown/exec.png)
 
 ##Conclusioni
 

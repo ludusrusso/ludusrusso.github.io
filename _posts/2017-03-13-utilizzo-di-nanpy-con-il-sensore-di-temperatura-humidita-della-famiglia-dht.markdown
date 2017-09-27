@@ -18,7 +18,7 @@ description: Come utilizzare Nanpy col sensore DHT di temperatura e Umidità
 In attesa di trovare il tempo per finire la seconda parte del mio tutorial sui led, 
 scrivo questo breve tutorial per aiutare il mio amico Francesco a realizzare il suo progetto che prevede di utilizzare un Raspberry ed un Arduino per leggere dati di temperatura da un sensore DHT11.
 
-![DHT e Arduino](https://res.cloudinary.com/hbr/image/upload/v1489428163/WhatsApp_Image_2017-03-13_at_19.02.01_f7vjmy.jpg)
+![DHT e Arduino](/assets/imgs/2017-03-13-utilizzo-di-nanpy-con-il-sensore-di-temperatura-humidita-della-famiglia-dht.markdown/WhatsApp_Image_2017-03-13_at_19.02.01_f7vjmy.jpg)
 
 Gli ho subito suggerito di utilizzare Nanpy per gestire la comunicazione tra Arduino e Raspberry, tuttavia è venuto fuori che la libreria Nanpy non gestisce il sensore in questione di default (anche se è abilitata a farlo). Bisogna quindi avere una attimo di pazienza per abilitare ed usare il sensore.
 
@@ -63,7 +63,7 @@ Siamo pronti ad installare i driver! Per farlo, apriamo il file **Nanpy.ino** ch
 
 Sviluppiamo un semplicissimo circuito per leggere i dati dal sensore. Io userò un sensore DHT22 (è uguale con un DHT11).
 
-![Circuito DHT](https://res.cloudinary.com/hbr/image/upload/v1489426175/arduino-dht22-temperature-hookup_oh726w.svg)
+![Circuito DHT](/assets/imgs/2017-03-13-utilizzo-di-nanpy-con-il-sensore-di-temperatura-humidita-della-famiglia-dht.markdown/arduino-dht22-temperature-hookup_oh726w.svg)
 
 In particolare, dobbiamo collegare il PIN data del DHC (il secondo da sinistra) al PIN 2 di Arduino e all'alimentazione (5V) attraverso una resistenza da $10k\Omega$.
 

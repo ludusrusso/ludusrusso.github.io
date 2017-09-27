@@ -17,7 +17,7 @@ Vi presento la mia startup: ecco come riusciamo a insegnare la Cloud Robotics co
 
 Recentemente ho pochissimo tempo per scrivere articoli su questo blog. Non che non mi stia più interessando alla divulgazione, ma anzi, la mia attività di divulgazione si è fatta (e lo sarà per le prossime settimane) molto intensa in modalità offline.
 
-![Python e DotBot spiegazione Avogadro](http://res.cloudinary.com/hbr/image/upload/v1485173582/IMG_20170118_114658-PANO_ye4xbh.jpg)
+![Python e DotBot spiegazione Avogadro](/assets/imgs/2017-01-23-hb-robotics-con-python-impariamo-la-cloud-robotics.markdown/IMG_20170118_114658-PANO_ye4xbh.jpg)
 
 Volevo condividere il mio lavoro con la startup che ho fondato insieme al mio socio Gabriele: HB Robotics.
 **HB Robotics** ha una storia lunga che non vi racconterò in questa sede, se però qualcuno (che conosce l'inglese) è interessato può trovare tutti i dettagli [qui](http://mars42.org/blog/2017/1/4/hotblack-robotics-story).

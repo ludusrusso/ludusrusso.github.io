@@ -15,6 +15,6 @@ description:
 
 Il mio tutorial in Flask sta crescendo sempre di più. Nella settimana parte, inizieremo a giocare con CSS e JavaScript per migliorare la grafica del blog.
 
-![Settima Parte Flask](http://www.ludusrusso.cc/tutorial/_images/cover_text_typed.png)
+![Settima Parte Flask](/assets/imgs/2017-05-11-implementiamo-un-blog-in-python-e-flask-parte-7-codice-css-e-javascript.markdown/cover_text_typed.png)
 
 Trovate [il tutorial qui](http://www.ludusrusso.cc/tutorial/python/ludoblog/07cssjs.html).

@@ -17,7 +17,7 @@ Da un po' di tempo ho scoperto la bellezza ed il divertimento di implementare bo
 
 Chi mi segue su questo blog o su [HotBlack Robotics](http://www.hotblackrobotics.com/) sa bene che mi diletto non poco con questa tecnologia. Vi propongo oggi quindi una brevissima introduzione allo sviluppo di chatbot utilizzando *Python* e la libreria *Telepot*.
 
-![ChatBot telegram in azione](https://github.com/ludusrusso/images/blob/master/telepot/chatbotIntro.png?raw=true)
+![ChatBot telegram in azione](/assets/imgs/2017-04-27-implementiamo-un-bot-telegram-con-python.markdown/chatbotIntro.png?raw=true)
 
 ##La libreria telepot
 
@@ -50,7 +50,7 @@ Una volta connessi al bot, ci basterà scrivere il comando `/newbot` e seguire l
 
 Una volta completata la procedura, il avremmo a disposizione un nostro TOKEN univoco (attenzione, non pubblicatelo altrimenti chiunque potrà usarlo) da utilizzare per sviluppare il nostro programma.
 
-![ChatBot telegram in azione](https://github.com/ludusrusso/images/blob/master/telepot/newbot.png?raw=true)
+![ChatBot telegram in azione](/assets/imgs/2017-04-27-implementiamo-un-bot-telegram-con-python.markdown/newbot.png?raw=true)
 
 
 ## Implementiamo il primo programma!
@@ -181,7 +181,7 @@ In particolare, utilizzando una stringa contenente la sequenza `%s` e seguita da
 
 L'effetto, come potete immaginare, è quello di far sembrare il bot un po' meno stupido.
 
-![ChatBot telegram in azione](https://github.com/ludusrusso/images/blob/master/telepot/chatbot.png?raw=true)
+![ChatBot telegram in azione](/assets/imgs/2017-04-27-implementiamo-un-bot-telegram-con-python.markdown/chatbot.png?raw=true)
 
 ## Conclusioni
 

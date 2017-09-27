@@ -57,7 +57,7 @@ plot(x,y)
 
 Che aprirà una finestra con il grafico che abbiamo realizzato. 
 
-![Esempio Plot](https://github.com/ludusrusso/images/blob/master/blog/pylab/plot-retta.png?raw=true)
+![Esempio Plot](/assets/imgs/2017-04-06-breve-introduzione-all-utilizzo-di-spyder-per-il-plot-dei-dati-a-livello-scientifico.markdown/plot-retta.png?raw=true)
 
 ### Dare un titolo al grafico e dei nomi agli assi
 
@@ -73,7 +73,7 @@ ylabel('Ordinate (y)')
 
 Se ritorniamo alla finestra del grafico, vedremo che questo è cambiato in accordo con i nostri comandi.
 
-![Esempio labels e titolo](https://github.com/ludusrusso/images/blob/master/blog/pylab/titlexy.png?raw=true)
+![Esempio labels e titolo](/assets/imgs/2017-04-06-breve-introduzione-all-utilizzo-di-spyder-per-il-plot-dei-dati-a-livello-scientifico.markdown/titlexy.png?raw=true)
 
 ### Stile del disegno
 
@@ -96,4 +96,4 @@ plot(x,y2, 'r--')
 plot(x,y3, 'b.')
 ```
 
-![Esempio marks](https://github.com/ludusrusso/images/blob/master/blog/pylab/marks.png?raw=true)
+![Esempio marks](/assets/imgs/2017-04-06-breve-introduzione-all-utilizzo-di-spyder-per-il-plot-dei-dati-a-livello-scientifico.markdown/marks.png?raw=true)

@@ -13,7 +13,7 @@ author: ludusrusso
 description: Presento questo interessante tool python che può essere considerato una buona alternativa a Matlab per l'analisi dei dati!
 ---
 
-![Canopy Main](https://raw.githubusercontent.com/ludusrusso/images/master/canopy/main.png)
+![Canopy Main](/assets/imgs/2017-01-09-canopy-una-pythonica-alternativa-a-matlab.markdown/main.png)
 
 Da ingegnere meccatronico e informatico, sono abituato ad utilizzare Matlab, uno dei tool più importanti disponibili in ambito ingegneristico e scientifico. Durante la mia carriera universitaria (sia da studente che da dottorando) ho avuto modo di utilizzare Matlab in tantissimi corsi, da analisi dei segnali a robotica. Mi sono sempre interessato a cercare una valida alternativa OpenSource a questo programma, e ho sempre creduto che tutta la suite **matplotlib** fosse un buon compromesso... Questo finchè non mi sono imbattuto in **Canopy**.
 
@@ -29,11 +29,11 @@ Ovviamente no, non credo ad esempio (o non ne conosco) che esistano alternative 
 
 Una volta installata l'applicazione (si installa molto facilmente), apriamo il programma e vedremo la seguente schermata
 
-![Canopy Schermata Home](https://raw.githubusercontent.com/ludusrusso/images/master/canopy/home.png)
+![Canopy Schermata Home](/assets/imgs/2017-01-09-canopy-una-pythonica-alternativa-a-matlab.markdown/home.png)
 
 Selezioniamo il pulsante **Editor** e accederemo ad un'interfaccia molto simile a quella di matlab.
 
-![Canopy Editor](https://raw.githubusercontent.com/ludusrusso/images/master/canopy/editor.png)
+![Canopy Editor](/assets/imgs/2017-01-09-canopy-una-pythonica-alternativa-a-matlab.markdown/editor.png)
 
 Dalla linea di comando interattiva possiamo scrivere del codice Python con interfaccia pyLab. Ecco un brevissimo esempio per plottare a video una parabola.
 
@@ -57,7 +57,7 @@ plot(x,y)
 
 Otterremo il seguente grafico
 
-![Canopy Editor](https://raw.githubusercontent.com/ludusrusso/images/master/canopy/parabolaplot.png)
+![Canopy Editor](/assets/imgs/2017-01-09-canopy-una-pythonica-alternativa-a-matlab.markdown/parabolaplot.png)
 
 ##Considerazioni
 

@@ -15,7 +15,7 @@ description: Una semplice tutorial che mostra il funzionamento della libreria py
 
 Dopo un mio recente post, mi è stato chiesto se fosse possibile creare uno script python in grado di catturare uno screenshot dello schermo del computer. Dopo una breve ricerca ho trovato il modulo [pyscreenshot](http://pyscreenshot.readthedocs.io/en/latest/) che promette di risolvere questo problema.
 
-![main screenshot](https://github.com/ludusrusso/images/blob/master/pyscreenshot/main.png?raw=true)
+![main screenshot](/assets/imgs/2017-04-27-pillole-di-python-pyscreenshot.markdown/main.png?raw=true)
 
 Scrivo questo brevissimo tutorial per far vedere come è possibile, in pochissime linee di codice, scrivere un semplice programma che cattura lo schermo del computer e salva l'immagine su un file .png.
 
@@ -49,7 +49,7 @@ Salviamo ed eseguiamo il programma con il comando
 
 e vedremo apparire un nuovo file, nella cartella di lavoro, contenente lo screenshot del vostro computer (trovate il mio sotto).
 
-![screenshot](https://github.com/ludusrusso/images/blob/master/pyscreenshot/screenshot.png?raw=true)
+![screenshot](/assets/imgs/2017-04-27-pillole-di-python-pyscreenshot.markdown/screenshot.png?raw=true)
 
 ### Analizziamo il codice
 

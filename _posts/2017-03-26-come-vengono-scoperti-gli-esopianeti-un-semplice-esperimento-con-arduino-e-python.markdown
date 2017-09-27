@@ -16,7 +16,7 @@ description:
 
 Un esopianeta (o pianeta extrasolare) è un pianeta che non appartiene al sistema solare, cioè un pianeta che orbita intorno ad una stella diversa dal sole.
 
-![Esopianeta con Arduino e Python](http://res.cloudinary.com/hbr/image/upload/v1490562994/exoplanet_in7ttp.png)
+![Esopianeta con Arduino e Python](/assets/imgs/2017-03-26-come-vengono-scoperti-gli-esopianeti-un-semplice-esperimento-con-arduino-e-python.markdown/exoplanet_in7ttp.png)
 
 Osserverare direttamente un esopianeta è quasi impossibile, a causa dell'elevata distanza che ci sapara dalle altre stelle. Infatti, dei circa 4 mila esopianeti attualmente conosciuti, solamente 22 sono stati osservati direttamente con il telescopio (trovate la lista completa [qui](https://en.wikipedia.org/wiki/List_of_directly_imaged_exoplanets)). E, in ogni caso, si tratta di pianeti molto grandi che orbitano molto distanti dalla loro stella madre.
 
@@ -29,7 +29,7 @@ In seguito, con dei semplicissimi strumenti, riusciremo a ottenere dei dati molt
 
 Come già detto, questo metodo consiste nel misurare un piccolo calo di luminosità della stella dovuto al transito di un esopianeta davanti alla stella (rispetto al nostro punto di vista). 
 
-![Metodo per Transito](https://www.nasa.gov/sites/default/files/images/656348main_ToV_transit_diag_full.jpg)
+![Metodo per Transito](/assets/imgs/2017-03-26-come-vengono-scoperti-gli-esopianeti-un-semplice-esperimento-con-arduino-e-python.markdown/656348main_ToV_transit_diag_full.jpg)
 
 Ovviamente questo metodo ha molte limitazione, prima tra tutte, funziona solo se l'orbita del pianeta è esattamente perpendicolare al nostro punto di vista (ciò riduce di tantissimo il numero di esopianeti che possono essere scoperti con questa tecnica). Tuttavia, ha l'enorme vantaggio di poter funzionare anche a grandissime distanze ed essere utilizzato da semplici telescopi. È quindi possibile scansionare contemporaneamente grandi porzioni di cielo e poi concentrarsi sulle stelle su cui si osservano cali di luminosità.
 
@@ -60,7 +60,7 @@ Dalla equazione precente, siamo in grado di misurare la luminosità a partire da
 
 Per fortuna, misurare una resistenza con Arduino è molto facile, e ci viene in auto un semplice circuito chiamato *partitore di tensione*, illustrato in figura.
 
-![Partitore di tensione](http://res.cloudinary.com/hbr/image/upload/v1490563292/partitore_tensione_w0pueg.png)
+![Partitore di tensione](/assets/imgs/2017-03-26-come-vengono-scoperti-gli-esopianeti-un-semplice-esperimento-con-arduino-e-python.markdown/partitore_tensione_w0pueg.png)
 
 
 Con questa configurazione, sappiamo che la tensione $v$ dipende da $R$ e $R_1$ secondo la seguente equazione
@@ -80,7 +80,7 @@ $$
 
 Implementiamo quindi il circuito con Arduino, utilizzando come resistenza $R_1$ una resistenza $R_1 = 10k\Omega$ e come resistenza $R$ il nostro fotoresistore. Alimentiamo il circuito con i $5V$ di Arduino (in questo modo avremo $V=5V$) e usiamo il PIN A0 per misurare la tensione $v$.
 
-![Arduino Fotoreistore](http://res.cloudinary.com/hbr/image/upload/v1490563928/photoresistore_ai1iey.png)
+![Arduino Fotoreistore](/assets/imgs/2017-03-26-come-vengono-scoperti-gli-esopianeti-un-semplice-esperimento-con-arduino-e-python.markdown/photoresistore_ai1iey.png)
 
 ####Codice
 
@@ -146,23 +146,23 @@ def plot_lux(T):
 
 Con questa funzione, possiamo quindi disegnare come varia la luminosità nella stanza. Questo è un esempio ottenuto lanciando la funzione `plot_lux(10)` (quindi campionando per $10$ secondi) e muovendo casualemtne la torcia del cellulare sopra il sensore.
 
-![Luxometro casuale](http://res.cloudinary.com/hbr/image/upload/v1490561752/luxometro_casouale_ndyswi.png)
+![Luxometro casuale](/assets/imgs/2017-03-26-come-vengono-scoperti-gli-esopianeti-un-semplice-esperimento-con-arduino-e-python.markdown/luxometro_casouale_ndyswi.png)
 
 ##Simuliamo un esopianeta utilzzando una lampadina, una pallina ed un filo
 
 Siamo pronti a tornare a parlare del metodo di transito da cui eravamo partiti: un modo molto semplice per simulare gli effetti del transito di un esopianeta sulla luminosità della stella madre, è quello di utilizzare una pallina legata con uno spago che "orbita" attorno ad una lampadina accesa.
 In questo modo, ogni volta che la pallina passa davanti alla lampadina, si verificherà subito un calo di luminosità della stessa.
 
-![Pallina lampadina Arduino](http://res.cloudinary.com/hbr/image/upload/v1490564061/WhatsApp_Image_2017-03-26_at_23.33.15_zry9c1.jpg)
+![Pallina lampadina Arduino](/assets/imgs/2017-03-26-come-vengono-scoperti-gli-esopianeti-un-semplice-esperimento-con-arduino-e-python.markdown/WhatsApp_Image_2017-03-26_at_23.33.15_zry9c1.jpg)
 
 Utilizzando il luxometro appena costruito, possiamo quindi disegnare l'andamento della luminosità visto dalla fotoresistenza, e quindi visualizzare il calo di luminosità causato dal transito della pallina attorno alla lampadina. L'esperimento di per se è molto semplice:
 nel mio caso, ho usato una lampadina USB (che si attacca direttamente al computer, molto comoda da utilizzare), e una pallina da pingpong legata con uno spago. Ho fatto girare la pallina intorno alla lampadina tenendola per una mano, e ho eseguito il campionamento con $T=10s$, ottenendo il grafico qui sotto.
 
-![esopianeta simulato luce](http://res.cloudinary.com/hbr/image/upload/v1490562563/esopianeta_hea9nq.png)
+![esopianeta simulato luce](/assets/imgs/2017-03-26-come-vengono-scoperti-gli-esopianeti-un-semplice-esperimento-con-arduino-e-python.markdown/esopianeta_hea9nq.png)
 
 Ho ripetuto lo stesso esperiendo però spegnendo la luce della camera, in modo da far risaltare meglio il transito:
 
-![esopianeta simulato buio](http://res.cloudinary.com/hbr/image/upload/v1490562563/esopianeta_scuro_j7cp3b.png)
+![esopianeta simulato buio](/assets/imgs/2017-03-26-come-vengono-scoperti-gli-esopianeti-un-semplice-esperimento-con-arduino-e-python.markdown/esopianeta_scuro_j7cp3b.png)
 
 Come potete vedere, nel primo caso il salto di luminosità nel momento di passaggio va da $35.5lux$ a $32.5lux$ (circa il $10%$), mentre nel secondo caso, il salto (in percentuale) è molto più elevato ($>50\%$) e la curva meno rumorosa. Ad ogni modo, da entrambi i grafici è possibilissimo stimare il periodo di rotazione della pallina.
 

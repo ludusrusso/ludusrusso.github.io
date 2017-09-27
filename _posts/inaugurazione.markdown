@@ -11,7 +11,7 @@ description: Ciao a tutti, mi chiamo Ludovico e sono un maker e un imprenditore.
 ---
 
 ###Un Blog in Python e Flask
-![Copertina](https://z-1-scontent-mxp1-1.xx.fbcdn.net/v/t1.0-9/15665631_1880622942174208_313603892332993532_n.jpg?oh=c704f172b1ab251064ce8f1b2b6859b5&oe=58F0F63F)
+![Copertina](/assets/imgs/inaugurazione.markdown/15665631_1880622942174208_313603892332993532_n.jpg?oh=c704f172b1ab251064ce8f1b2b6859b5&oe=58F0F63F)
 
 Ciao a tutti, mi chiamo Ludovico e sono un **maker** e un **imprenditore**. Sotto consiglio (molto assillante) di [Michele Maffucci](http://www.maffucci.it), ho deciso di aprire questo blog in cui racconterò quello che faccio e dei miei vari progetti.
 

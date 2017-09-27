@@ -18,7 +18,7 @@ description:
 
 Prendo ispirazione da [questo post](http://www.lafucinadellescienze.it/wordpress/archives/3878) pubblicato dal prof. Alfonso d'Ambrosio per sviluppare il prossimo esperimento di fisica basato su Python e Arduino.
 
-![led spyder python](http://res.cloudinary.com/hbr/image/upload/v1487805711/Schermata_2017-02-23_alle_00.20.38_r2bl4e.png)
+![led spyder python](/assets/imgs/2017-02-22-misurare-la-costante-di-plank-con-arduino-e-python-parte-1.markdown/Schermata_2017-02-23_alle_00.20.38_r2bl4e.png)
 
 In questo esperimento, misureremo la curva tensione corrente di alcuni diodi led colorati, verificandone l'andamento esponezione. In seguito, useremo i dati raccolti per misurare sperimentalmente il valore di una delle costanti fondamentali dalla fisica: la [**costante di Planck**](https://it.wikipedia.org/wiki/Costante_di_Planck) $h$.
 
@@ -57,7 +57,7 @@ ylabel("$i [A]$")
 
 Che produce, come risultato
 
-![simulazione diodo al silicio](http://res.cloudinary.com/hbr/image/upload/v1487805709/diode_sim_roujei.png)
+![simulazione diodo al silicio](/assets/imgs/2017-02-22-misurare-la-costante-di-plank-con-arduino-e-python-parte-1.markdown/diode_sim_roujei.png)
 
 In prima approssimazione, la curva logaritmica di un diodo può essere approssimata con una funzione spezzata descritta come segue
 
@@ -97,7 +97,7 @@ def diode_approx(v, VD, RD):
 e a questo punto, possiamo plottare insieme i due grafici, ottenendo quanto riportato in figura
 
 
-![approssimazione diodo](http://res.cloudinary.com/hbr/image/upload/v1487805709/diode_sim_approx_nwyysq.png)
+![approssimazione diodo](/assets/imgs/2017-02-22-misurare-la-costante-di-plank-con-arduino-e-python-parte-1.markdown/diode_sim_approx_nwyysq.png)
 
 ###Teoria sul LED
 

@@ -18,7 +18,7 @@ description:
 
 Dopo una lunga pausa, dovuta principalmente al lavoro necessario per la consegna della tesi che mi ha preso tutto il tempo libero delle ultime due settimane, al mio lavoro con HotBlack Robotics che si fa sempre più denso, e ad alcuni progetti che sto facendo partire di cui parlerò a breve, ecco che finalmente trovo il tempo per riprendere in mano questo tutorial lasciato a metà.
 
-![Misura della caratteristica di Led](http://res.cloudinary.com/hbr/image/upload/v1490138990/WhatsApp_Image_2017-03-22_at_00.29.13_qmfajj.jpg)
+![Misura della caratteristica di Led](/assets/imgs/2017-03-21-misurare-la-costante-di-plank-con-arduino-e-python-parte-2.markdown/WhatsApp_Image_2017-03-22_at_00.29.13_qmfajj.jpg)
 
 Per chi si fosse perso la prima parte (più teorica), può trovarla [cliccando qui](http://www.ludusrusso.cc/posts/2017-02-22-misurare-la-costante-di-plank-con-arduino-e-python-parte-1). In questa seconda parte iniziamo con il vero smanettamente con Aruduino.
 
@@ -30,7 +30,7 @@ In particolare, per misurare la caratteristica del Led (o di un qualsiasi compon
 
 Riprendendo l'idea del Prof. Alfonso d'Ambrosio, ho utilizzato il semplice circuito sottostante per la misura di queste grandezze con il metodo volt-amperometrico
 
-![Circuito LED](http://res.cloudinary.com/hbr/image/upload/v1490133424/citcuito_jhoxnp.png)
+![Circuito LED](/assets/imgs/2017-03-21-misurare-la-costante-di-plank-con-arduino-e-python-parte-2.markdown/citcuito_jhoxnp.png)
 
 ###Come funziona
 
@@ -61,7 +61,7 @@ Utilizzando Arduino ed una breadboard, implementiamo il circuito sopra indicato.
 
 Usiamo come input il Pin6 di Arduino, e come lettura il Pin A0, come indicato in figura.
 
-![Schema Arduino](http://res.cloudinary.com/hbr/image/upload/v1490138789/ledmeas_w1obv6.png)
+![Schema Arduino](/assets/imgs/2017-03-21-misurare-la-costante-di-plank-con-arduino-e-python-parte-2.markdown/ledmeas_w1obv6.png)
 
 ###Codice di Acquisizione
 
@@ -133,7 +133,7 @@ plot(v, i)
 
 Se tutto è andato bene, dovrette ottenere un grafico simile a seguente (in questo caso ho usato un Led Blu).
 
-![led blu caratteristica](http://res.cloudinary.com/hbr/image/upload/v1490138781/ledblue_ezorqw.png)
+![led blu caratteristica](/assets/imgs/2017-03-21-misurare-la-costante-di-plank-con-arduino-e-python-parte-2.markdown/ledblue_ezorqw.png)
 
 Notiamo subito una cosa molto diversa dal caso ideale: quando il led non couduce (è spento), in realtà passa una corrente, molto piccola, nel circuito ($i_in < 0.5mA$). Questa corrente è dovuta alle resistenze interne del condesatore C.
 
@@ -160,7 +160,7 @@ plot(vy, iy, 'y')
 vg, ig = characterize_led()
 plot(vg, ig, 'g')
 ```
-![led tutti caratteristica](http://res.cloudinary.com/hbr/image/upload/v1490138784/leds_klmwzq.png)
+![led tutti caratteristica](/assets/imgs/2017-03-21-misurare-la-costante-di-plank-con-arduino-e-python-parte-2.markdown/leds_klmwzq.png)
 
 Notare che per ogni led misuriamo una corrente molto bassa in ingresso prima che il led si accenda. Si noti anche che i led verde e giallo hanno una caratteristica quasi identica.
 

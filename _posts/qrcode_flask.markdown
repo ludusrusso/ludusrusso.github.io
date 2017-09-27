@@ -10,7 +10,7 @@ author: ludusrusso
 description: Creiamo una webapp in Python e Flask per generare QRCode in modo semplice e veloce.
 ---
 
-![](http://www.ludusrusso.cc/tutorial/_images/index_with_qrcode_dyn.png)
+![](/assets/imgs/qrcode_flask.markdown/index_with_qrcode_dyn.png)
 
 Ciao a tutti,
 sono finalmente arrivato ad una versione decente del mio tutorial sull'utilizzo di Python e Flask per creare una webapp per la generazione di qrcode.

@@ -42,7 +42,7 @@ Il risultato che ho ottenuto mi ha molto soddisfatto, anche perchè sono riuscit
 
 ### 2. Come collegare le varie componenti
 Lo schema per collegare tutte le componenti ad Arduino è il seguente:
-![alt text](https://github.com/ludusrusso/images/blob/master/stampacchia/telegram_ele.jpeg?raw=true)
+![alt text](/assets/imgs/2017-04-15-accendere-led-con-arduino-e-telegram.markdown/telegram_ele.jpeg?raw=true)
 
 ### 3. Come preparare Arduino
 Basta aprire il file nanpy-firmware-master/Nanpy/Nanpy.ino dalla cartella del firmware nanpy con l'IDE Arduino e caricarlo su Arduino UNO.
@@ -141,7 +141,7 @@ A questo punto bisogna eseguire il file e, se tutto è andato bene, il bot di Te
 
 Ecco un esempio di chat il con bot
 
-![chat con il bot](https://github.com/ludusrusso/images/blob/master/stampacchia/telegram_ui.jpeg?raw=true)
+![chat con il bot](/assets/imgs/2017-04-15-accendere-led-con-arduino-e-telegram.markdown/telegram_ui.jpeg?raw=true)
 
 ##Autori
 

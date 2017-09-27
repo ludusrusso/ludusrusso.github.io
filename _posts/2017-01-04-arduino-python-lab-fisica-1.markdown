@@ -13,7 +13,7 @@ author: ludusrusso
 description: Primi esperimenti con Arduino e Python per realizzare un semplice laboratorio di fisica sfruttando la potenza di Python e la versatilità di Arduino
 ---
 
-![](https://raw.githubusercontent.com/ludusrusso/images/master/WhatsApp%20Image%202017-01-04%20at%2014.05.08.jpeg)
+![](/assets/imgs/2017-01-04-arduino-python-lab-fisica-1.markdown/WhatsApp%20Image%202017-01-04%20at%2014.05.08.jpeg)
 
 ## Premessa
 Recentemente sono stato contattato dalla mia ex scuola (Liceo G. Stampacchia di Tricase) per aiutare a creare un corso di robotica e automazione per i nuovi studenti del liceo. Ho preso molto a cuore l'iniziativa e sto supportando i professori e il preside nell'implementazione. Da questo progetto è nata, tra le varie cose, l'idea di iniziare a sperimentare l'accoppiata Python + Arduino (magari su un raspberry pi) per realizzare in modo semplice esperimenti di Fisica e Matematica. Dal mio punto di vista i vantaggi di questo approccio sono molteplici, ecco quelli che mi vengono in mente adesso:
@@ -59,16 +59,16 @@ Materiale:
 
 Importante: dato che Arduino (specialmente quando comunica in seriale) non è capace di acquisire dati ad una frequenza molto elevata, per riuscire a prendere un numero adeguato di dati conviene scegliere valori di $R$ e $C$ abbastanza elevati, in modo da avere constanti di tempo dell'ordine di qualche di qualche secondo. Nel mio caso, ho scelto $\tau=RC=1s$ nominale.
 
-![RC-Scheme](https://raw.githubusercontent.com/ludusrusso/images/master/RC.png)
- 
+![RC-Scheme](/assets/imgs/2017-01-04-arduino-python-lab-fisica-1.markdown/RC.png)
+
 Essendo il condensatore che ho utilizzato elettrolitico, i suoi terminali sono polarizzati, ossia è necessario collegare il terminale positivo (anodo) ad un punto del circuito avente potenziale più elevato rispetto al punto di collegamento del terminale negativo (catodo). Nel caso si utilizzi un condesatore ceramico, non è importante la polarità!
 
 Colleghiamo quindi il catodo ($-$) del condensatore al PIN GND di Arduino ,e l'anodo ($+$) tramite breadboard al pin $A0$. Colleghiamo inoltre, per mezzo di una resistenza, l'anodo del condensatore al PIN $2$ di Arduino.
 
 ###Codice Arduino
-Il codice Arduino che andremo ad implementare sfrutta il PIN $2$ per caricare e scaricare il condensatore. In fase di carica, utilizzando il PIN $A0$ misura il valore di carica sul considerare e invia i dati in seriale. Il codice che ho sviluppato raccoglie 50 campioni intervallati da un periodo di campionamento $Tc =100ms$. 
+Il codice Arduino che andremo ad implementare sfrutta il PIN $2$ per caricare e scaricare il condensatore. In fase di carica, utilizzando il PIN $A0$ misura il valore di carica sul considerare e invia i dati in seriale. Il codice che ho sviluppato raccoglie 50 campioni intervallati da un periodo di campionamento $Tc =100ms$.
 
-È importante scegliere il tempo $Tc$ in modo da avere abbastanza campioni per valutare riuscire a ricostruire correttamente l'andamento del segnale. 
+È importante scegliere il tempo $Tc$ in modo da avere abbastanza campioni per valutare riuscire a ricostruire correttamente l'andamento del segnale.
 
 Apro una piccola parantesi ingegneristica, esiste il [Teorema di Nyquist](https://it.wikipedia.org/wiki/Teorema_del_campionamento_di_Nyquist-Shannon) che impone che il tempo di campionamento di un qualisasi segnale temporale deve essere $T_c < \frac{1}{2}\tau_{min}$, dove $\tau_{min}$ è la più piccola costante di tempo di segnale stesso. In questo caso abbiamo una sola costante di tempo $\tau=RC=1s$, quindi dobbiamo scegliere $T_c< 0.5s$.
 
@@ -76,7 +76,7 @@ All'atto pratico, il mio consiglio è scegliere sempre $Tc =\frac{\tau}{10}$. Ne
 
 Una volta scelto $Tc$ possiamo implementare il codice Arduino. Lo scopo del codice è:
 
-- Scaricare il condensatore per un tempo appropriato $T=50\cdot Tc$. 
+- Scaricare il condensatore per un tempo appropriato $T=50\cdot Tc$.
 - Iniziare il ciclo di carica.
 - Campionare i dati di $v(t)$ e mandarli in seriale.
 
@@ -87,7 +87,7 @@ Il codice implementato è riportato di seguito.
 #define POWER_PIN 2
 
 int cnt = 0;
-int sensorPin = A0; 
+int sensorPin = A0;
 
 int Tc = 100; // 100ms
 
@@ -120,7 +120,7 @@ void loop() {
 ####Testiamo il codice
 Una volta implementato e lanciato il codice in Arduino, possiamo testare il programma attraverso il serial monitor. Apriamo il serial monitor e resettiamo la scheda, il programma inizierà a scaricare il condensatore e poi a prendere i dati. Il tutto dovrebbe durare circa $10s$. Sul serial monitor dovreste vedere i valori misurati, come nella foto seguete
 
-![](https://raw.githubusercontent.com/ludusrusso/images/master/Schermata%202017-01-04%20alle%2015.11.32.png)
+![](/assets/imgs/2017-01-04-arduino-python-lab-fisica-1.markdown/Schermata%202017-01-04%20alle%2015.11.32.png)
 
 Se tutto funziona correttamente, possiamo passare all'utilizzo di Python per salvare i dati ed analizzarli.
 
@@ -180,7 +180,7 @@ ipython --pylab
 
 A questo punto, accedendo alla linea di comando di pyPlot, dovreste vedere una schermata simile alla seguente
 
-![iPython](https://raw.githubusercontent.com/ludusrusso/images/master/Schermata%202017-01-04%20alle%2015.26.00.png)
+![iPython](/assets/imgs/2017-01-04-arduino-python-lab-fisica-1.markdown/Schermata%202017-01-04%20alle%2015.26.00.png)
 
 ####Campionamento dei Dati
 Perfetto, ora possiamo iniziare ad usare pyPlot in modo interattivo. Per prima cosa, bisogna importare il file `rc.py` ed utilizzarlo. Per farlo, eseguiamo i seguenti comandi:
@@ -215,7 +215,7 @@ plot(t_meas, v_meas, 'ro')
 
 A questo punto, dovrebbe apparire istantaneamente una nuova finestra con il grafico dei dati campionati
 
-![graph1](https://raw.githubusercontent.com/ludusrusso/images/master/Schermata%202017-01-04%20alle%2015.44.17.png)
+![graph1](/assets/imgs/2017-01-04-arduino-python-lab-fisica-1.markdown/Schermata%202017-01-04%20alle%2015.44.17.png)
 
 Nota: `plot` prende due parametri più un parametro opzionale. I primi due sono due vettori contenenti i dati da disegnare rispettivamente sull'asse $x$ e $y$. Il terzo parametro (opzionale) è una stringa che definisce lo stile del disegno. In questo caso `"ro"` significa "disegna i valori in rosso (r) con dei pallini (o)".
 
@@ -255,7 +255,7 @@ plot(t_sim, v_sim, 'b')
 
 E, riaprendo la finestra dell'immagine, otterremo un grafico simile a questo
 
-![graph2](https://raw.githubusercontent.com/ludusrusso/images/master/Schermata%202017-01-04%20alle%2015.56.05.png)
+![graph2](/assets/imgs/2017-01-04-arduino-python-lab-fisica-1.markdown/Schermata%202017-01-04%20alle%2015.56.05.png)
 
 ##Conclusioni
 
@@ -264,7 +264,7 @@ Ho ricevuto molti segnale interesse per questo esperimento da parte dei professo
 Se avete suggerimenti, trovate errori o volete semplicemente contattarmi, mi trovate su [facebook](https://www.facebook.com/ludusrusso.cc/).
 
 ##Ringraziamenti
-Alla stesura di questo documento hanno contribuito 
+Alla stesura di questo documento hanno contribuito
 
 - Prof. Michele Maffucci
 - Prof. Giorgio de Nunzio

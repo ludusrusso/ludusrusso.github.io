@@ -10,7 +10,7 @@ author: ludusrusso
 description: Ho caricato il generatore di codici QRCode online!
 ---
 
-![](https://raw.githubusercontent.com/ludusrusso/images/master/Schermata%202016-12-24%20alle%2011.50.58.png)
+![](/assets/imgs/qrcode-generator-online.markdown/Schermata%202016-12-24%20alle%2011.50.58.png)
 
 Come promesso,
 segnalo che ho messo online l'applicazione realizzata nel tutorial che trovate [qui](http://www.ludusrusso.cc/tutorial/python/flask/intro.html).

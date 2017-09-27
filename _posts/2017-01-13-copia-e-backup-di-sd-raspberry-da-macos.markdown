@@ -16,7 +16,7 @@ description:
 
 Ultimamente noto che su internet c'è molta confusione sui tools per effetturare backup e ripristino della SD del Raspberry Pi usando un Mac (quindi con MacOS). Questo tutorial lo scrivo principalmente come reminder per me, dopo aver sperimentato un po' di soluzioni in rete e visto quella che funziona meglio.
 
-![Copiare SD Mac Index](https://raw.githubusercontent.com/ludusrusso/images/master/copy_SD/main.jpg)
+![Copiare SD Mac Index](/assets/imgs/2017-01-13-copia-e-backup-di-sd-raspberry-da-macos.markdown/main.jpg)
 
 
 ##Passaggi generali
@@ -27,7 +27,7 @@ Per scoprirlo, una volta inserita l'SD nel Mac, apriamo il programma **Utility D
 
 Una volta selezionata, si aprirà una finestra in cui è possibile vedere, sotto la voce `Dispositivo` il nome del file in questione. Nel mio caso è `disk2` come potete vedere nell'immagine sottostante.
 
-![Utiliti disco SD nome](https://raw.githubusercontent.com/ludusrusso/images/master/copy_SD/diskutil.png)
+![Utiliti disco SD nome](/assets/imgs/2017-01-13-copia-e-backup-di-sd-raspberry-da-macos.markdown/diskutil.png)
 
 Una volta scoperto il nome, appuntiamolo da qualche parte e procediamo in base a quello che vogliamo fare.
 

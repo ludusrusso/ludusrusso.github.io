@@ -13,7 +13,7 @@ author: ludusrusso
 description: Scrivo questo post come introduzione all'utilizzo di Vagrant per la gestione di Macchine virtuali. Ho scoperto Vagrant qualche mese fa e mi è subito sembrato un ottimissimo tool per gestione progetti e per muovere i primi passi con Linux senza necessariam
 ---
 
-![vagrant](https://www.ideato.it/assets/uploads/2015/03/687474703a2f2f6572696b6168656964692e636f6d2f7468656d652f6661746361747a2f696d616765732f76616772616e742f6c6f676f5f76616772616e742e706e67.png)
+![vagrant](/assets/imgs/2017-04-25-introduzione-a-vagrant.markdown/687474703a2f2f6572696b6168656964692e636f6d2f7468656d652f6661746361747a2f696d616765732f76616772616e742f6c6f676f5f76616772616e742e706e67.png)
 
 Scrivo questo post come introduzione all'utilizzo di Vagrant per la gestione di Macchine virtuali. Ho scoperto Vagrant qualche mese fa e mi è subito sembrato un ottimissimo tool per gestione progetti e per muovere i primi passi con Linux senza necessariamente avere un computer Linux e senza dover usare Macchine Virtuali con interfaccia grafica.
 
@@ -41,8 +41,8 @@ Lo scopo del tutorial è il seguente:
 
 L'installazione di Vagrant è estramemente semplice, per farlo, basta scaricare il pacchetto per il vostro sistema operativo da [qui](https://www.vagrantup.com/downloads.html), e seguire la procedura di installazione.
 
-![installazione vagrant 1](https://github.com/ludusrusso/images/blob/master/vagrant/install1.png?raw=true)
-![installazione vagrant 2](https://github.com/ludusrusso/images/blob/master/vagrant/install2.png?raw=true)
+![installazione vagrant 1](/assets/imgs/2017-04-25-introduzione-a-vagrant.markdown/install1.png?raw=true)
+![installazione vagrant 2](/assets/imgs/2017-04-25-introduzione-a-vagrant.markdown/install2.png?raw=true)
 
 In alcuni casi, sarà necessario installare manualmente anche virtualbox, che può essere scaricato da [qui](https://www.virtualbox.org/).
 
@@ -151,7 +151,7 @@ Adesso vediamo alcuni comandi base di Vagrant per gestire la macchina virtuale.
 
 Ok perfetto, a questo punto siamo pronti ad accedere alla macchina virtuale. Per prima cosa, controlliamo che la macchina sia accesa, eseguendo il `vagrant status`. Se la macchina non risulta in *running*, allora accendiamola col comando `vagrant up`.
 
-![Vagrant ssh](https://github.com/ludusrusso/images/blob/master/vagrant/sshpng.png?raw=true)
+![Vagrant ssh](/assets/imgs/2017-04-25-introduzione-a-vagrant.markdown/sshpng.png?raw=true)
 
 Per accedere quindi alla macchina virtuale, basta eseguire il comando `vagrant ssh`, che automaticamente porterà la shell all'interno della macchina tramite protocollo SSH.
 
@@ -246,7 +246,7 @@ Per eseguirlo, da macchina virtuale, basta lanciare il comando
 (server-flask)$ python server.py
 ```
 
-![Vagrant ssh](https://github.com/ludusrusso/images/blob/master/vagrant/run.png?raw=true)
+![Vagrant ssh](/assets/imgs/2017-04-25-introduzione-a-vagrant.markdown/run.png?raw=true)
 
 
 ### Configurare una rete virtuale per l'accesso alla macchina da host
@@ -288,7 +288,7 @@ Una volta partito, apriamo un browser qualsiasi e accediamo all'url `http://192.
 
 Se tutto va bene, dovreste vedere il server ed otterrete la seguente pagina web.
 
-![Vagrant ssh](https://github.com/ludusrusso/images/blob/master/vagrant/site.png?raw=true)
+![Vagrant ssh](/assets/imgs/2017-04-25-introduzione-a-vagrant.markdown/site.png?raw=true)
 
 
 ##Conclusioni
