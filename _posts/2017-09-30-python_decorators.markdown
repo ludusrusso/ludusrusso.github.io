@@ -26,7 +26,7 @@ Facciamo un esempio pratico:
 
 Supponiamo di definire una serie di funzioni (per semplicità due) che generano dei dizionari Python.
 
-```Python
+```python
 def dict_name(name):
     return dict(name=name)
 
@@ -49,7 +49,7 @@ Le soluzioni possono essere due:
 
 1. Modificare le due funzioni come segue:
 
-  ```Python
+  ```python
   import json
 
   def dict_name_json(name):
@@ -84,7 +84,7 @@ Riprendiamo il nostro esempio: se vogliamo utilizzare questo design pattern, dob
 
 Ecco il codice:
 
-```Python
+```python
 def as_json(func):
     def func_wrapper(arg):
         d = func(arg)
@@ -113,7 +113,7 @@ Di seguito, vediamo come utilizzarla.
 
 In particolare, le due seguenti righe di codice
 
-```Python
+```python
 dict_name = as_json(dict_name)
 dict_age = as_json(dict_age)
 ```
@@ -122,7 +122,7 @@ sono quelle in cui *decoriamo* le funzioni con il decoratore `as_json`.
 
 Questa sintassi è un po' brutta, per questo motivo, python mette a disposizione una speciale sintassi che permette di decorare una funzione nel momento in cui viene creata:
 
-```Python
+```python
 @as_json
 def dict_name(name):
     return dict(name=name)
@@ -134,7 +134,7 @@ def dict_age(age):
 
 Che è equivalente (ma decisamente più bella) a
 
-```Python
+```python
 @as_json
 def dict_name(name):
     return dict(name=name)
@@ -152,7 +152,7 @@ Notare che, a questo punto, il nostro decoratore funziona con qualsiasi funzione
 
 Che succede se proviamo ad usare questo decoratore con una funzione più complessa? Provando a lanciare il seguente codice
 
-```Python
+```python
 @as_json
 def dict_name_age(name, age):
     return dict(name=name, age=age)
@@ -171,7 +171,7 @@ TypeError: func_wrapper() takes 1 positional argument but 2 were given
 
 Questo succede perchè la funzione `func_wrap` all'interno del decoratore prende solo un parametro. Come facciamo a fare in modo che questa prenda un numero indefinito di parametri in modo da essere compabile con qualsiasi funzione decorata? Ci aiuta una funzione di python chiamata **unpacking**, che magari discuterò in un altro post. Al momento, vi basti sapere che la soluzione è la seguente:
 
-```Python
+```python
 def as_json(func):
     def func_wrapper(*args, **kargs):
         d = func(*args, **kargs)
@@ -181,7 +181,7 @@ def as_json(func):
 
 In cui `*args, **kargs` intercettano genericamente qualsiasi parametro venga passato alla `func_wrapper` e li passano alla funzione `func` decorata. Ora possiamo usare il nostro decoratore in modo più generale.
 
-```Python
+```python
 @as_json
 def dict_name_age(name, age):
     return dict(name=name, age=age)
@@ -206,7 +206,7 @@ a cui specificare se ritornare il json in formato più leggibile (con le indenta
 
 Per farlo, ecco il codice che propongo:
 
-```Python
+```python
 def as_json(indent=False):
     def as_json_dec(func):
         def func_wrapper(*args, **kargs):
@@ -224,7 +224,7 @@ un decoratore (`as_json_dec`). Il parametro passato alla fuzione `as_json` viene
 
 Questo decoratore può essere utilizzato come segue:
 
-```Python
+```python
 @as_json()
 def dict_name_age(name, age):
     return dict(name=name, age=age)
@@ -232,7 +232,7 @@ def dict_name_age(name, age):
 
 o, in alternativa, in questo modo:
 
-```Python
+```python
 @as_json(True)
 def dict_name_age(name, age):
     return dict(name=name, age=age)
@@ -262,7 +262,7 @@ Prima di tutto, notiamo che Flask mette a disposizione la funzione `jsonify()` c
 
 Per farlo, quindi, definitiamo il nostro decoratore come segue:
 
-```Python
+```python
 from flask import Flask, jsonify
 
 def as_json(func):
@@ -274,7 +274,7 @@ def as_json(func):
 
 E utilizziamolo all'interno della nostra `route` flask, nel seguente modo:
 
-```Python
+```python
 app = Flask(__name__)
 
 @app.route('/')
