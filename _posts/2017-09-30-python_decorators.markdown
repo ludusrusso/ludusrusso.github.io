@@ -135,7 +135,6 @@ def dict_age(age):
 Che è equivalente (ma decisamente più bella) a
 
 ```python
-@as_json
 def dict_name(name):
     return dict(name=name)
 dict_name=as_json(dict_name)
