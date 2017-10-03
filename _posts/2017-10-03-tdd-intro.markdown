@@ -60,25 +60,25 @@ Ciò vuol dire che, a lungo andare, lo sviluppo viene velocizzato, non rallentat
 
 È importante, quindi, implementare dei test il più frequentemente possibile.
 Istintivamente, i test dovrebbero essere scritti dopo lo sviluppo del codice stesso,
-tuttavia, esiste una metodologia di sviluppo molto pragmanti e che (nel mio caso)
+tuttavia, esiste una metodologia di sviluppo molto pragmantica e che (nel mio caso)
 risulta essere molto efficiente: il **TDD (Test Driven Development)**.
 
 **TDD** è una metodologia di sviluppo che necessita un po' di tempo per essere
 padroneggiata, e che, nel momento in cui i programmatori ci si imbattono per la prima volta,
-risulta essere molto inutile.
+appare inutile e anti produttiva.
 
 Il mantra principale del **TDD** è il seguente: *mai sviluppare codice se non abbiamo un test che fallisce!*.
 
 L'idea del **TDD** è infatti che i test per un determinato pezzo di codice o funzionalità del nostro programma debbano essere scritti *prima* dell'implementaizone stessa. La parte di sviluppo del test è la prima parte di un *ciclo* del TDD (*red*).
-Questa prima parte finisce nel momento in cui il test implementato viene eseguito: il test deve essere eseguito e quest **deve** fallire: se il test non fallisce vuol dire che qualcosa non va. Infatti, non avendo ancora implementato il codice che il test dovrebbe testare, è naturale che il test stesso fallisca.
+Questa prima parte finisce nel momento in cui il test implementato viene eseguito: il test deve essere eseguito e questo **deve** fallire: se il test non fallisce vuol dire che qualcosa non va. Infatti, non avendo ancora implementato il codice che il test dovrebbe testare, è naturale che il test stesso fallisca.
 
-Una volta che il test fallisce, passiamo alla seconda fase del ciclo (*green*) dove possiamo, finalmente, metterci a scrivere il codice che aggiusta il test.
+Una volta che il test fallisce, si passa alla seconda fase del ciclo (*green*) dove possiamo, finalmente, metterci a scrivere il codice che aggiusta il test.
 Questo pezzo di codice deve essere implementato nel modo più semplice possibile, senza
 intessarci troppo al fatto che il codice venga scritto bene. Dobbiamo cioè implementare **solo quel minimo pezzo di codice che fa passare il test**.
 Una volta implemetato il codice, e possiamo lanciare l'intera suite di test implemetata fino
 ad ora, e vedere se l'intera suite di test funziona. Se si, possiamo passare alla fase successiva, altrimenti dobbiamo risolvere i test che falliscono.
 
-L'ultima fase del ciclo (*refactoring*) consiste nel migliorare il codice sviluppato, cercando di migliorarne la struttura. A questo punto, il ciclo di test riparte.
+L'ultima fase del ciclo (*refactoring*) consiste nel modificare il codice sviluppato, cercando di migliorarne la struttura. A questo punto, il ciclo di test riparte.
 
 
 ## I Vantaggi del TDD
@@ -95,7 +95,7 @@ precisini. Tuvvavia, ho voluto provare ad utilizzarla per un po', e adesso non r
 
 ## Alcune note sul TDD
 
-È importate sottolineare che il TDD non è una scienza esatta, e nemmeno una
+È importate sottolineare che il TDD non è una metodologia perfetta, e nemmeno una
 tecnica che si padroneggia facilmente.
 
 Molto spesso ci imbatteremo in pezzi di codice che sono difficilmente testabili.
