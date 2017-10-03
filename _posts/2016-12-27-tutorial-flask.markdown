@@ -5,8 +5,16 @@ date: 2016-12-27
 image: http://www.ludusrusso.cc/tutorial/_images/indexnav.png
 headerImage: false
 tag:
+ - Flask
+ - Python
 category: blog
 redirect_from:
+ - /posts/tutorial-blog-intro
+ - /posts/2017-01-08-implementiamo-un-blog-in-python-e-flask-parte-3
+ - /posts/2017-01-15-implementiamo-un-blog-in-python-e-flask-parte-4
+ - /posts/2017-05-01-implementiamo-un-blog-in-python-e-flask-parte-5
+ - /posts/2017-05-04-implementiamo-un-blog-in-python-e-flask-parte-6-gestione-dei-posts
+ - /posts/2017-05-11-implementiamo-un-blog-in-python-e-flask-parte-7-codice-css-e-javascript
  - /tutorial/python/flask/intro.html
  - /tutorial/python/flask/06gestioneposts.html
  - /tutorial/python/flask/07cssjs.html
@@ -754,7 +762,7 @@ Per farlo, utilizziamo il comando
 
 che restituirà un output simile al seguente se tutto va bene
 
-```  
+```
   Creating directory /Users/ludus/develop/tutorials/ludoblog/project/migrations ... done
   Creating directory /Users/ludus/develop/tutorials/ludoblog/project/migrations/versions ... done
   Generating /Users/ludus/develop/tutorials/ludoblog/project/migrations/alembic.ini ... done
@@ -1423,7 +1431,7 @@ Per chi avesse problemi a leggere il codice, riporto sotto una versione estesa d
     def preview(self, nlines=5):
         lines = self.body.split('\n')
         preview_lines = lines[:nlines]
-        preview = '\n'.join(preview_lines)        
+        preview = '\n'.join(preview_lines)
         return preview
 ```
 
