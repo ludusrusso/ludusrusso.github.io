@@ -7,12 +7,12 @@ layout: page
 Ciao,
 se siete finiti in questa pagina, è probabile che vogliate sapere qualcosa di me!
 
-## Io, da Ingegnere
+## Io... sulla carta
 
 Ho conseguito un Ph.D. in Robotica (Computer Science) presso il Politecnico di Torino nel 2017.
 E precedentemente ho conseguito una laurea magistrale in ing. Meccatronica (sempre presso il PoliTo) e una in ing. dell'Automazione presso il Politecnico di Milano (tramite il programma Alta Scuola Politecnica). Tutti i 3 titoli ottenuti con Lode.
 
-### Bene, detti i titoli, parliamo di cosa so fa!
+## Io... da ingegnere
 
 Durante il mio percorso di ricerca mi sono occupato di Cloud Robotics e Assistive Technology, presso il laboratorio di TIM (Telecom Italia) JOL CRAB.
 Mi sono sempre interessato di Algoritmi per l'automazione robotica, in particolare per la navigazione
@@ -28,7 +28,7 @@ Come detto, sono sempre attivo nell'aggiornamento e nella scoperta di nuove tecn
 
 Mi occupo tantissimo di sviluppo di piattaforma Cloud, specialmente per IoT e Cloud Robotics.
 
-## Io, da imprenditore
+## Io... da imprenditore
 
 Sono sempre stato attratto dal mondo dell'imprenditoria, e, grazie al programma TIM #WCAP,
 ho avuto la possibilità di fondare e lavorare dentro due startup.
@@ -41,7 +41,7 @@ in HBR, grazie alla saggezza di un team di pazzi scatenati fondatori di **42Acce
 ho appreso con enorme interesse la metodologia Lean Startup, la cultura del fallimento e cosa vuol dire
 veramente fare impresa!
 
-## Io, da Maker
+## Io... da Maker
 
 Come detto molte volte nel blog, mi considero più un maker che un ricercatore.
 Sono appassionato di Making da prima ancora di scoprire che esistesse un nome
@@ -52,7 +52,7 @@ un felice possessore di una bellissima Stampante 3D Prusa i3 autocostruito.
 Ah, dimenticavo, insieme a [Michele Maffucci](http://www.maffucci.it/) la mia mission
 è girare tutte le Maker Faire d'Italia (e del mondo).
 
-## Io, e basta...
+## Io... e basta...
 
 Provengo da una piccola cittadina del Sud Salento, chiamata Tricase.
 
