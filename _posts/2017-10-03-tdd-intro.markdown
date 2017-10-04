@@ -125,3 +125,9 @@ Se volete approfondire, consiglio i seguenti link:
  - [5 Common Misconceptions About TDD & Unit Tests](https://medium.com/javascript-scene/5-common-misconceptions-about-tdd-unit-tests-863d5beb3ce9)
 
 Oltre al libro [Test-Driven Development with Python](http://chimera.labs.oreilly.com/books/1234000000754), dal quale ho iniziato ad imparare questa metodologia.
+
+## Edit
+
+Aggiungerò qui le parti del tutorial sul TDD:
+
+ - [parte 1](/2017/10/04/tdd-flask-pytest-1/)
