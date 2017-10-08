@@ -59,8 +59,7 @@ Provengo da una piccola cittadina del Sud Salento, chiamata Tricase.
 Prima di diventare quello che sono, ero una promessa della Pallavolo (non scherzo).
 Poi a causa di vari problemi alle ginocchia, ho preso 2 lauree, 1 dottorato, e 20 kili!
 
-Sono appassionato di fantascienza, passione in comune con il mio (ormai ex, con un po'
-di tristezza) *mentore Basilio Bona*. In generale, adoro tantissimo leggere,
+Sono appassionato di fantascienza, passione in comune con il mio  *mentore Basilio Bona*. In generale, adoro tantissimo leggere,
 anche se spesso non ho tempo.
 
 Sono un po' timido, e pratico ancora pallavolo quando riesco a trovare il tempo per farlo.
