@@ -20,3 +20,5 @@ abbiamo sviluppato una semplicissima app che risponde con 200 al route `/`.
 
 In questa parte vedremo come definire sviluppare l'autenticazione utilizzando
 il protocollo JWT (JSON Web Socket), sempre adottando il TDD.
+
+Partiamo subito!!
