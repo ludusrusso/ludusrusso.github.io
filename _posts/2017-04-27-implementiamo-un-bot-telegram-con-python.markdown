@@ -23,7 +23,9 @@ Chi mi segue su questo blog o su [HotBlack Robotics](http://www.hotblackrobotics
 
 ## La libreria telepot
 
-Esistono diverse api Telegram per lo sviluppo di bot telegram in Python. La mia preferita (un po' per caso e un po' perchè la trovo veramente semplice e intuitiva), risulta essere [telepot](https://github.com/nickoala/telepot).
+Esistono diverse api Telegram per lo sviluppo di bot telegram in Python.
+Tra le più semplici, almeno dal mio punto di vista, troviamo [telepot](https://github.com/nickoala/telepot).
+Questa libreria permette in modo semplice e veloce di implementare bot telegram semplici, anche se risulta essere complessa e poco scalabile nel caso in cui si vogliano creare bot telegram più professionali.
 
 Per installare questa libreria, basta semplicemente eseguire il comando `pip install telepot`.
 
