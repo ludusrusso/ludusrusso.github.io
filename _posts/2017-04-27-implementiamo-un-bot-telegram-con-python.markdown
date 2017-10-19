@@ -2,7 +2,7 @@
 title: "Implementiamo un bot Telegram con Python"
 layout: post
 date: 2017-04-27
-image: https://github.com/ludusrusso/images/blob/master/telepot/chatbotIntro.png?raw=true
+image: /assets/imgs/2017-04-27-implementiamo-un-bot-telegram-con-python.markdown/chatbotIntro.png
 headerImage: false
 tag:
  - Python
@@ -19,7 +19,7 @@ Da un po' di tempo ho scoperto la bellezza ed il divertimento di implementare bo
 
 Chi mi segue su questo blog o su [HotBlack Robotics](http://www.hotblackrobotics.com/) sa bene che mi diletto non poco con questa tecnologia. Vi propongo oggi quindi una brevissima introduzione allo sviluppo di chatbot utilizzando *Python* e la libreria *Telepot*.
 
-![ChatBot telegram in azione](/assets/imgs/2017-04-27-implementiamo-un-bot-telegram-con-python.markdown/chatbotIntro.png?raw=true)
+![ChatBot telegram in azione](/assets/imgs/2017-04-27-implementiamo-un-bot-telegram-con-python.markdown/chatbotIntro.png)
 
 ## La libreria telepot
 
