@@ -14,7 +14,7 @@ picture: assets/images/profile.jpg
 # and specify source (external or local).
 # resume: true
 # resume-external: true
-# resume-url: https://google.com/?q=my+resume
+# resume-url: https://google.com/?q=my+resume
 
 
 url: http://ludusrusso.cc
@@ -48,7 +48,7 @@ github: ludusrusso
 # stackoverflow: 7044681/mystackoverflow
 # quora: userquora
 # reddit: username
- # medium: medium
+# medium: medium
 # vimeo: myvimeo
 # lanyrd: mylanyrd
 email: ludus.russo@gmail.com
