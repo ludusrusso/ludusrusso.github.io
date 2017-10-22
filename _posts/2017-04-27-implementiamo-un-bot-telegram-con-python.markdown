@@ -2,7 +2,7 @@
 title: "Implementiamo un bot Telegram con Python"
 layout: post
 date: 2017-04-27
-image: https://github.com/ludusrusso/images/blob/master/telepot/chatbotIntro.png?raw=true
+image: /assets/imgs/2017-04-27-implementiamo-un-bot-telegram-con-python.markdown/chatbotIntro.png
 headerImage: false
 tag:
  - Python
@@ -19,13 +19,15 @@ Da un po' di tempo ho scoperto la bellezza ed il divertimento di implementare bo
 
 Chi mi segue su questo blog o su [HotBlack Robotics](http://www.hotblackrobotics.com/) sa bene che mi diletto non poco con questa tecnologia. Vi propongo oggi quindi una brevissima introduzione allo sviluppo di chatbot utilizzando *Python* e la libreria *Telepot*.
 
-![ChatBot telegram in azione](/assets/imgs/2017-04-27-implementiamo-un-bot-telegram-con-python.markdown/chatbotIntro.png?raw=true)
+![ChatBot telegram in azione](/assets/imgs/2017-04-27-implementiamo-un-bot-telegram-con-python.markdown/chatbotIntro.png)
 
-##La libreria telepot
+## La libreria telepot
 
-Esistono diverse api Telegram per lo sviluppo di bot telegram in Python. La mia preferita (un po' per caso e un po' perchè la trovo veramente semplice e intuitiva), risulta essere [telepot](https://github.com/nickoala/telepot).
+Esistono diverse api Telegram per lo sviluppo di bot telegram in Python.
+Tra le più semplici, almeno dal mio punto di vista, troviamo [telepot](https://github.com/nickoala/telepot).
+Questa libreria permette in modo semplice e veloce di implementare bot telegram semplici, anche se risulta essere complessa e poco scalabile nel caso in cui si vogliano creare bot telegram più professionali.
 
-Per installare questa libreria, basta semplicemente eseguire il comando `pip install telepot`. 
+Per installare questa libreria, basta semplicemente eseguire il comando `pip install telepot`.
 
 ## Setup Ambiente di sviluppo
 Come sempre (e non smetterò mai di dirlo), consiglio di creare prima di tutto un ambiente virtuale python su cui lavorare.
