@@ -86,7 +86,7 @@ L'ultima fase del ciclo (*refactoring*) consiste nel modificare il codice svilup
 Quando ho scoperto per la prima volta il TDD mi sembrava un'assurdità da nerd infomatici
 precisini. Tuvvavia, ho voluto provare ad utilizzarla per un po', e adesso non riuscirei a farne a meno. Quando infatti mi capita di iniziare ad implementare del codice senza test (per fretta o perchè mi avvicino a nuove piattaforma che ancora non conosco bene), è come sentirmi nudo, in quanto so benissimo che i test mi proteggono da eventuali errori. Vediamo quindi quali sono i vantaggi di questa metogdologia:
 
-1. Il TDD ci forza a testare la quasi totalità del codice che implementiamo. Questo ha due vantaggia:
+1. Il TDD ci forza a testare la quasi totalità del codice che implementiamo. Questo ha due vantaggio:
   - Quasi tutti i bug che una modifica del codice introduce nelle funzionalità già implementate venogno scoperte all'istante, è anche molto facile risolvere perchè vengono automaticamente riprodotti.
   - Non dobbiamo avere paura di fare il refactoring (anche molto spinto) del codice implementato.
 2. Come detto, tutti i test sono un'accurata documentazione del nostro codice. Ogni funzione che implementiamo viene documentata dai test, e questo ci aiuterà nel momento in cui ritorneremo a cercare di capire cosa fa del codice scritto un po' di tempo fa.
@@ -125,3 +125,9 @@ Se volete approfondire, consiglio i seguenti link:
  - [5 Common Misconceptions About TDD & Unit Tests](https://medium.com/javascript-scene/5-common-misconceptions-about-tdd-unit-tests-863d5beb3ce9)
 
 Oltre al libro [Test-Driven Development with Python](http://chimera.labs.oreilly.com/books/1234000000754), dal quale ho iniziato ad imparare questa metodologia.
+
+## Edit
+
+Aggiungerò qui le parti del tutorial sul TDD:
+
+ - [parte 1](/2017/10/04/tdd-flask-pytest-1/)
