@@ -13,7 +13,7 @@ category: blog
 redirect_from:
  - /posts/2017-03-26-come-vengono-scoperti-gli-esopianeti-un-semplice-esperimento-con-arduino-e-python
 author: ludusrusso
-description: 
+description:
 ---
 
 Un esopianeta (o pianeta extrasolare) è un pianeta che non appartiene al sistema solare, cioè un pianeta che orbita intorno ad una stella diversa dal sole.
@@ -27,9 +27,9 @@ Tutti gli altri pianeti sono stati scoperti grazie a metodi indiretti, cioè oss
 In questo articolo, prenderemo in esame il metodo di individuazione per **Transito**, che consiste semplicemente nel misurare un calo di luminosità della stella che si verifica quando il pianeta transita davanti alla stella stessa.
 In seguito, con dei semplicissimi strumenti, riusciremo a ottenere dei dati molto simili a quelli che vengono ottenuti dai moderni telescopi quando misurano il transito di un pianeta.
 
-##Individuare un Esopianeta con il metodo per Transito
+## Individuare un Esopianeta con il metodo per Transito
 
-Come già detto, questo metodo consiste nel misurare un piccolo calo di luminosità della stella dovuto al transito di un esopianeta davanti alla stella (rispetto al nostro punto di vista). 
+Come già detto, questo metodo consiste nel misurare un piccolo calo di luminosità della stella dovuto al transito di un esopianeta davanti alla stella (rispetto al nostro punto di vista).
 
 ![Metodo per Transito](/assets/imgs/2017-03-26-come-vengono-scoperti-gli-esopianeti-un-semplice-esperimento-con-arduino-e-python.markdown/656348main_ToV_transit_diag_full.jpg)
 
@@ -38,11 +38,11 @@ Ovviamente questo metodo ha molte limitazione, prima tra tutte, funziona solo se
 La seconda grande limitazione deriva dal fatto che questo metodo è soggetto a tantissimi falsi positivi, in quanto questi cali possono avere molteplici cause. Ovvialmente è possibile misurare cali di luminosità periodici, però questo tipo di conferma non è praticamente applicabile per pianeti con orbita molto grande (che inpiegano decine o centinaia di anni per concludere un periodo). Per questo motivo, molto spesso questa tecnica viene utilizzata insieme ad altri metodi per avere la sicurezza che si tratti di un esopianeta.
 
 
-##Misuratore di luminosità con Arduino e Python
+## Misuratore di luminosità con Arduino e Python
 
 Prima di iniziare l'esperimento vero e proprio, dobbiamo però costruire un semplice sensore di luminosità utilizzando Arduino, una resistenza ed un fotoresistenza.
 
-###Fotoresistenza
+### Fotoresistenza
 
 Le fotoresistenze sono dispositivi molto semplici ed economici. Si comportano come normali resistenze elettriche, solo che cambiano il proprio valore di resistenza in base alla quantità di luce che incide la loro superficie. Possono quindi essere usati come sensori di luminosità, misurandone la resistenza e quindi ricavando la luminosità da essa.
 
@@ -56,7 +56,7 @@ $$
 
 Dove $b = 1.25\cdot 10^7$ e $\alpha = 1.5$.
 
-###Costruiamo un Luxmetro con Arduino
+### Costruiamo un Luxmetro con Arduino
 
 Dalla equazione precente, siamo in grado di misurare la luminosità a partire dal valore della resistenza elettrica della fotoresistenza. Se riusciamo a misurare tale resistenza, siamo quindi in grado di misurare la luminosità!
 
@@ -77,14 +77,14 @@ $$
 R = \frac{V-v}{v}R_1
 $$
 
-####Circuito
+#### Circuito
 
 
 Implementiamo quindi il circuito con Arduino, utilizzando come resistenza $R_1$ una resistenza $R_1 = 10k\Omega$ e come resistenza $R$ il nostro fotoresistore. Alimentiamo il circuito con i $5V$ di Arduino (in questo modo avremo $V=5V$) e usiamo il PIN A0 per misurare la tensione $v$.
 
 ![Arduino Fotoreistore](/assets/imgs/2017-03-26-come-vengono-scoperti-gli-esopianeti-un-semplice-esperimento-con-arduino-e-python.markdown/photoresistore_ai1iey.png)
 
-####Codice
+#### Codice
 
 Andiamo quindi ad implementare una semplice funzione in Python per leggere il valore $v$ e ricavarne prima la resistenza $R$ e poi la luminosità $L$.
 Come al solito, utilizzeremo la libreria **Nanpy**.
@@ -102,7 +102,7 @@ def luxmeter():
 
     alpha = 1.5
     b = 1.25e7
-    
+
     L = b*R**(-alpha)
     return L, R
 ```
@@ -111,7 +111,7 @@ Come vedete, nella riga `v = a.analogRead(14) * 5.0/1023.0` leggo il valore di $
 
 A questo punto, posso calcolare il valore della resistenza $R$ e della luminosità $L$ con le equazioni viste sopra.
 
-####Test
+#### Test
 
 Per verificare che tutto funzioni, eseguiamo il codice in *Spyder* in modo da avere a disposizione la funzione `luxmeter` da linea di comando. A quel punto, possiamo provare a lanciare la funzione variando la luminosità della stanza dove ci troviamo, per verificare che i valori letti cambino.
 
@@ -123,9 +123,9 @@ Nel mio caso, ottengo i seguenti valori:
 
 Non avendo un luxometro in casa, non ho modo di verificare la correttezza di tali valori, però, almeno qualitativamente, i dati sembrano tornare.
 
-###Misuriamo l'andamento della luminosità nel tempo
+### Misuriamo l'andamento della luminosità nel tempo
 
-Con la funzione `luxmeter` appena realizzata, possiamo anche misurare e disegnare l'andamento della luminosità nel tempo. 
+Con la funzione `luxmeter` appena realizzata, possiamo anche misurare e disegnare l'andamento della luminosità nel tempo.
 
 Implementiamo una seconda funzione che campiona i dati per un tempo $T$ (in secondi) definito come parametro, e plotta i dati nel tempo usando la funzione `plot`.
 
@@ -134,15 +134,15 @@ def plot_lux(T):
     from datetime import datetime, timedelta
     start_time = datetime.now()
     stop_time = start_time + timedelta(0, T)
-    
+
     times = []
     luxs = []
-    
+
     while datetime.now() < stop_time:
         L, R = luxmeter()
         times.append((datetime.now() - start_time).total_seconds())
         luxs.append(L)
-        
+
     plot(times, luxs)
 ```
 
@@ -150,7 +150,7 @@ Con questa funzione, possiamo quindi disegnare come varia la luminosità nella s
 
 ![Luxometro casuale](/assets/imgs/2017-03-26-come-vengono-scoperti-gli-esopianeti-un-semplice-esperimento-con-arduino-e-python.markdown/luxometro_casouale_ndyswi.png)
 
-##Simuliamo un esopianeta utilzzando una lampadina, una pallina ed un filo
+## Simuliamo un esopianeta utilzzando una lampadina, una pallina ed un filo
 
 Siamo pronti a tornare a parlare del metodo di transito da cui eravamo partiti: un modo molto semplice per simulare gli effetti del transito di un esopianeta sulla luminosità della stella madre, è quello di utilizzare una pallina legata con uno spago che "orbita" attorno ad una lampadina accesa.
 In questo modo, ogni volta che la pallina passa davanti alla lampadina, si verificherà subito un calo di luminosità della stessa.
@@ -168,6 +168,6 @@ Ho ripetuto lo stesso esperiendo però spegnendo la luce della camera, in modo d
 
 Come potete vedere, nel primo caso il salto di luminosità nel momento di passaggio va da $35.5lux$ a $32.5lux$ (circa il $10%$), mentre nel secondo caso, il salto (in percentuale) è molto più elevato ($>50\%$) e la curva meno rumorosa. Ad ogni modo, da entrambi i grafici è possibilissimo stimare il periodo di rotazione della pallina.
 
-Che ve ne pare di questo esperimento? Avete provato a farlo? Ci siete riusciti? Non avremo certamente scoperto un nuovo esopianeta, ma in poco tempo e con pochissimo materiale siamo certamente riusciti a creare un interessantissimo esperimento didattico. 
+Che ve ne pare di questo esperimento? Avete provato a farlo? Ci siete riusciti? Non avremo certamente scoperto un nuovo esopianeta, ma in poco tempo e con pochissimo materiale siamo certamente riusciti a creare un interessantissimo esperimento didattico.
 
 Avete suggermienti/critiche? Mi trovate su facebook alla pagina [Ludus Russo](https://www.facebook.com/ludusrusso.cc/).
