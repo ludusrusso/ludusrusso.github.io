@@ -189,3 +189,13 @@ L'effetto, come potete immaginare, è quello di far sembrare il bot un po' meno 
 ## Conclusioni
 
 Che ve ne pare di questa breve guida? Siete interessati ad approfondire l'utilizzo di questa libreria? Scrivetemelo su [facebook](https://www.facebook.com/ludusrusso.cc/).
+
+## Update
+
+Questo post ha ricevuto un notevole successo, per questo motivo, ho deciso di scrivere altri
+tutorial sull'argomento telegram.
+
+Ma voglio fare qualcosa di più divertente.. Invece che pubblicare i nuovi tutorial direttamente
+sul sito, ho sviluppato un bot Telegram che vi dirà dove trovare i nuovi tutorial!
+
+Provatelo [cliccando qui](https://t.me/ludusrusso_bot)

@@ -289,7 +289,6 @@ Per ultima cosa, aggiungiamo il comando all'help. Vediamo quindi il codice compl
 
 ```python
 import telepot
-import wikipedia
 
 TOKEN = '*** inserisci il tuo token qui  ***'
 
@@ -310,7 +309,7 @@ def on_chat_message(msg):
         elif txt.startswith('/conti'):
             params = txt.split()[1:]
             if len(params) == 0:
-                bot.sendMessage(chat_id, 'Uso: /help <parametri>.. Calcola la somma e la media dei numeri')
+                bot.sendMessage(chat_id, 'Uso: /conti <parametri>.. Calcola la somma e la media dei numeri')
             else:
                 try:
                     params = [float(param) for param in params]
@@ -318,11 +317,6 @@ def on_chat_message(msg):
                     bot.sendMessage(chat_id, 'Somma: {}, media {}'.format(somma, media))
                 except:
                     bot.sendMessage(chat_id, 'Errore nei parametri, non hai inserito numeri!')
-        elif txt.startswith('/wiki'):
-            txt = txt.split('/wiki')[1]
-            res = wikipedia.page(txt)
-            print(res)
-            bot.sendMessage(chat_id, res.url)
         else:
             bot.sendMessage(chat_id, 'Mi spiace {}, non capisco\nUsa /help per sapere cosa posso fare!'.format(name))
 
