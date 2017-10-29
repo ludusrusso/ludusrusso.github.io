@@ -7,7 +7,7 @@ headerImage: false
 tag:
  - Raspberry-Pi
  - Atom
- - Tutorials
+ - Tutorial
 category: blog
 redirect_from:
  - /posts/2017-01-07-utilizziamo-atom-come-editor-di-testo-remoto-su-raspberry-pi

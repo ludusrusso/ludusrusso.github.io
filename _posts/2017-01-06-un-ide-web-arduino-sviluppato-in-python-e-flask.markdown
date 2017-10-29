@@ -5,7 +5,7 @@ date: 2017-01-06
 image: https://raw.githubusercontent.com/ludusrusso/images/master/arduino-rasp-web/main.jpg
 headerImage: false
 tag:
- - Tutorials
+ - Tutorial
  - Raspberry-Pi
  - Arduino
 category: blog

@@ -7,7 +7,7 @@ headerImage: false
 tag:
  - Python
  - Canopy
- - Tutorials
+ - Tutorial
 category: blog
 redirect_from:
  - /posts/2017-01-09-canopy-una-pythonica-alternativa-a-matlab
