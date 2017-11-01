@@ -18,8 +18,9 @@ picture: assets/images/profile.jpg
 
 title: Ludus Russo
 
+lang: it_IT
+
 url: http://ludusrusso.cc
-# your url: http://USERNAME.github.io
 
 permalink: /:year/:month/:day/:title/
 
@@ -41,7 +42,7 @@ twitter: Ludus89
 # google: mygoogle
 # instagram: myinstagram
 # pinterest: mypinterest
-# linkedin: mylinkedin
+linkedin: ludovicorusso
 # youtube: myyoutube
 # spotify: myspotify
 github: ludusrusso
