@@ -29,7 +29,7 @@ se sono scritti bene, diventa piacevole.
 In questo post vi voglio consigliare alcuni libri su Python che ho letto negli ultimi due anni e
 da cui ho imparato molte delle cose che conosco.
 La lista è in ordine casuale, non c'è un libro preferito al momento.
-Sono tutti libri che ritengo (ad esclusione di uno) ottime
+Sono tutti libri che ritengo ottime
 risorse per approfondire molti concetti del linguaggio.
 
 Inoltre, tutti i libri che riporto qui sono in inglese. So che molte delle persone
@@ -97,7 +97,12 @@ in ufficio.
 
 Nonostante sia un libro introduttivo sul Python, si concentra principalmente sugli
 aspetti teorici della programmazione, scavalcando quelli pratici, e portando pochi esempi
-interessanti. Insomma... Io seguo la filosofia del *Learning by Doing*, cioè imparare
+interessanti. Lo reputo un ottimo libro per imparare a programmare in generale, quindi
+se non conoscete nessun linguaggio di programmazione e siete veramente alle prime armi,
+allora è un ottimo libro per voi!
+
+In caso contrario, se conoscete già un altro linguaggio di programmazione,vi consiglio
+di seguire la filosofia del *Learning by Doing*, cioè imparare
 facendo, e poi approfondire in seguito. Se volete quindi iniziare ad imparare Python,
 partite da un progetto, e poi approfondite con libri di livello intermedio!
 
