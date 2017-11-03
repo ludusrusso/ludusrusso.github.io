@@ -27,17 +27,16 @@ author: ludusrusso
 description: Tutorial su come implementare, a partire da zero, un blog personale utilizzando Python e Flask! Prima parte!
 ---
 
-{% raw  %}
+{% raw %}
+# Scriviamo un Blog in Python e Flask
 
-# Scriviamo un Blog in Python e Flask
-
-Prendendo spunta da [Miguel Grinberg](https://blog.miguelgrinberg.com), noto esperto di flask da cui ho appreso molte delle cose che conosco di questo microframework, ho deciso di seguire, passo passo, in questo tutorial l'implementazione del sito che ho reallizato.
+Prendendo spunta da [Miguel Grinberg](https://blog.miguelgrinberg.com), noto esperto di Flask da cui ho appreso molte delle cose che conosco di questo microframework, ho deciso di seguire, passo passo, in questo tutorial l'implementazione del sito che ho reallizato.
 
 Quindi, questa guida seguirà, passo passo, i vari step che e le varie migliorie che implementerò sul mio stesso blog.
 
 # 1. Setup ambiente di sviluppo
 
-Per prima cosa, inziamo a creare un [virtualenv](../virtualenv.md) (io lo chiamerò `ludoblog`) e installiamoci all'interno `flask`.
+Per prima cosa, iniziamo a creare un [virtualenv](../virtualenv.md) (io lo chiamerò `ludoblog`) e installiamoci all'interno `flask`.
 
 ```bash
 $ virtuealenv ludoblog
@@ -48,6 +47,7 @@ $ source bin/activate
 ```
 
 ## Organizziamo il progetto
+
 Per progetti grandi e per tenere il codice organizzato, conviene organizzare in modo organico il progetto all'interno di cartelle. Organizzerò il progetto seguendo delle [linee guida che si trovano su internet](http://flask.pocoo.org/docs/0.12/patterns/packages/).
 
 La cartella `/project` sarà la cartella principale della nostra applicazione. Assicuriamoci di essere all'interno di questa cartella prima di iniziare a lavorare.
@@ -977,7 +977,8 @@ Che rimanda al link di Amministrazione da cui possiamo modificare aggiungere ed 
 Si noti che se proviamo ad accedere al link o sottolink senza aver fatto correttamente il login `http://127.0.0.1:5000/admin` otterremo l'errore di accesso negato.
 ![Accesso Negato](/assets/imgs/2016-12-27-tutorial-flask.markdown/accessonegato.png)
 
-### GitHub parte 3
+### GitHub parte 3
+
 Trovate la repo aggiornata con tutto il lavoro svolto finora al [link](https://github.com/ludusrusso/ludoblog/tree/p3).
 
 # 4. Creazione dei Post
