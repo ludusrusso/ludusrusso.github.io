@@ -9,6 +9,7 @@ tag:
  - Libri
 category: blog
 author: ludusrusso
+star: true
 description: Una lista di libri su Python (in Inglese) da cui ho imparato a programmare
 ---
 
