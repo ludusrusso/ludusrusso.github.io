@@ -1,0 +1,15 @@
+---
+layout: page
+title: Progetti
+---
+<section class="list">
+  <div class="container-fluid">
+    <div class="row">
+      {% for post in site.posts %}
+          {% if post.projects %}
+            {% include blog-post.html %}
+        {% endif %}
+      {% endfor %}
+    </div>
+  </div>
+</section>
