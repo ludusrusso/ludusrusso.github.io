@@ -5,25 +5,31 @@ layout: page
 title: Blog
 ---
 <section class="list">
-	{% if site.posts.size == 0 %}
-		<p class="text-center">Nothing published yet!</p>
-	{% elsif site.paginate %}
-		{% for post in paginator.posts %}
-			{% if post.category == 'blog' %}
-				{% if post.hidden != true %}
-					{% include blog-post.html %}
+	<div class="container-fluid">
+		<div class="row">
+		{% if site.posts.size == 0 %}
+			<p class="text-center">Nothing published yet!</p>
+		{% elsif site.paginate %}
+			{% for post in paginator.posts %}
+				{% if post.category == 'blog' %}
+					{% if post.hidden != true %}
+						{% include blog-post.html %}
+					{% endif %}
 				{% endif %}
-			{% endif %}
-		{% endfor %}
+			{% endfor %}
 
-		{% include pagination.html%}
-	{% else %}
-		{% for post in site.posts %}
-			{% if post.category == 'blog' %}
-				{% if post.hidden != true %}
-					{% include blog-post.html %}
+			{% include pagination.html%}
+		{% else %}
+			{% for post in site.posts %}
+				{% if post.category == 'blog' %}
+					{% if post.hidden != true %}
+						{% include blog-post.html %}
+					{% endif %}
 				{% endif %}
-			{% endif %}
-		{% endfor %}
-	{% endif %}
+			{% endfor %}
+		{% endif %}
+		<!-- Content here -->
+
+		</div>
+	</div>
 </section>
