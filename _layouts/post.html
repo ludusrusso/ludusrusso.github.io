@@ -22,7 +22,13 @@ layout: page
     <img src="{{ page.image }}" alt="{{ page.title }}">
 {% endif %}
 
-{{content}}
+<div class="container">
+  <div class="row">
+    <div class="col">
+      {{content}}
+    </div>
+  </div>
+</div>
 
 {% if site.post-advance-links contains page.category %}
     <div class="blog-navigation">
