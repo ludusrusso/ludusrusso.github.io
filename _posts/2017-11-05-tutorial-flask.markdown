@@ -1,8 +1,8 @@
 ---
 title: "Scriviamo un Blog in Python e Flask"
 layout: post
-date: 2016-12-27
-image: http://www.ludusrusso.cc/tutorial/_images/indexnav.png
+date: 2017-11-05
+image: /assets/imgs/2016-12-27-tutorial-flask.markdown/cover_text_typed.png
 headerImage: false
 tag:
  - Flask
@@ -23,16 +23,61 @@ redirect_from:
  - /tutorial/python/flask/posts.html
  - /tutorial/python/flask/setup.html
  - /tutorial/python/flask/templating.html
+ - /2016/12/27/tutorial-flask/
 author: ludusrusso
-description: Tutorial su come implementare, a partire da zero, un blog personale utilizzando Python e Flask! Prima parte!
+description: Tutorial su come implementare, a partire da zero, un blog personale utilizzando Python e Flask!
 ---
 
-{% raw %}
-# Scriviamo un Blog in Python e Flask
 
-Prendendo spunta da [Miguel Grinberg](https://blog.miguelgrinberg.com), noto esperto di Flask da cui ho appreso molte delle cose che conosco di questo microframework, ho deciso di seguire, passo passo, in questo tutorial l'implementazione del sito che ho reallizato.
+Ciao a tutti,
+questo blog è nato con l'idea di aiutare i nuovi programmatori e i makers a creare
+applicazioni reali e utili non solo all'apprendimento, ma alla loro carriera futura.
 
-Quindi, questa guida seguirà, passo passo, i vari step che e le varie migliorie che implementerò sul mio stesso blog.
+![immagine copertina testo con typed](/assets/imgs/2016-12-27-tutorial-flask.markdown/cover_text_typed.png)
+
+Questa è la visione che mi ha sempre contraddistinto nell'apprende nuove tecnologie:
+mai studiare solo la tecnologia risolvendo semplici esericizi, ma darsi un obiettivo,
+anche ambizioso, ed imparare realizzando questo obiettivo. Io ad esempio, ho imparato
+ad utilizzare Python realizzando un sito web. Di seguito vi riporto il tutorial, da
+me scritto, durante il periodo di apprendimento e lavoro su questo progetto.
+
+Ho scritto questa guida un po' di tempo fa, e da allora un po' di cose sono cambiate:
+
+  1. Ho deciso di passare ad un nuovo e più efficace blog manager: *jekyll*.
+  2. Sono notevolmente migliorato nella sviluppo di applicazioni web, quindi alcuni dei consigli e soluzioni che trovate in questo post, probabilmente non sono corrette, e comunque, le avrei fatte in un altro modo. Ciò non vuol dire però che il processo di apprendimento non sia valido.
+  3. Questo post aveva molti errori di battitura, che ho cercato di eliminare.
+  4. Ho aggiunto una nuova sezione introduttiva: **Introduzione a Flask**
+
+Questa guida prende spunto dal lavoro di [Miguel Grinberg](https://blog.miguelgrinberg.com),
+noto programmatore Python, che nel suo blog ha creato un guida molto completa
+per lo sviluppo di applicazioni web usando la libreria Flask.
+Dal [Flask Mega Tutorial di Miguel] ho iniziato ad apprendere molte delle cose che conosco su Python e Flask, ed il suo lavoro mi ha spinto all'implementazione di un mio blog engine personale
+e alla creazione di questo stesso blog.
+
+Questa guida seguirà, i vari step che e le varie migliorie che implementerò
+sul mio stesso blog.
+
+# Introduzione a Flask
+
+
+> Flask is a microframework for Python based on Werkzeug, Jinja 2 and good intentions. And before you ask: It's BSD licensed!
+
+Questa è la prima frase che trovate nella guida ufficile di [Flask](http://flask.pocoo.org/).
+Si potrebbe tradurre con:
+
+> Flask è un *microframework* in Python basato su Werkzeug, Jinja 2 e tante buone intezioni. E prima che lo chiediate: ha una licenza BSD!
+
+## Ma cosa è Flask?
+
+Come dice la descrizione, Flask è un Microframework, implementato in Python, pernsato
+per lo sviluppo di siti web, o webapp. Flask nasce con l'idea di essere **micro**, cioè minimale:
+al suo interno troviamo il minimo indispensabile per scrivere un'applicazione web in Python, ma
+è stato progettato con due interessanti vantaggi:
+
+ - È estendibile in modo molto semplice, questo ha permetto lo sviluppo di numerse estenzioni che permettono di aggiungere un bel po' di funzionalità interessanti. Di seguito ne vedremo alcune.
+ - Utilizza dei pattern di programmazione avanzati che rendono il codice molto pulito e leggebile, in perfetto stile Pythonico. Personalmente, adoro di *Flask* l'utilizzo dei decoratori per definire le route delle varie pagine.
+
+Ma lanciamoci subito nello sviluppo.
 
 # 1. Setup ambiente di sviluppo
 
@@ -53,6 +98,7 @@ Per progetti grandi e per tenere il codice organizzato, conviene organizzare in 
 La cartella `/project` sarà la cartella principale della nostra applicazione. Assicuriamoci di essere all'interno di questa cartella prima di iniziare a lavorare.
 
 ## Creiamo il modulo blog
+
 Creiamo una cartella `blog` che conterrà la nostra applicazione, il file `blog/__init__.py` che sarà il core dell'applicazione.
 
 ```bash
@@ -72,6 +118,7 @@ def create_app():
     return app
 ```
 
+{% raw %}
 
 ## Creiamo il blueprint main
 
