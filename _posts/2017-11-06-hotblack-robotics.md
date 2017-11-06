@@ -12,7 +12,7 @@ author: ludusrusso
 description: La vera storia di HotBlack Robotics, aka la mia Startup. Scritta dal mio socio Gabriele Ermacora
 ---
 
-Come sapete, da un po' di tempo (2 anni) mi sto dedicandomi alla creazione di una
+Come sapete, da un po' di tempo (2 anni) mi sto dedicando alla creazione di una
 start up in Robotica. In questo articolo, vi riporto la storia di [HotBlack Robotics](http://www.hotblackrobotics.com/),
 [scritta qualche mese](http://mars42.org/blog/2017/1/4/hotblack-robotics-story) fa da Gabriele (il mio socio e CEO della Startup) e tradotta
 dall'inglese da me.
