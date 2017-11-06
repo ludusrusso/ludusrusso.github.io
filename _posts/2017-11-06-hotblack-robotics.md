@@ -23,7 +23,7 @@ Vi lascio alle parole di Gabriele.
 
 ## *Autore: Gabriele Ermacora, Ph.D., CEO & Co-Founder, HotBlack Robotics*
 
-La storia di [HotBlack Robotics](http://www.hotblackrobotics.com/) inizia nel 2011, quanto TIM decise di investire in Ricerca e Sviluppo (R&D) sui nuovi trend tecnologici: Internet of Things e Cloud Robotics.
+La storia di [HotBlack Robotics](http://www.hotblackrobotics.com/) inizia nel 2011, quando TIM decise di investire in Ricerca e Sviluppo (R&D) sui nuovi trend tecnologici: Internet of Things e Cloud Robotics.
 Dato che l'idea sembrava interessante, nel 2012 TIM decise di collaborare a stretto contatto con le più prestigiose università italiane. Così fondarono nuovi laboratori all'interno del mondo accademico. Questi laboratori si chiamano Joint Open Lab (JOL) e l'idea su cui si fondano è quella di creare team eterogenei di persone con background molto diverso tra di loro, sia ricercatori accademici che impiegati TIM, e farli lavorare insieme all'interno di progetti di innovazione molto ambiziosi.
 Il laboratorio dove ho svolto il mio Dottorato (*ed anche il mio, nota di Ludovico*) è il JOL CRAB (Connected Robotics Application laB). La visione su cui è nato questo laboratorio è quella di costruire una piattaforma di Cloud Robotics e trovare nuovi mercati per generare valore utilizzando questa tecnologia. Il laboratorio sviluppò diversi test case per mostrare le potenzialità della piattaforma:
 
