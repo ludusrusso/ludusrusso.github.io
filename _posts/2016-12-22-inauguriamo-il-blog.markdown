@@ -11,7 +11,7 @@ author: ludusrusso
 description: Ciao a tutti, mi chiamo Ludovico e sono un maker e un imprenditore. Questo Blog è stato scritto da me in Python e Flask, e lo userò per condividere i miei esperimenti!
 ---
 
-###Un Blog in Python e Flask
+### Un Blog in Python e Flask
 ![Copertina](/assets/imgs/2016-12-22-inauguriamo-il-blog.markdown/15665631_1880622942174208_313603892332993532_n.jpg?oh=c704f172b1ab251064ce8f1b2b6859b5&oe=58F0F63F)
 
 Ciao a tutti, mi chiamo Ludovico e sono un **maker** e un **imprenditore**. Sotto consiglio (molto assillante) di [Michele Maffucci](http://www.maffucci.it), ho deciso di aprire questo blog in cui racconterò quello che faccio e dei miei vari progetti.
