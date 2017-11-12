@@ -1,7 +1,24 @@
+---
+title: "Implementiamo un bot Telegram con Python - I Comandi 2"
+layout: post
+date: 2017-11-11
+# image: /assets/imgs/2017-10-04-tdd-flask-pytest-1.markdown/tdd-python.png
+tag:
+  - Python
+  - Tutorial
+  - Telegram
+category: blog
+author: ludusrusso
+description: Cosa vuol dire scrivere codice Ideomatico? Cosa è esattamente Pythonico?
+---
 
+Nell'articolo precedente abbiamo visto come sviluppare un semplice comando Telegram
+con parametri. In questo post, invece, vediamo come sviluppare un comando che ha
+più senso come applicazione reale. E per farlo, utilizzeremo una libreria Python
+chiamata `wikipedia`... Vediamo chi indovina qual è il tema di oggi!!
 
-
-Come primo esempio, facciamo in modo che il
+Esatto!!
+Facciamo in modo che il
 nostro Bot sia in grado di fare ricerche su wikipedia, e ritornare alcune informazioni
 della ricerca che abbiamo appena fatto.
 
@@ -21,6 +38,10 @@ Per farlo, possiamo utilizzare una bellissimo pacchetto python chiamato (appunto
 ```bash
 (env) pip install wikipedia
 ```
+
+## Implementiamo il comando `/wiki`
+
+
 
 
 

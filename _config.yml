@@ -101,6 +101,6 @@ plugins:
   - jekyll-feed
   - jemoji
   - jekyll-redirect-from
-
+  - jekyll-sitemap
 jekyll-mentions:
     base_url: https://github.com

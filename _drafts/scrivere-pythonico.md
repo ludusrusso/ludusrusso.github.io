@@ -39,28 +39,26 @@ un'apposita parola per questo: **Pythonico**.
 
 ## The Zen of Python
 
-> Scusate, ma tradurre in italiano il titolo è un pugno nell'occhio! Molto meglio
-come suona in inglese.
+> Scusate, ma tradurre in italiano il titolo è un pugno nell'occhio! Molto meglio come suona in inglese.
 
 **The Zen of Python** sono una serie di principii intorno ai quali è stato sviluppato
 il linguaggio di programmazione, e che la community di Python incoraggia ad
 applicare all'interno del codice. Vediamo quali sono:
 
-> Beautiful is better than ugly.
-Explicit is better than implicit.
-Simple is better than complex.
-Complex is better than complicated.
-Flat is better than nested.
-Sparse is better than dense.
-Readability counts.
-Special cases aren't special enough to break the rules.
-Although practicality beats purity.
-Errors should never pass silently.
-Unless explicitly silenced.
+ - Beautiful is better than ugly.
+ - Explicit is better than implicit.
+ - Simple is better than complex.
+ - Complex is better than complicated.
+ - Flat is better than nested.
+ - Sparse is better than dense.
+ - Readability counts.
+ - Special cases aren't special enough to break the rules.
+ - Although practicality beats purity.
+ - Errors should never pass silently.
+ - Unless explicitly silenced.
 
-Che si traducono come segue:
-
-
+Che preferisco lasciare in inglese.. Vi assicuro, ho provato a tradurli ma suonano
+proprio male, a volte l'inglese ha la sua musicalità che non va toccata.
 
 
 
