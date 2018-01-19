@@ -2,7 +2,7 @@
 title: "Scriviamo un Blog in Python e Flask"
 layout: post
 date: 2016-12-27
-image: http://www.ludusrusso.cc/tutorial/_images/indexnav.png
+image: /assets/imgs/2016-12-27-tutorial-flask.markdown/cover_text_typed.png
 headerImage: false
 tag:
  - Flask
