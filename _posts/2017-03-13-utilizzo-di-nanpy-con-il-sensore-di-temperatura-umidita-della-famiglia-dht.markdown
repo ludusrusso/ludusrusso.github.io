@@ -2,7 +2,7 @@
 title: "Utilizzo di Nanpy con il sensore di temperatura/umidità della famiglia DHT"
 layout: post
 date: 2017-03-13
-image: https://res.cloudinary.com/hbr/image/upload/v1489428163/WhatsApp_Image_2017-03-13_at_19.02.01_f7vjmy.jpg
+image: /assets/imgs/2017-03-13-utilizzo-di-nanpy-con-il-sensore-di-temperatura-umidita-della-famiglia-dht.markdown/WhatsApp_Image_2017-03-13_at_19.02.01_f7vjmy.jpg
 headerImage: false
 tag:
  - Dht

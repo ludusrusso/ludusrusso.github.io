@@ -2,7 +2,7 @@
 title: "Copia e Backup di SD Raspberry da macOS"
 layout: post
 date: 2017-01-13
-image: https://raw.githubusercontent.com/ludusrusso/images/master/copy_SD/main.jpg
+image: /assets/imgs/2017-01-13-copia-e-backup-di-sd-raspberry-da-macos.markdown/main.jpg
 headerImage: false
 tag:
  - Tutorial

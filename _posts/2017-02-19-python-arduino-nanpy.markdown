@@ -2,7 +2,7 @@
 title: "Python + Arduino = Nanpy"
 layout: post
 date: 2017-02-19
-image: http://res.cloudinary.com/hbr/image/upload/v1487532763/nanpy_wyg6az.png
+image: /assets/imgs/2017-02-19-python-arduino-nanpy.markdown/nanpy_wyg6az.png
 headerImage: false
 tag:
  - Arduino

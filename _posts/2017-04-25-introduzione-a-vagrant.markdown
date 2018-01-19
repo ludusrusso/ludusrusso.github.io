@@ -2,7 +2,7 @@
 title: "Introduzione a Vagrant"
 layout: post
 date: 2017-04-25
-image: https://www.maketecheasier.com/assets/uploads/2014/01/vagrant-logo-800px.jpg
+image: /assets/imgs/2017-04-25-introduzione-a-vagrant.markdown/vagrant-logo-800px.jpg
 headerImage: false
 tag:
  - Vagrant

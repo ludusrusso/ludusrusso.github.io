@@ -2,7 +2,7 @@
 title: "Pasqua al Liceo Stampacchia di Tricase: Corsi di Arduino e Stampa 3D"
 layout: post
 date: 2017-03-20
-image: https://res.cloudinary.com/hbr/image/upload/c_scale,w_1038/v1490038852/Schermata_2017-03-20_alle_20.40.18_w7axia.png
+image: /assets/imgs/2017-03-20-pasqua-al-liceo-stampacchia-di-tricase-corsi-di-arduino-e-stampa-3d.markdown/Schermata_2017-03-20_alle_20.40.18_w7axia.png
 headerImage: false
 tag:
  - Stampacchia

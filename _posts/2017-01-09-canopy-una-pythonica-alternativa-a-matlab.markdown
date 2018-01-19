@@ -2,7 +2,7 @@
 title: "Canopy: una Pythonica alternativa a Matlab"
 layout: post
 date: 2017-01-09
-image: https://raw.githubusercontent.com/ludusrusso/images/master/canopy/main.png
+image: /assets/imgs/2017-01-09-canopy-una-pythonica-alternativa-a-matlab.markdown/main.png
 headerImage: false
 tag:
  - Python

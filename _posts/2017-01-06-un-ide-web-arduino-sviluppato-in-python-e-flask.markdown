@@ -2,7 +2,7 @@
 title: "Un IDE web Arduino sviluppato in Python e Flask"
 layout: post
 date: 2017-01-06
-image: https://raw.githubusercontent.com/ludusrusso/images/master/arduino-rasp-web/main.jpg
+image: /assets/imgs/2017-01-06-un-ide-web-arduino-sviluppato-in-python-e-flask.markdown/main.jpg
 headerImage: false
 tag:
  - Tutorial

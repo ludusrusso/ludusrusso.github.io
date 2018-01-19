@@ -2,7 +2,7 @@
 title: "Breve Introduzione all'utilizzo di Spyder per il Plot dei dati a livello scientifico"
 layout: post
 date: 2017-04-06
-image: https://github.com/ludusrusso/images/blob/master/blog/pylab/marks.png?raw=true
+image: /assets/imgs/2017-04-06-breve-introduzione-all-utilizzo-di-spyder-per-il-plot-dei-dati-a-livello-scientifico.markdown/marks.png?raw=true
 headerImage: false
 tag:
  - Fisica

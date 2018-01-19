@@ -2,7 +2,7 @@
 title: "Utilizziamo Atom come editor di testo remoto su Raspberry Pi"
 layout: post
 date: 2017-01-07
-image: https://raw.githubusercontent.com/ludusrusso/images/master/ratom/example.png
+image: /assets/imgs/2017-01-07-utilizziamo-atom-come-editor-di-testo-remoto-su-raspberry-pi.markdown/example.png
 headerImage: false
 tag:
  - Raspberry-Pi

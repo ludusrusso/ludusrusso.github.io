@@ -2,7 +2,7 @@
 title: "Un super grazie ai ragazzi del corso \"Laboratorio di Robotica\""
 layout: post
 date: 2017-09-11
-image: https://raw.githubusercontent.com/ludusrusso/images/master/stampacchia/robotica/5.jpg
+image: /assets/imgs/2017-09-11-un-super-grazie-ai-ragazzi-del-corso-laboratorio-di-robotica.markdown/5.jpg
 headerImage: false
 tag:
  - Corso

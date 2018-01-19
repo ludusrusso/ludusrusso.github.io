@@ -2,7 +2,7 @@
 title: "Ci vediamo a PyCon 8"
 layout: post
 date: 2017-03-14
-image: https://res.cloudinary.com/hbr/image/upload/v1489533821/Schermata_2017-03-15_alle_00.23.13_y0hexu.png
+image: /assets/imgs/2017-03-14-ci-vediamo-a-pycon-8.markdown/Schermata_2017-03-15_alle_00.23.13_y0hexu.png
 headerImage: false
 tag:
  - Pycon

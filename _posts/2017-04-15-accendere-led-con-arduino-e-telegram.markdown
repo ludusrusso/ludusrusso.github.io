@@ -2,7 +2,7 @@
 title: "Accendere led con Arduino e Telegram"
 layout: post
 date: 2017-04-15
-image: https://github.com/ludusrusso/images/blob/master/stampacchia/telegram_esempio.png?raw=true
+image: /assets/imgs/2017-04-15-accendere-led-con-arduino-e-telegram.markdown/telegram_esempio.png?raw=true
 headerImage: false
 tag:
  - Stampacchia

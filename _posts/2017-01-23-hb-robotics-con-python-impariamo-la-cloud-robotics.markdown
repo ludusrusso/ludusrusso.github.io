@@ -2,7 +2,7 @@
 title: "HB Robotics: con Python impariamo la Cloud Robotics"
 layout: post
 date: 2017-01-23
-image: http://res.cloudinary.com/hbr/image/upload/v1485173582/IMG_20170118_114658-PANO_ye4xbh.jpg
+image: /assets/imgs/2017-01-23-hb-robotics-con-python-impariamo-la-cloud-robotics.markdown/IMG_20170118_114658-PANO_ye4xbh.jpg
 headerImage: false
 tag:
  - Hbrobotics

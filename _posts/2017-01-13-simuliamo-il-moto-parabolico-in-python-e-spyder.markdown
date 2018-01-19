@@ -2,7 +2,7 @@
 title: "Simuliamo il moto parabolico in Python e Spyder"
 layout: post
 date: 2017-01-13
-image: https://raw.githubusercontent.com/ludusrusso/images/master/spyder/parabolico.png
+image: /assets/imgs/2017-01-13-simuliamo-il-moto-parabolico-in-python-e-spyder.markdown/parabolico.png
 headerImage: false
 tag:
  - Fisica

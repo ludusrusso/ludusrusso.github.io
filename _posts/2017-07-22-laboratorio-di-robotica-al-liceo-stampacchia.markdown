@@ -2,7 +2,7 @@
 title: "Laboratorio di Robotica al Liceo Stampacchia"
 layout: post
 date: 2017-07-22
-image: https://raw.githubusercontent.com/ludusrusso/images/master/tricaseAgosto.png
+image: /assets/imgs/2017-07-22-laboratorio-di-robotica-al-liceo-stampacchia.markdown/tricaseAgosto.png
 headerImage: false
 tag:
  - Corso

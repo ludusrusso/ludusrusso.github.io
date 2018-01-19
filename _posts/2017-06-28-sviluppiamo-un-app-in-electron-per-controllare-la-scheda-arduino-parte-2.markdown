@@ -2,7 +2,7 @@
 title: "Sviluppiamo un'app in Electron per controllare la scheda Arduino - parte 2"
 layout: post
 date: 2017-06-28
-image: https://raw.githubusercontent.com/ludusrusso/electron-arduino/master/img/arduinoscope.png
+image: /assets/imgs/2017-06-28-sviluppiamo-un-app-in-electron-per-controllare-la-scheda-arduino-parte-2.markdown/arduinoscope.png
 headerImage: false
 tag:
  - Arduino

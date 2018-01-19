@@ -2,7 +2,7 @@
 title: "Gestire l'autenticazione in Flask con flask-jwt-extended"
 layout: post
 date: 2017-06-12
-image: https://github.com/ludusrusso/images/blob/master/ludoblog/jwt-flask/login1.png?raw=true
+image: /assets/imgs/2017-06-12-gestire-l-autenticazione-in-flask-con-flask-jwt-extended.markdown/login1.png?raw=true
 headerImage: false
 tag:
  - Jwt

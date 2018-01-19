@@ -2,7 +2,7 @@
 title: "Come vengono scoperti gli Esopianeti? Un semplice esperimento con Arduino e Python!"
 layout: post
 date: 2017-03-26
-image: http://res.cloudinary.com/hbr/image/upload/v1490562994/exoplanet_in7ttp.png
+image: /assets/imgs/2017-03-26-come-vengono-scoperti-gli-esopianeti-un-semplice-esperimento-con-arduino-e-python.markdown/exoplanet_in7ttp.png
 headerImage: false
 tag:
  - Fisica

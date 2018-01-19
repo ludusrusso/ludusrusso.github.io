@@ -2,7 +2,7 @@
 title: "Intervento a Pycon 8 - Costruiamo un laboratorio di fisica con Arduino e Python"
 layout: post
 date: 2017-04-05
-image: https://res.cloudinary.com/hbr/image/upload/v1489533821/Schermata_2017-03-15_alle_00.23.13_y0hexu.png
+image: /assets/imgs/2017-04-05-intervento-a-pycon-8-costruiamo-un-laboratorio-di-fisica-con-arduino-e-python.markdown/Schermata_2017-03-15_alle_00.23.13_y0hexu.png
 headerImage: false
 tag:
  - Pycon8

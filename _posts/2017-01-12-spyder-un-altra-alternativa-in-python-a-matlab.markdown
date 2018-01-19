@@ -2,7 +2,7 @@
 title: "Spyder, un'altra alternativa in Python a Matlab"
 layout: post
 date: 2017-01-12
-image: https://raw.githubusercontent.com/ludusrusso/images/master/spyder/spyder.png
+image: /assets/imgs/2017-01-12-spyder-un-altra-alternativa-in-python-a-matlab.markdown/spyder.png
 headerImage: false
 tag:
  - Spyder

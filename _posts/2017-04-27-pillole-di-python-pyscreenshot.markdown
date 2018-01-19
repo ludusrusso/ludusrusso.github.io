@@ -2,7 +2,7 @@
 title: "Pillole di Python: pyscreenshot"
 layout: post
 date: 2017-04-27
-image: https://github.com/ludusrusso/images/blob/master/pyscreenshot/main.png?raw=true
+image: /assets/imgs/2017-04-27-pillole-di-python-pyscreenshot.markdown/main.png?raw=true
 headerImage: false
 tag:
  - Python

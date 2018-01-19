@@ -2,7 +2,7 @@
 title: "Un laboratorio di Fisica con Python e Arduino - Circuito RC v2"
 layout: post
 date: 2017-02-21
-image: http://res.cloudinary.com/hbr/image/upload/v1487643026/Schermata_2017-02-21_alle_03.09.44_gxveep.png
+image: /assets/imgs/2017-02-21-un-laboratorio-di-fisica-con-python-e-arduino-circuito-rc-v2.markdown/Schermata_2017-02-21_alle_03.09.44_gxveep.png
 headerImage: false
 tag:
  - Fisica

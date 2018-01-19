@@ -2,7 +2,7 @@
 title: "Misurare la costante di Planck con Arduino e Python - Parte 2"
 layout: post
 date: 2017-03-21
-image: http://res.cloudinary.com/hbr/image/upload/v1490138990/WhatsApp_Image_2017-03-22_at_00.29.13_qmfajj.jpg
+image: /assets/imgs/2017-03-21-misurare-la-costante-di-planck-con-arduino-e-python-parte-2.markdown/WhatsApp_Image_2017-03-22_at_00.29.13_qmfajj.jpg
 headerImage: false
 tag:
  - Tutorial

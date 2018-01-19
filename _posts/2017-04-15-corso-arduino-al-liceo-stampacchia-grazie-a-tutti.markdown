@@ -2,7 +2,7 @@
 title: "Corso Arduino al Liceo Stampacchia - Grazie a tutti"
 layout: post
 date: 2017-04-15
-image: https://github.com/ludusrusso/images/blob/master/stampacchia/429839548_15180008906508156947.jpg?raw=true
+image: /assets/imgs/2017-04-15-corso-arduino-al-liceo-stampacchia-grazie-a-tutti.markdown/429839548_15180008906508156947.jpg?raw=true
 headerImage: false
 tag:
  - Stampacchia

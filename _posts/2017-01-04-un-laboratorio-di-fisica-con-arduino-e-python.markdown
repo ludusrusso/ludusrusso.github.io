@@ -2,7 +2,7 @@
 title: "Un laboratorio di Fisica con Arduino e Python"
 layout: post
 date: 2017-01-04
-image: https://raw.githubusercontent.com/ludusrusso/images/master/WhatsApp%20Image%202017-01-04%20at%2014.05.08.jpeg
+image: /assets/imgs/2017-01-04-un-laboratorio-di-fisica-con-arduino-e-python.markdown/WhatsApp%20Image%202017-01-04%20at%2014.05.08.jpeg
 headerImage: false
 tag:
  - Arduino
@@ -28,14 +28,14 @@ Come primo spunto, propongo un semplicissimo esperimento per la misura della car
 
 Nota: ho realizzato questo esperimento per dare alcuni spunti ai miei ex professori su cosa si può fare sfruttando queste tecnologie. Ancora non so se (e in che modo) si può proporre un'esperienza del genere agli studenti, ma credo fortemente che questi strumenti possano essere fortemente istruttivi!
 
-##iPython e pyLab
+## iPython e pyLab
 **iPython** è un'interfaccia di comando per Python molto semplice da utilizzare e potente. In accoppiata con la libreria **matplotlib** permette di ottenere un perfetto tool di lavoro per l'analisi dei dati scientifico, comprendente tool per la visualizzazione grafica dei dati. Una volta installato, è possibile lanciare il tool con il comando bash
 
 ```
 ipython --pylab
 ```
 
-##Teoria sul circuito $RC$
+## Teoria sul circuito $RC$
 
 Il circuito $RC$ è un semplice circuito elettronico composto da un condensatore (di capacità $C$) in serie ad una resistenza (di valore $R$). Lo scopo dell'esperimento è misurare l'evoluzione carica $Q$ del condensatore nel tempo, cioè l'andamento della differenza di potenziale $V$ ai terminali del condensatore quando il circuito viene alimentato. Si ricordi, infatti che $Q=CV$.
 
@@ -47,10 +47,10 @@ $$
 
 dove $V_\infty$ è la tensione a cui viene alimentato il circuito $RC$, solitamente $V_\infty = 5V$.
 
-##Implementazione
+## Implementazione
 L'esperimento realizzato permette, sfruttando Arduino, di misurare l'andamento della tensione $v(t)$ ai due capi del condensatore e mandare (sfruttando la comunicazione seriale) a Python questi dati. Una volta acquisiti i dati possono venire elaborati sfruttando le potenzialità di **iPython**.
 
-###Circuito
+### Circuito
 Il circuito sviluppato è mostrato nella figura seguente.
 Materiale:
 
@@ -62,15 +62,15 @@ Materiale:
 Importante: dato che Arduino (specialmente quando comunica in seriale) non è capace di acquisire dati ad una frequenza molto elevata, per riuscire a prendere un numero adeguato di dati conviene scegliere valori di $R$ e $C$ abbastanza elevati, in modo da avere constanti di tempo dell'ordine di qualche di qualche secondo. Nel mio caso, ho scelto $\tau=RC=1s$ nominale.
 
 ![RC-Scheme](/assets/imgs/2017-01-04-un-laboratorio-di-fisica-con-arduino-e-python.markdown/RC.png)
- 
+
 Essendo il condensatore che ho utilizzato elettrolitico, i suoi terminali sono polarizzati, ossia è necessario collegare il terminale positivo (anodo) ad un punto del circuito avente potenziale più elevato rispetto al punto di collegamento del terminale negativo (catodo). Nel caso si utilizzi un condesatore ceramico, non è importante la polarità!
 
 Colleghiamo quindi il catodo ($-$) del condensatore al PIN GND di Arduino ,e l'anodo ($+$) tramite breadboard al pin $A0$. Colleghiamo inoltre, per mezzo di una resistenza, l'anodo del condensatore al PIN $2$ di Arduino.
 
-###Codice Arduino
-Il codice Arduino che andremo ad implementare sfrutta il PIN $2$ per caricare e scaricare il condensatore. In fase di carica, utilizzando il PIN $A0$ misura il valore di carica sul considerare e invia i dati in seriale. Il codice che ho sviluppato raccoglie 50 campioni intervallati da un periodo di campionamento $Tc =100ms$. 
+### Codice Arduino
+Il codice Arduino che andremo ad implementare sfrutta il PIN $2$ per caricare e scaricare il condensatore. In fase di carica, utilizzando il PIN $A0$ misura il valore di carica sul considerare e invia i dati in seriale. Il codice che ho sviluppato raccoglie 50 campioni intervallati da un periodo di campionamento $Tc =100ms$.
 
-È importante scegliere il tempo $Tc$ in modo da avere abbastanza campioni per valutare riuscire a ricostruire correttamente l'andamento del segnale. 
+È importante scegliere il tempo $Tc$ in modo da avere abbastanza campioni per valutare riuscire a ricostruire correttamente l'andamento del segnale.
 
 Apro una piccola parantesi ingegneristica, esiste il [Teorema di Nyquist](https://it.wikipedia.org/wiki/Teorema_del_campionamento_di_Nyquist-Shannon) che impone che il tempo di campionamento di un qualisasi segnale temporale deve essere $T_c < \frac{1}{2}\tau_{min}$, dove $\tau_{min}$ è la più piccola costante di tempo di segnale stesso. In questo caso abbiamo una sola costante di tempo $\tau=RC=1s$, quindi dobbiamo scegliere $T_c< 0.5s$.
 
@@ -78,7 +78,7 @@ All'atto pratico, il mio consiglio è scegliere sempre $Tc =\frac{\tau}{10}$. Ne
 
 Una volta scelto $Tc$ possiamo implementare il codice Arduino. Lo scopo del codice è:
 
-- Scaricare il condensatore per un tempo appropriato $T=50\cdot Tc$. 
+- Scaricare il condensatore per un tempo appropriato $T=50\cdot Tc$.
 - Iniziare il ciclo di carica.
 - Campionare i dati di $v(t)$ e mandarli in seriale.
 
@@ -89,7 +89,7 @@ Il codice implementato è riportato di seguito.
 #define POWER_PIN 2
 
 int cnt = 0;
-int sensorPin = A0; 
+int sensorPin = A0;
 
 int Tc = 100; // 100ms
 
@@ -119,7 +119,7 @@ void loop() {
 
 
 
-####Testiamo il codice
+#### Testiamo il codice
 Una volta implementato e lanciato il codice in Arduino, possiamo testare il programma attraverso il serial monitor. Apriamo il serial monitor e resettiamo la scheda, il programma inizierà a scaricare il condensatore e poi a prendere i dati. Il tutto dovrebbe durare circa $10s$. Sul serial monitor dovreste vedere i valori misurati, come nella foto seguete
 
 ![](/assets/imgs/2017-01-04-un-laboratorio-di-fisica-con-arduino-e-python.markdown/Schermata%202017-01-04%20alle%2015.11.32.png)
@@ -127,7 +127,7 @@ Una volta implementato e lanciato il codice in Arduino, possiamo testare il prog
 Se tutto funziona correttamente, possiamo passare all'utilizzo di Python per salvare i dati ed analizzarli.
 
 
-###Utilizzo di Python e pyLab
+### Utilizzo di Python e pyLab
 
 Per utilizzare questi strumenti, è necessario installare sul computer le seguenti librerie
 
@@ -137,7 +137,7 @@ Per utilizzare questi strumenti, è necessario installare sul computer le seguen
 
 Le prime due servono per utilizzare in modo efficace e semplice tutta la potenza di pylab, l'ultima è una libreria che ci permette di sfruttare la comunicazione seriale per parlare con Arduino.
 
-####Scriviamo il codice per loggare i dati in seriale da Arduino
+#### Scriviamo il codice per loggare i dati in seriale da Arduino
 
 Creiamo un file chiamato `rc.py` in una cartella vuota, e implementiamo il seguente codice nel nuovo file.
 
@@ -172,7 +172,7 @@ def get_data(port):
 
 Salviamo il file e apriamo la cartella all'interno del terminale.
 
-####Utilizzo di pyPlot
+#### Utilizzo di pyPlot
 
 All'interno del terminale lanciamo iPython con PyLab utilizzando il seguente comando.
 
@@ -184,7 +184,7 @@ A questo punto, accedendo alla linea di comando di pyPlot, dovreste vedere una s
 
 ![iPython](/assets/imgs/2017-01-04-un-laboratorio-di-fisica-con-arduino-e-python.markdown/Schermata%202017-01-04%20alle%2015.26.00.png)
 
-####Campionamento dei Dati
+#### Campionamento dei Dati
 Perfetto, ora possiamo iniziare ad usare pyPlot in modo interattivo. Per prima cosa, bisogna importare il file `rc.py` ed utilizzarlo. Per farlo, eseguiamo i seguenti comandi:
 
 Importiamo il file con il comando
@@ -207,7 +207,7 @@ Una volta eseguita la funzione, dovremo aspettare la fine della procedura di acq
 
 Per verificare che la procedura sia andata a buon fine, possiamo semplicemente digitare il nome di una delle due variabili e premere invio per stampare a schermo i valori contenuti all'interno.
 
-####Disegniamo i dati campionati
+#### Disegniamo i dati campionati
 
 Per disegnare i dati possiamo eseguire il seguente comando
 
@@ -221,7 +221,7 @@ A questo punto, dovrebbe apparire istantaneamente una nuova finestra con il graf
 
 Nota: `plot` prende due parametri più un parametro opzionale. I primi due sono due vettori contenenti i dati da disegnare rispettivamente sull'asse $x$ e $y$. Il terzo parametro (opzionale) è una stringa che definisce lo stile del disegno. In questo caso `"ro"` significa "disegna i valori in rosso (r) con dei pallini (o)".
 
-####Verifichiamo la legge fisica
+#### Verifichiamo la legge fisica
 
 A questo punto, non ci resta che verificare la legge fisica che regola la carica del circuito $RC$. Per farlo, proviamo a simulare l'andamento della carica sfruttando la legge e sovrapponiamo la simulazione ai dati campionati, per vedere se combaciano.
 
@@ -259,14 +259,14 @@ E, riaprendo la finestra dell'immagine, otterremo un grafico simile a questo
 
 ![graph2](/assets/imgs/2017-01-04-un-laboratorio-di-fisica-con-arduino-e-python.markdown/Schermata%202017-01-04%20alle%2015.56.05.png)
 
-##Conclusioni
+## Conclusioni
 
 Ho ricevuto molti segnale interesse per questo esperimento da parte dei professori della mia scuola. Spero che questo tutorial, che non è perfetto e che andrà migliorato, possa aiutare qualcuno a fare didattica in modo più divertente.
 
 Se avete suggerimenti, trovate errori o volete semplicemente contattarmi, mi trovate su [facebook](https://www.facebook.com/ludusrusso.cc/).
 
-##Ringraziamenti
-Alla stesura di questo documento hanno contribuito 
+## Ringraziamenti
+Alla stesura di questo documento hanno contribuito
 
 - Prof. Michele Maffucci
 - Prof. Giorgio de Nunzio
