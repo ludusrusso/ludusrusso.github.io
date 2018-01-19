@@ -2,7 +2,7 @@
 title: Un Video Corso di ROS
 layout: post
 date: 2017-11-24
-image: https://hotblackrobotics.github.io/assets/imgs/2017-11-20-slide-del-nostro-intervento-al-politecnico-di-torino-su-ros.md/main.jpg
+image: /assets/imgs/2017-11-24-videocorso-web-ros.md/main.jpg
 headerImage: false
 tag:
  - ROS
@@ -17,7 +17,7 @@ scrivo un breve post per due motivi.
 
 Il primo, per informavi che nel mio lavoro con [HotBlack Robotics](http://hotblackrobotics.com) sto portando avanti un video corso su come utilizzare ROS (Robot Operating System) completamente in italiano.
 
-![Corso ROS](https://hotblackrobotics.github.io/assets/imgs/2017-11-20-slide-del-nostro-intervento-al-politecnico-di-torino-su-ros.md/main.jpg)
+![Corso ROS](/assets/imgs/2017-11-24-videocorso-web-ros.md/main.jpg)
 
 Se volete seguire il corso, o comunque ricevere più informazioni a riguardo, iscrivetevi al gruppo facebook appositamente creato, chiamato [robot developers italiani](https://www.facebook.com/groups/493163691070528/?ref=bookmarks) oppure alla newsletter che trovate al fondo di [questo articolo](https://hotblackrobotics.github.io/2017/11/20/slide-del-nostro-intervento-al-politecnico-di-torino-su-ros/).
 
