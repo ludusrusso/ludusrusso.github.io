@@ -19,14 +19,18 @@ layout: page
     {% include author.html class="top-author" %}
 {% endif %}
 
-
+{% include index-generator.html %}
 
 {% if page.image and page.headerImage %}
     <img src="{{ page.image }}" alt="{{ page.title }}">
 {% endif %}
 
 <div class="content">
+
   {{content}}
+
+  {% include index-generator.html %}
+
 </div>
 
 {% if site.post-advance-links contains page.category %}

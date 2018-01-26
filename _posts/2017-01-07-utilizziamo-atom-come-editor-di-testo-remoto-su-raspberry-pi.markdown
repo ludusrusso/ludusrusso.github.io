@@ -5,7 +5,7 @@ date: 2017-01-07
 image: /assets/imgs/2017-01-07-utilizziamo-atom-come-editor-di-testo-remoto-su-raspberry-pi.markdown/example.png
 headerImage: false
 tag:
- - Raspberry-Pi
+ - Raspberry
  - Atom
  - Tutorial
 category: blog
@@ -47,7 +47,7 @@ sudo chmod +x /usr/local/bin/rmate
 sudo ln -s /usr/local/bin/rmate /usr/local/bin/ratom
 ```
 
-A questo punto siamo pronti ad utilizzare Atom. 
+A questo punto siamo pronti ad utilizzare Atom.
 
 ##Utilizzo
 

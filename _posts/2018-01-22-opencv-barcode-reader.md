@@ -51,13 +51,13 @@ originale (**zbar**) che i wrapper di tale libreria in python (**pyzbar**).
 
 Per installare la libreria, in base al sistema operativo, dobbiamo usare i seguenti comandi.
 
-##### Mac OS
+#### Mac OS
 
 ```bash
 brew install zbar
 ```
 
-##### Linux
+#### Linux
 
 ```bash
 sudo apt-get install libzbar0

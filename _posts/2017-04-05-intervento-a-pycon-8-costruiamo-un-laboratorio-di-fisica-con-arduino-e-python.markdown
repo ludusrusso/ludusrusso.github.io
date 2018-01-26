@@ -5,7 +5,7 @@ date: 2017-04-05
 image: /assets/imgs/2017-04-05-intervento-a-pycon-8-costruiamo-un-laboratorio-di-fisica-con-arduino-e-python.markdown/Schermata_2017-03-15_alle_00.23.13_y0hexu.png
 headerImage: false
 tag:
- - Pycon8
+ - Pycon
  - Arduino
  - Python
  - Fisica
@@ -13,7 +13,7 @@ category: blog
 redirect_from:
  - /posts/pycon8
 author: ludusrusso
-description: 
+description:
 ---
 
 Questo post è da supporto al mio intervento del 6 Aprile alla conferenza [PyCon8](https://www.pycon.it/it/). Qui trovate direttamente le slides del mio intervento, alcuni link utili per approfondire e il codice che userò da copiare-incollare durante il training.
@@ -78,7 +78,7 @@ a.digitalWrite(2, a.HIGH)
 for i in range(0,50):
     tm.append(datetime.now())
     vm.append(5.0*a.analogRead(14)/1023.0)
-    
+
 # convertiamo i dati in numpy
 ts = tm[0]
 tm = [(i-ts).total_seconds() for i in  tm]
@@ -101,7 +101,7 @@ popt, pcov = curve_fit(rc_simulation, tm, vm)
 ```python
 def diode_approx(v, VD, RD):
     i = np.array(v)
-    
+
     for k in range(len(v)):
         if v[k] < VD:
             i[k] = 0
@@ -159,14 +159,14 @@ def plot_lux(T):
     from datetime import datetime, timedelta
     start_time = datetime.now()
     stop_time = start_time + timedelta(0, T)
-    
+
     times = []
     luxs = []
-    
+
     while datetime.now() < stop_time:
         L, R = luxmeter()
         times.append((datetime.now() - start_time).total_seconds())
         luxs.append(L)
-        
+
     return times, luxs
 ```

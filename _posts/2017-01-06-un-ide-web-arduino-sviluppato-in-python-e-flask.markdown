@@ -6,7 +6,7 @@ image: /assets/imgs/2017-01-06-un-ide-web-arduino-sviluppato-in-python-e-flask.m
 headerImage: false
 tag:
  - Tutorial
- - Raspberry-Pi
+ - Raspberry
  - Arduino
 category: blog
 redirect_from:
