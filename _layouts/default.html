@@ -33,31 +33,29 @@ layout: compress
     {% capture scss_sheet %}{% include style.scss %}{% endcapture %}
     {{ scss_sheet | scssify }}
     </style>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
 
 </head>
 <body>
+<div class="wrapper-{% if site.width == "normal" %}normal{% elsif site.width == "large" %}large{% endif %}">
+    {% if page.tag %}
+        <div class="post">{% else %}
+    {% if showHeader != true %}
+        <div class="page {{ page.title | downcase }}">
+    {% else %}
+        <div class="{{ page.title | downcase }}">
+    {% endif %}
+    {% endif %}
 
-    <div class="wrapper-{% if site.width == "normal" %}normal{% elsif site.width == "large" %}large{% endif %}">
-        {% if page.tag %}
-            <div class="post">
-        {% else %}
-            {% if showHeader != true %}
-                <div class="page {{ page.title | downcase }}">
-            {% else %}
-                <div class="{{ page.title | downcase }}">
-            {% endif %}
-        {% endif %}
-
-            {{ content }}
-        </div>
+        {{ content }}
     </div>
+</div>
 
-    {% include icons.html %}
+{% include icons.html %}
 
-    {% include analytics-google.html %}
-    {% include cookies-consent.html %}
+{% include analytics-google.html %}
+{% include cookies-consent.html %}
 
 </body>
 </html>
