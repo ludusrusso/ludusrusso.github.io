@@ -8,7 +8,7 @@
     {% endif %}
     <div class="card-body">
       <h4 class="card-title">{{ post.title }}</h4>
-      <p class="date"><time datetime="{{ post.date | date:"%d-%m-%Y" }}">{{ post.date | date: "%b %d %Y" }}</time></p>
+      <p class="date"><time datetime="{{ post.date | date:"%d-%m-%Y" }}">{{ post.date | date: "%d/%m/%Y" }}</time> - {% include read-time.html %} </p>
       <p class="card-text">{{ post.description }}</p>
     </div>
   </a>

@@ -2,18 +2,6 @@
 layout: page
 ---
 
-
-<h1 class="title">{{ page.title }}</h1>
-
-{% if site.show-author %}
-    {% include author.html %}
-{% endif %}
-
-<span class="date">
-    <time datetime="{{ page.date | date:"%d-%m-%Y" }}">{{ page.date | date: "%A. %B %d, %Y" }}</time>
-    {% if site.read-time %} - {% include read-time.html %}{% endif %}
-</span>
-
 {% if site.show-tags %}
     <div class="post-tags">
         {% for tag in page.tags %}
@@ -21,6 +9,17 @@ layout: page
         {% endfor %}
     </div>
 {% endif %}
+<h1 class="title">{{ page.title }}</h1>
+<span class="date">
+    Pubblicato il <time datetime="{{ page.date | date:"%d-%m-%Y" }}">{{ page.date | date: "%m/%d/%Y" }}</time>
+    {% if site.read-time %} - lettura in {% include read-time.html %}{% endif %}
+</span>
+
+{% if site.show-author %}
+    {% include author.html class="top-author" %}
+{% endif %}
+
+
 
 {% if page.image and page.headerImage %}
     <img src="{{ page.image }}" alt="{{ page.title }}">
