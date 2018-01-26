@@ -5,30 +5,22 @@
     max-width: 100%
     margin: 4rem auto 0
 
-    > .toleft > .selfie
-        width: 90%
-        border-radius: 100%
+    .selfie-col
+        width: 100px
 
-    > .toright > .name,
-    > .toright > .bio
-        width: 60%
-        display: inline-block
+        .selfie
+            width: inherit
 
-    > .toright > .name
+    .name,
+    .bio
+        padding: 0px
+
+    .name
         font-size: 1.5rem
         font-family: $fontSans
         font-weight: 500
-        margin: 6px 0 0
 
-        @media #{$mobile}
-            width: 100%
-            display: block
-
-        @media #{$tablet}
-            width: 100%
-            display: block
-
-    > .toright > .bio
+    .bio
         font-family: $fontSans
         font-weight: 300
         color: $gama
@@ -36,35 +28,6 @@
         text-align: justify
         line-height: 1.5
         margin: 0
-
-        @media #{$mobile}
-            width: 100%
-            display: block
-
-        @media #{$tablet}
-            width: 100%
-            display: block
-
-    > .toleft
-        width: 10%
-        display: inline-block
-
-        @media #{$mobile}
-            width: 20%
-
-        @media #{$tablet}
-            width: 20%
-
-    > .toright
-        width: 89%
-        display: inline-block
-        vertical-align: top
-
-        @media #{$mobile}
-            width: 78%
-
-        @media #{$tablet}
-            width: 78%
 
 .no-disqus
     border-bottom: none
