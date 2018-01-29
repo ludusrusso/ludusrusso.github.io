@@ -11,6 +11,7 @@ tag:
   - PyTest
 category: blog
 author: ludusrusso
+multiple: ttd-python-flask
 description: Tutorial su come usare il Test Driver Development (TDD) con Flask e PyTest per sviluppare delle semplici API REST
 ---
 
@@ -140,7 +141,7 @@ e quindi lanciare il comando `pytest test.py`
 
 
 ```bash
-$ pytest test.py
+(env)$ pytest tests.py
 ============================= test session starts ==============================
 platform darwin -- Python 3.6.1, pytest-3.2.2, py-1.4.34, pluggy-0.4.0
 rootdir: /Users/ludus/develop/github/flask-tdd-tutorial, inifile:
@@ -168,7 +169,7 @@ causato dal fatto che non esiste un modulo `app` (`ImportError: No module named 
 Risolviamolo: creiamo un file `app.py` e rilanciamo il test.
 
 ```
-$ pytest test.py
+(env)$ pytest tests.py
 ============================= test session starts ==============================
 platform darwin -- Python 3.6.1, pytest-3.2.2, py-1.4.34, pluggy-0.4.0
 rootdir: /Users/ludus/develop/github/flask-tdd-tutorial, inifile:
@@ -204,7 +205,7 @@ proprio questa: risolviamo un errore alla volta (nel modo più semplice possibil
 Lanciamo il test:
 
 ```
-$ pytest test.py
+(env)$ pytest tests.py
 ============================= test session starts ==============================
 platform darwin -- Python 3.6.1, pytest-3.2.2, py-1.4.34, pluggy-0.4.0
 rootdir: /Users/ludus/develop/github/flask-tdd-tutorial, inifile:
@@ -242,7 +243,7 @@ def create_app():
 E rilanciamo il test:
 
 ```
-$ pytest test.py
+(env)$ pytest tests.py
 ============================= test session starts ==============================
 platform darwin -- Python 3.6.1, pytest-3.2.2, py-1.4.34, pluggy-0.4.0
 rootdir: /Users/ludus/develop/github/flask-tdd-tutorial, inifile:
@@ -272,7 +273,7 @@ $ pip install Flask
 E via di nuovo con il test.
 
 ```
-$ pytest test.py
+(env)$ pytest tests.py
 ============================= test session starts ==============================
 platform darwin -- Python 3.6.1, pytest-3.2.2, py-1.4.34, pluggy-0.4.0
 rootdir: /Users/ludus/develop/github/flask-tdd-tutorial, inifile:
@@ -324,7 +325,7 @@ attualmente stiamo risolvendo l'errore 404, non il messaggio nella risposta HTML
 Lanciamo il test...
 
 ```
-$ pytest test.py
+(env)$ pytest tests.py
 ============================= test session starts ==============================
 platform darwin -- Python 3.6.1, pytest-3.2.2, py-1.4.34, pluggy-0.4.0
 rootdir: /Users/ludus/develop/github/flask-tdd-tutorial, inifile:
@@ -427,7 +428,7 @@ ma parliamo sempre di refactoring.
 Lanciamo il test e controlliamo che questo vada bene.
 
 ```
-$ pytest test.py
+(env)$ pytest tests.py
 ============================= test session starts ==============================
 platform darwin -- Python 3.6.1, pytest-3.2.2, py-1.4.34, pluggy-0.4.0
 rootdir: /Users/ludus/develop/github/flask-tdd-tutorial, inifile:
