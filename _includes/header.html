@@ -1,27 +1,35 @@
-{% if page.title == "Home"
-   or page.title == "Blog"
-   or page.title == "Progetti"
-   or page.title == "Tags"
-%}{% assign showHeader = true %}{% endif %}
+<nav class="navbar navbar-expand-lg navbar-inverse bg-inverse">
+  <div class="container">
+    <div class="title-image container-fluid">
+      <div class="row align-items-center">
+        <div class="">
+            <img class="rounded-circle" src="http://localhost:4000/assets/images/profile.jpg" alt="Ludus Russo">
+        </div>
+        <div class="">
+          <h1>{{site.title}}</h1>
+          <h2>{{site.bio}}</h2>
+        </div>
+      </div>
+    </div>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item {% if page.title == 'Home' %} active {% endif %}">
+          <a class="nav-link" href="/">Home</a>
+        </li>
+        <li class="nav-item {% if page.title == 'Blog' %} active {% endif %}">
+          <a class="nav-link" href="/blog/">Blog</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link {% if page.title == 'Progetti' %} active {% endif %}" href="/progetti/">Progetti</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link {% if page.title == 'About' %} active {% endif %}" href="/about/">About</a>
+        </li>
+      </ul>
+    </div>
+  </div>
 
-{% if showHeader == true %}
-    <header class="header-home {% if site.animation %}animated{% endif %}">
-        {% if site.about %}
-            <a class="link" href="{{ site.url }}/about">
-                <img class="selfie" alt="{{ site.name }}" src="{% if site.external-image %}{{ site.picture }}{% else %}{{ site.url }}/{{ site.picture }}{% endif %}" />
-            </a>
-        {% else %}
-            <span class="link">
-                <img class="selfie" alt="{{ site.name }}" src="{% if site.external-image %}{{ site.picture }}{% else %}{{ site.url }}/{{ site.picture }}{% endif %}" />
-            </span>
-        {% endif %}
-
-        <h1 class="title">{{ site.name }}</h1>
-        <h2 class="description">{{ site.bio }}</h2>
-
-
-        {% include social-links.html %}
-    </header>
-{% endif %}
-
-{% include nav.html %}
+</nav>

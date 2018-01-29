@@ -1,9 +1,8 @@
 ---
 title: About
-layout: post
-author: ludusrusso
-
+layout: page
 ---
+![Profile Image]({{ site.url }}/{{ site.picture }})
 
 Ciao,
 se siete finiti in questa pagina, è probabile che vogliate sapere qualcosa di me!

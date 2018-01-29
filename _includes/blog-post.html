@@ -9,7 +9,7 @@
     <div class="card-body">
       <h4 class="card-title">{{ post.title }}</h4>
       <p class="date"><time datetime="{{ post.date | date:"%d-%m-%Y" }}">{{ post.date | date: "%d/%m/%Y" }}</time> - {% include read-time.html content=post.content%} </p>
-      <p class="card-text">{{ post.description }}</p>
+      <p class="card-text">{{ post.description | truncate: 50}}</p>
     </div>
   </a>
 </div>
