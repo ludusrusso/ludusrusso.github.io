@@ -11,6 +11,11 @@ layout: default
     <div class="col-md-4">
       {% include follow.html %}
       {% include hbr.html %}
+
+      {% if site.related %}
+          {% include related.html %}
+      {% endif %}
+
     </div>
   </div>
 </div>

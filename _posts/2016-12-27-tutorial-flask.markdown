@@ -25,6 +25,7 @@ redirect_from:
  - /tutorial/python/flask/templating.html
 author: ludusrusso
 description: Tutorial su come implementare, a partire da zero, un blog personale utilizzando Python e Flask! Prima parte!
+starred: True
 ---
 
 {% raw %}

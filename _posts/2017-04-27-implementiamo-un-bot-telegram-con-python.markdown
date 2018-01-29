@@ -13,6 +13,7 @@ redirect_from:
  - /posts/2017-04-27-implementiamo-un-bot-telegram-con-python
 author: ludusrusso
 description: Una semplice guida per iniziare a muovere i primi passi nello sviluppo di chatbot Telegram con Python
+starred: True
 ---
 
 Da un po' di tempo ho scoperto la bellezza ed il divertimento di implementare bot telegram, cioè chatbot automatici che possono essere programmati per rispondere in modo semplice (o complesso) a messaggi da utenti reali.
