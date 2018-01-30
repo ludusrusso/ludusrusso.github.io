@@ -19,7 +19,7 @@ analytics-google: 'UA-89221021-1'
 
 disqus:
   shortname: ludusrusso-cc # enter this from your disqus account
-  categories: [blog, project] # only show disqus for posts that have these categories
+  categories: [blog, project, fabacademy] # only show disqus for posts that have these categories
 
 mailchimp:
   subscribe: https://ludusrusso.us17.list-manage.com/subscribe/post?u=b834c0b2ad6188cfdad0234c3&amp;id=68e285b053
