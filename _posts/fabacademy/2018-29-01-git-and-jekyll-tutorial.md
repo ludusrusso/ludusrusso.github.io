@@ -6,7 +6,7 @@ tags:
   - fabacademy
   - git
   - Web Development
-title: Git and Jekyll for fun
+title: Git and Jekyll for fun for Fab Academy 2018
 subtitle: assignment 1
 author: ludusrusso
 image: /assets/images/fabac.jpg
