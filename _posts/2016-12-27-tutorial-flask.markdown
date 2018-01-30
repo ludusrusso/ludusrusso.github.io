@@ -37,7 +37,7 @@ Quindi, questa guida seguirà, passo passo, i vari step che e le varie migliorie
 
 # 1. Setup ambiente di sviluppo
 
-Per prima cosa, iniziamo a creare un [virtualenv](../virtualenv.md) (io lo chiamerò `ludoblog`) e installiamoci all'interno `flask`.
+Per prima cosa, iniziamo a creare un [virtualenv](/2017/11/06/virtualenv/) (io lo chiamerò `ludoblog`) e installiamoci all'interno `flask`.
 
 ```bash
 $ virtuealenv ludoblog
@@ -227,7 +227,7 @@ Trovate tutto il codice sviluppato fino ad ora al seguente link <https://github.
 
 # 2. Diamo una veste grafica all'applicazione
 
-Nel [tutorial precedente](./setup.md) abbiamo realizzato lo scheletro di un'applicazione funzionante. In questo secondo punto, organizzeremo la veste grafica della nostra app per poi iniziare a svilupparla.
+In questo secondo punto, organizzeremo la veste grafica della nostra app per poi iniziare a svilupparla.
 
 ## Templating
 
@@ -1029,7 +1029,7 @@ class Post(db.Model):
 
 In questo modo, informiamo il sistema di creare un collegameto tra le due tabelle, in partcolare, ogni utente avrà a disposizione una lista post a di cui è autore, mentre ogni post avrà associato la colonna del proprio autore.
 
-Ok, abbiamo una configurazione minima per poter utilizzare i post. Ricordiamoci ora di fare una migrazione del nostro database in modo da includere le modifiche effettuate. Per fare cioè, utilizziamo i comandi visti nel [tutorial precedente](./models.md)
+Ok, abbiamo una configurazione minima per poter utilizzare i post. Ricordiamoci ora di fare una migrazione del nostro database in modo da includere le modifiche effettuate. Per fare cioè, utilizziamo i comandi visti precedentemente.
 
 ```
 (blog)$ ./manage.py db migrate -m "add posts"
