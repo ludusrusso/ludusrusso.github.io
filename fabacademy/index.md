@@ -9,7 +9,7 @@ headerImage: true
 ## Hi, welcome to my personal page of Fab Academy 2018.
 
 
-As you probably don't know, I'm currently thinking on enrolling to the Fac Academy 2018.
+As you probably don't know, I'm currently thinking on enrolling to the Fab Academy 2018.
 
 > Due to some *technical issues*, I'm not actually enrolled, so I'm building this
 sub-site on my personal blog to do the various exercizes.
