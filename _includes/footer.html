@@ -1,6 +1,7 @@
 <footer class="footer-main">
+  {% if site.mailchimp %}
     {% include mailchimp.html %}
-
+  {% endif %}
 
     <p>{{ site.name }} © {{ site.time | date: '%Y' }}</p>
 

@@ -4,6 +4,8 @@
   <a href="https://www.facebook.com/ludusrusso.cc/" role="button" class="btn" target="_blank"> Seguimi su Facebook</a>
 </div>
 
-<div class="left-element mailchimp">
-  {% include mailchimp.html %}
-</div>
+{% if site.mailchimp %}
+  <div class="left-element mailchimp">
+    {% include mailchimp.html %}
+  </div>
+{% endif %}
