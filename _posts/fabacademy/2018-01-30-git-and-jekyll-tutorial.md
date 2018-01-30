@@ -48,7 +48,7 @@ that does not requires dynamic content. In this case you can manually generate e
 
 Using **GitHub**/**GitLab** pages, you can simply store a static web site under a special repo on your account, and it will be automatically served without any complex configuration of the server.
 
-#### Setting up a simple static page with GitLab
+#### Setting up a simple static page with GitLab
 
 Let's us build a simple static site using **GitLab** pages, with only the main page and using git to interact with **GitLab**.
 
@@ -316,7 +316,7 @@ This is my better image:
 ![Fab Academy Image](/assets/images/fabac.jpg)
 ```
 
-### Get Online
+### Get Online
 
 Nice!
 Now we need only to commit and push the repo:
