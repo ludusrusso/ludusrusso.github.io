@@ -14,3 +14,5 @@
   img: /assets/images/tags/fabacademy.png
 - name: jekyll
   img: /assets/images/tags/jekyll.png
+- name: OpenCV
+  img: /assets/images/tags/opencv.png
