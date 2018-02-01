@@ -210,7 +210,7 @@ def handle(msg):
 
 Provate a lanciare il codice. Noterete che è molto più veloce di quello precedente!
 
-## Codice completo
+## Codice completo
 
 Qui trovate il codice completo sviluppato in questo articolo
 

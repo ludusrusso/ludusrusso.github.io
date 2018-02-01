@@ -14,6 +14,10 @@ url: https://ludusrusso.cc
 
 permalink: /:year/:month/:day/:title/
 
+markdown: kramdown
+kramdown:
+  toc_levels: 1..2
+
 
 analytics-google: 'UA-89221021-1'
 
@@ -70,7 +74,6 @@ post-advance-links: [blog]
 
 # show author block at the end of a post ?
 show-author: true
-
 
 plugins:
   - jekyll-seo-tag

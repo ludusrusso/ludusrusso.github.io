@@ -10,6 +10,7 @@ tag:
 category: blog
 redirect_from:
  - /posts/tutorial-blog-intro
+ - /2017/01/08/implementiamo-un-blog-in-python-e-flask-parte-3/
  - /posts/2017-01-08-implementiamo-un-blog-in-python-e-flask-parte-3
  - /posts/2017-01-15-implementiamo-un-blog-in-python-e-flask-parte-4
  - /posts/2017-05-01-implementiamo-un-blog-in-python-e-flask-parte-5
@@ -28,8 +29,10 @@ description: Tutorial su come implementare, a partire da zero, un blog personale
 starred: True
 ---
 
+* TOC
+{:toc}
+
 {% raw %}
-# Scriviamo un Blog in Python e Flask
 
 Prendendo spunta da [Miguel Grinberg](https://blog.miguelgrinberg.com), noto esperto di Flask da cui ho appreso molte delle cose che conosco di questo microframework, ho deciso di seguire, passo passo, in questo tutorial l'implementazione del sito che ho reallizato.
 
