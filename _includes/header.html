@@ -1,32 +1,38 @@
-<nav class="navbar navbar-expand-lg navbar-dark">
-  <a href="/" class="navbar-brand">
-    <div class="title-image container-fluid">
-      <div class="row align-items-center">
-        <div class="">
-            <img class="rounded-circle" src="/assets/images/profile.jpg" alt="Ludus Russo">
-        </div>
-        <div>
-          <h1>{{site.title}}</h1>
-          <h2 class="d-none d-sm-block">{{site.bio}}</h2>
+<div class="navcontainer">
+
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <a href="/" class="navbar-brand">
+      <div class="title-image container-fluid">
+        <div class="row align-items-center">
+          <div class="">
+              <img class="rounded-circle" src="/assets/images/profile.jpg" alt="Ludus Russo">
+          </div>
+          <div>
+            <h1>{{site.title}}</h1>
+            <h2 class="d-none d-sm-block">{{site.bio}}</h2>
+          </div>
         </div>
       </div>
-    </div>
-  </a>
+    </a>
 
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="container navbar-nav mr-auto justify-content-end">
-      <li class="nav-item {% if page.title == 'Blog' %} active {% endif %}">
-        <a class="nav-link" href="/blog/">Blog</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link {% if page.title == 'Progetti' %} active {% endif %}" href="/progetti/">Progetti</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link {% if page.title == 'About' %} active {% endif %}" href="/about/">About</a>
-      </li>
-    </ul>
-  </div>
-</nav>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="container navbar-nav mr-auto justify-content-end">
+        <li class="nav-item {% if page.title == 'Blog' %} active {% endif %}">
+          <a class="nav-link" href="/blog/">Blog</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link {% if page.title == 'Progetti' %} active {% endif %}" href="/progetti/">Progetti</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link {% if page.title == 'About' %} active {% endif %}" href="/about/">About</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  {% include search.html %}
+
+</div>

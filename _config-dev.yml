@@ -2,3 +2,9 @@
 # bundle exec jekyll serve --config _config.yml,_config-dev.yml
 url: http://localhost:4000
 analytics-google: ''
+
+disqus:
+  shortname: '' # enter this from your disqus account
+  categories: [] # only show disqus for posts that have these categories
+
+show_drafts: true
