@@ -43,7 +43,7 @@ Quindi, questa guida seguirà, passo passo, i vari step che e le varie migliorie
 Per prima cosa, iniziamo a creare un [virtualenv](/2017/11/06/virtualenv/) (io lo chiamerò `ludoblog`) e installiamoci all'interno `flask`.
 
 ```bash
-$ virtuealenv ludoblog
+$ virtualenv ludoblog
 $ cd ludoblog
 $ source bin/activate
 (ludoblog)$ pip install flask
