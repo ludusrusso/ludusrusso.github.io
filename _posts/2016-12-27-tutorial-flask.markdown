@@ -175,7 +175,7 @@ Con queste due linee di codice abbiamo registrato alla nostra applicazione il bl
 A questo punto, l'applicazione ha il minimo indispensabile per poter essere lanciata e funzionare. Per porterlo fare, però, abbiamo bisogno di creare fisicamente l'app (ricordiamo che abbiamo creato un metodo `create_app()` ma non un vero e proprio oggetto app. Per poter fare questo, basterebbe un semplice script con le seguenti linee di codice
 
 ```python
-from ludoblog import create_app
+from blog import create_app
 app = create_app()
 app.run()
 ```
@@ -193,7 +193,7 @@ Ritorniamo nella cartella principale `/project` e creiamo un file `manage.py`. I
 ```python
 #!/usr/bin/env python
 
-from ludoblog import create_app
+from blog import create_app
 from flask_script import Manager
 
 app = create_app()
