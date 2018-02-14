@@ -224,6 +224,12 @@ Una volta lanciata l'app, accediamo, da browser, all'indirizzo `http://127.0.0.1
 
 ![](/assets/imgs/2016-12-27-tutorial-flask.markdown/index.png)
 
+Notate che il sito realizzato sarà accessibile solo dal computer su cui il server è in funzione. Se volete fare in modo che questo sia accessibile anche dall'esterno, usate l'opzione `-h 0.0.0.0`, come sotto:
+
+```bash
+(ludoblog)$ ./manage.py runserver -h 0.0.0.0
+```
+
 Note
 
 Trovate tutto il codice sviluppato fino ad ora al seguente link <https://github.com/ludusrusso/ludoblog/tree/p1>
