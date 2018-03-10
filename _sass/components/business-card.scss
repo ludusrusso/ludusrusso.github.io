@@ -1,0 +1,15 @@
+.business-card {
+    display: grid;
+    grid-template-columns: 1fr 2fr 20px;
+    width: 100%;
+    padding: 20px;
+    margin: 1px solid black;
+    box-shadow: 0 0 20px 1px;
+    color: hsl(120, 50, 5);
+
+
+    .name {
+        font-size: 16pt !important;
+        font-weight: bold;
+    }
+}

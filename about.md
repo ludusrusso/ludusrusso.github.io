@@ -8,6 +8,8 @@ author: ludusrusso
 Ciao,
 se siete finiti in questa pagina, è probabile che vogliate sapere qualcosa di me!
 
+{% include business-card.html %}
+
 ## Io... sulla carta
 
 Ho conseguito un Ph.D. in Robotica (Computer Science) presso il Politecnico di Torino nel 2017.
