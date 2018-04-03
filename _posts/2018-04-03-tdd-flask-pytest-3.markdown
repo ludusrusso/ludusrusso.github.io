@@ -115,7 +115,7 @@ il client fornisca un token valido, allora il serve gli permetta di accedere all
 Sviluppiamo quindi altri due test che considerano i seguenti casi:
 
 1. Il client fornisce un token non valido -> `401`
-2. Il clinet fornisce un token valido -> `200`
+2. Il client fornisce un token valido -> `200`
 
 
 ```python
@@ -209,7 +209,7 @@ Per farlo, dobbiamo:
 
 1. Controllare che `auth` sia composto da due parole,
 2. Controllare che la prima parola di `auth` sia effettivamente `Bearer`,
-3. Testare il token con la funzione `jwt.decode` vista nel (precedente tutorial)[/2018/01/25/tdd-flask-pytest-2/].
+3. Testare il token con la funzione `jwt.decode` vista nel [precedente tutorial](/2018/01/25/tdd-flask-pytest-2/).
 
 Sfruttiamo prima di tutto il metodo `.split()` delle stringhe in Python, che permette di generare una lista di stringhe separando la stringa di partenza in base agli spazi. 
 
@@ -281,7 +281,7 @@ per mettere le cose in ordine e rendere il codice un po' più ordinato.
 
 In particolare, faremo le seguenti operazioni:
 
-1. Sposiamo `FakeDB` in un'apposito file;
+1. Spostiamo `FakeDB` in un'apposito file;
 2. Definiamo i vari endpoint creati al di fuori della funzione `create_app` per mezzo di un blueprint.
 
 ### Riorganizziamo `FakeDB`
@@ -319,7 +319,7 @@ Tutto questo non avrà nessun effetto sue test, che dovrebbero passare senza nes
 
 ### Riorganizziamo gli endpoint sfruttando i Blueprint
 
-Ho parlato dei Bluepring in [questo mio post su Flask](/2016/12/27/tutorial-flask/){:target="_blank"}. 
+Ho parlato dei Blueprint in [questo mio post su Flask](/2016/12/27/tutorial-flask/){:target="_blank"}. 
 Questi sono un modo che permette di scrivere e raggruppare endpoint in modo separato
 dalla creazione dell'app stessa, e poi di attaccare questi endpoint all'app una volta 
 che l'app viene creata. I vantaggi dei blueprint sono due:
