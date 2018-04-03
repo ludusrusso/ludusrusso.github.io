@@ -1,7 +1,7 @@
 ---
 title: "TDD con Flask e PyTest per lo sviluppo di API REST. Parte 3"
 layout: post
-date: 2018-01-25
+date: 2018-04-03
 image: /assets/imgs/2018-04-03-tdd-flask-pytest-3.markdown/main.png
 headerImage: true
 read-time: true
