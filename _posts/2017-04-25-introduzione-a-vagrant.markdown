@@ -293,7 +293,7 @@ Se tutto va bene, dovreste vedere il server ed otterrete la seguente pagina web.
 ![Vagrant ssh](/assets/imgs/2017-04-25-introduzione-a-vagrant.markdown/site.png?raw=true)
 
 
-##Conclusioni
+## Conclusioni
 
 Questo è un banalissimo esempio di cosa si può fare con Vagrant.. Ovviamente quello fatto qui si può benissimo fare con una qualsiasi macchina, senza dover necessariamente virtualizzare. Ma ci sono ben due vantaggi non da poco:
 
