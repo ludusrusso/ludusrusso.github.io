@@ -1,5 +1,5 @@
 ---
-title: "Introduzione a Vagrant"
+title: "Gestire le macchine virtuali senza sforzo con Vagrant"
 layout: post
 date: 2017-04-25
 image: /assets/imgs/2017-04-25-introduzione-a-vagrant.markdown/vagrant-logo-800px.jpg
@@ -12,7 +12,7 @@ category: blog
 redirect_from:
  - /posts/2017-04-25-introduzione-a-vagrant
 author: ludusrusso
-description: Scrivo questo post come introduzione all'utilizzo di Vagrant per la gestione di Macchine virtuali. Ho scoperto Vagrant qualche mese fa e mi è subito sembrato un ottimissimo tool per gestione progetti e per muovere i primi passi con Linux senza necessariam
+description: Introduzione ed esempio di utilizzo su Vagrant, il tool che semplifica la gestione delle macchine virtuali per lo sviluppo.
 ---
 
 ![vagrant](/assets/imgs/2017-04-25-introduzione-a-vagrant.markdown/687474703a2f2f6572696b6168656964692e636f6d2f7468656d652f6661746361747a2f696d616765732f76616772616e742f6c6f676f5f76616772616e742e706e67.png)
