@@ -1,5 +1,5 @@
 ---
-title: Utilizzo di Virtualenv
+title: "Virtualenv: gestiamo meglio le dipendenze in Python" 
 layout: post
 date: 2017-11-06
 image: /assets/imgs/2017-11-10-virtualenv.md/main.png
