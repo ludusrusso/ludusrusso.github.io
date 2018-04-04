@@ -1,7 +1,7 @@
 ---
 title: "Divertiamoci sviluppando UI da terminale con ASCIIMATICS"
 layout: post
-date: 2018-04-03
+date: 2018-04-04
 image: /assets/imgs/2018-04-04-python-scrivere-terminal-gui.markdown/main.png
 headerImage: true
 read-time: true
