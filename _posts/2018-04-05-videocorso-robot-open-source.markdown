@@ -5,6 +5,8 @@ date: 2018-04-05
 image: /assets/imgs/2018-04-05-videocorso-robot-open-source/main.png
 headerImage: true
 read-time: true
+starred: True
+permalink: /robot-open-source/
 tag:
   - Python
   - ROS
@@ -13,6 +15,8 @@ tag:
   - Arduino
   - Raspberry Pi
   - Docker
+redirect_from:
+  - /2018/04/05/videocorso-robot-open-source/
 category: blog
 author: ludusrusso
 description: Inizio una serie di videoguide, in cui voglio introdurvi al mondo della robotica di servizio in modo pratico, facendo vedere come è possibilile, sfruttando tecnologie completamente Open Source, quali Arduino, Raspberry Pi, ROS e Docker, costruire un piccolo robot di Servizio.
@@ -100,8 +104,6 @@ Vi lascio al video di presentazione del corso!
 Codividerò il calendario del corso e i vari video sulla mia [pagina facebook](https://www.facebook.com/ludusrusso.cc) e sui
 gruppo [Rokers](https://www.facebook.com/groups/robotrokers){:target="_blank"} e [Robot Developers Italiani](https://www.facebook.com/groups/493163691070528/){:target="_blank"}!
 
-Il prossimo video sarà pubblicato **mercoledì 11 Aprile 2018**!
-
 Per ricevere notifiche alla pubblicazione di un nuovo video, iscrivetevi al mio [canale youtube](https://www.youtube.com/ludusrusso){:target="_blank"}!
 
 #### Un piccolo Plus
@@ -132,3 +134,8 @@ Iscriviti alla mailing list tramite il form qui sotto, ti arriverà via email in
 
 Hai mai costruito un Robot Open Source? Che tecnologie hai utilizzato, e cose era 
 in grado di fare questo robot?
+
+### Ecco i video Pubblicati fino ad Ora
+
+{% include youtube.html id="aQZfZWuiIko" %}
+
