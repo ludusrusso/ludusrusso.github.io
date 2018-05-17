@@ -1,5 +1,5 @@
 ---
-title: "I chatobot possono Parlare? Sviluppiamo un bot telegram che manda messaggi vocali"
+title: "I chatbot possono Parlare? Sviluppiamo un bot telegram che manda messaggi vocali"
 layout: post
 date: 2018-05-17
 image: /assets/imgs/2018-05-17-bot-messaggi-vocali/main.jpg
