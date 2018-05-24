@@ -2,24 +2,22 @@
 	<!-- Begin MailChimp Signup Form -->
 	<div id="mc_embed_signup_main">
 		<form action="{{site.mailchimp.subscribe}}" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-		    <div id="form-group">
+		    <div id="">
 					<h1 for="mce-EMAIL">Newsletter</h1>
 					<p>	Pubblico nuovi post ogni settimana. Iscriviti qui per rimanere sempre aggiornato!
 					</p>
 					<div class="input-group mb-3">
 						<input type="email" value="" name="EMAIL" class="form-control" id="mce-EMAIL" placeholder="La tua email" required>
-						<div class="input-group-append">
-							<button type="submit" name="subscribe" id="mc-embedded-subscribe" class="btn">Registrati</button>
-					  </div>
 					</div>
-					<input type="checkbox" value="false"> 
-						Dammi il consenso per il trattamento dei tuoi dati personali in accordo con la privacy policy che trovi qui: <a href="//www.iubenda.com/privacy-policy/7981809"
-						class="iubenda-white no-brand iubenda-embed"
-						title="Privacy Policy">Privacy Policy</a>
-					  <script type="text/javascript">(function (w,d) {var loader = function () {var s = d.createElement("script"), tag = d.getElementsByTagName("script")[0]; s.src = "//cdn.iubenda.com/iubenda.js"; tag.parentNode.insertBefore(s,tag);}; if(w.addEventListener){w.addEventListener("load", loader, false);}else if(w.attachEvent){w.attachEvent("onload", loader);}else{w.onload = loader;}})(window, document);</script>
-				
+					<div>
+						
+						<p> <input type="checkbox" value="false" onchange="document.getElementById('mc-embedded-subscribe').disabled = !this.checked;">  Dammi il consenso per il trattamento dei tuoi dati personali in accordo con la privacy policy che trovi qui: <a href="https://www.iubenda.com/privacy-policy/7981809"> Privacy Policy</a></p>	
+						<p> Ti invierò mail riguardanti nuovi post e update riguardo il lavoro che faccio su questo blog.</p>
 					</input>
-
+					</div>
+					<div class="">
+						<button disabled="true" type="submit" name="subscribe" id="mc-embedded-subscribe" class="btn">Registrati</button>
+					</div>
 				    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
 		    </div>
 		</form>
