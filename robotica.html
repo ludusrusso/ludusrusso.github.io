@@ -1,0 +1,21 @@
+---
+layout: mainpage
+title: Robotica
+---
+<section class="list">
+	<div class="container-fluid">
+		<h1> Scopriamo e discutiamo sul mondo della robotica! </h1>
+
+		<p>
+
+		</p>
+
+		<div class="row">
+			{% for post in site.robotica limit:6 %}
+				{% if post.hidden != true %}
+					{% include blog-post.html type="starred"%}
+				{% endif %}
+			{% endfor %}
+		</div>
+	</div>
+</section>

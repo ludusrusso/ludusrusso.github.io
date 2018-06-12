@@ -84,3 +84,7 @@ plugins:
   - jekyll-sitemap
 jekyll-mentions:
     base_url: https://github.com
+
+collections:
+  robotica:
+    output: True
