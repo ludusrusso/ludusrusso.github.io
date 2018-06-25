@@ -11,6 +11,7 @@ title: Ludus Russo
 lang: it_IT
 
 url: https://ludusrusso.cc
+base_url: https://ludusrusso.cc
 
 permalink: /:year/:month/:day/:title/
 
