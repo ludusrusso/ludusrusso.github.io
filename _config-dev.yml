@@ -3,6 +3,8 @@
 url: http://localhost:4000
 analytics-google: ''
 
+host: 0.0.0.0
+
 disqus:
   shortname: '' # enter this from your disqus account
   categories: [] # only show disqus for posts that have these categories
