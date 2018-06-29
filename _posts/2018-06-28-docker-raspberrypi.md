@@ -1,8 +1,10 @@
 ---
 title: "Buildare e usare container Docker per Raspberry Pi"
 layout: post
-date: 2018-06-11
+date: 2018-06-29
 image: /assets/imgs/2018-06-28-docker-raspberrypi/main.jpg
+redirect_from:
+ - /2018/06/11/docker-raspberrypi/
 headerImage: true
 tag:
   - Docker
