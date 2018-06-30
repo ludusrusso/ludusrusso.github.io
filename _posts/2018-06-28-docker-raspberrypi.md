@@ -11,6 +11,7 @@ tag:
   - Embedded Linux
   - Raspberry
   - Robot Open Source
+  - ROS
 category: blog
 author: ludusrusso
 description: "In questa guida vediamo come buildare ed utilizzare Docker su Raspberry Pi (ed in generale sistemi Linux Embedded) per velocizzare la produzione di applicazioni Linux Embedded"

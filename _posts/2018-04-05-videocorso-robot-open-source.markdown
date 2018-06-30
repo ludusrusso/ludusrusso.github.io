@@ -135,7 +135,16 @@ Iscriviti alla mailing list tramite il form qui sotto, ti arriverà via email in
 Hai mai costruito un Robot Open Source? Che tecnologie hai utilizzato, e cose era 
 in grado di fare questo robot?
 
-### Ecco i video Pubblicati fino ad Ora
+### Ecco tutto il materiale Pubblicato fino ad ora
 
-{% include youtube.html id="aQZfZWuiIko" %}
+Qui sotto trovate tutto il materiale pubblicato fino ad ora legato al progetto. Oltre ai video, 
+pubblicherò anche post di approfondimento e tutto quello che credo possa servire per
+seguire al meglio il progetto.
 
+<div class="row">
+  {% for post in site.posts %}
+    {% if post.tags contains "Robot Open Source" %}
+      {% include blog-post.html %}
+    {% endif %}
+  {% endfor %}
+</div>
