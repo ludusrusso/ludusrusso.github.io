@@ -3,7 +3,7 @@ layout: post
 title: "La robotica: la scienza che sta rivoluzionando il mondo"
 author: ludusrusso
 description: Iniziamo insieme un viaggio alla scoperta dei robot e della robotica!
-image: /assets/robotica/001-introduzione-robotica-servizio/robots.png
+image: /assets/robotica/001-introduzione-robotica/robots.png
 ---
 
 Negli ultimi anni il dibattito sulla robotica si è molto acceso ed è diventato comune anche tra l'opinione pubblica.
@@ -22,7 +22,7 @@ omnicomprensiva che permetta, in modo semplice e schematico, di definire questa 
 
 I robot, infatti, hanno differenti forme e funzioni, e vanno da Robot Industriali, enormi macchine meccaniche in grado di spostare anche oggetti pesantissimi, passando per droni e robot su ruote, fino ai semplici sistemi educativi che, da qualche tempo, vanno molto di moda nelle scuole.
 
-![alcuni esempi di robot](/assets/robotica/001-introduzione-robotica-servizio/robots.png)
+![alcuni esempi di robot](/assets/robotica/001-introduzione-robotica/robots.png)
 
 I robot, quindi, hanno diverse forme, dimensioni, funzioni e scopi nel nostro mondo, e diventa sempre più complesso darne una definizione che accontenta tutti! Nel mio piccolo, piace definire i robot secondo un paio di parametri che accomunano
 quasi tutti i robot con cui ho lavorato: la **multifunzionalità**, l'**autonomia** e la **programmabilità**. Secondo la mia definizione, infatti, i robot sono **macchine multifunzionali**, progettati cioè per compiere una vasta gamma di compiti più o meno complessi, in grado di **agire in modo (semi)autonomo** attraverso dell'intelligenza gestida da un **programma software**.
