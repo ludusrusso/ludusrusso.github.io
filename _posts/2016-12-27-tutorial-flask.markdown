@@ -662,6 +662,8 @@ class User(db.Model, UserMixin):
 In questo modo abbiamo creato due models (**User** e **Role**) che sono collegati tra loro da una relazione *Molto a Molti* (`roles_users`).
 In altre parole, ogni utente può avere dei ruoli, e viceversa, ogni ruolo può essere associato a più di un utente. Abbiamo inoltre aggiunto le colonne `username` e `about` che non sono richiesti da `flask-security` ma saranno importanti per lo sviluppo del blog. Utilizzando questi due modelli, flask-security permette di gestire gli accessi al sito e anche alle singole pagine del sito stesso.
 
+>> Nota: Se stai usando Python 3, probabilmente otterrai un errore legato al campo `required=True`. Questo è dovuto al fatto che le API di SQLAlchemy sono state recentemente cambiate, e il campo `required` è stato sostituito con `nullable` (che funziona al contrario), perchè più in linea con il linguaggio sql. In questo caso, basta sostituire `required=True` con `nullable=False` per risolvere l'errore. Ringrazione l'utente **Sonak** per avermi segnalato il problema!
+
 ### Configuriamo Flask-Security
 
 Una volta creati models essenziali, possiamo inizializzare flask-security in modo da poter gestire in modo semplice l'accesso alla nostra applicazione. Per fare questo, modifichiamo il file `blog/__init__.py` come segue:
