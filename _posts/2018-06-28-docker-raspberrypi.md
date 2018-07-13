@@ -204,7 +204,7 @@ RUN apt-get install python3 -y
 Quindi, creiamo un file `hello.py` con il seguente contenuto:
 
 ```python
-#!/bin/env python3
+#!/usr/bin/env python3
 
 print('Hello from Docker')
 ```
