@@ -248,7 +248,7 @@ Per gestire graficamente l'app, utilizzeremo **Bootstrap**. **Bootstrap** è uno
 
 ### Configurazione Flask-Boostrap
 
-Flask-Bootstrap è un'estensione di flask che automaticamente ed in modo semplice importa bootstrap nella nostra applicazione e permette subito di usarlo. Andiamo quindi a crearlo e confingurarlo.
+Flask-Bootstrap è un'estensione di flask che automaticamente ed in modo semplice importa bootstrap nella nostra applicazione e permette subito di usarlo. Andiamo quindi a crearlo e configurarlo.
 
 Per installare il pacchetto, utilizziamo (come al solito) il seguente comando.
 
