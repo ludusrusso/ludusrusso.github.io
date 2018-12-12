@@ -20,10 +20,13 @@ Da un po' di tempo mi sto dedicando sempre di più allo sviluppo di software in 
 
 In questo post, vi voglio raccontare queli che sono (e che saranno il prossimo anno) i tool più importanti che ogni Cloud Developer deve conoscere.
 
-## 1. Docker
+## 1. Docker
+
+![Docker](/assets/imgs/2018-12-12-i-4-tools-per-sviluppare-in-cloud/docker.png)
 
 
 Ho [parlato di Docker](https://ludusrusso.cc/tags/#docker) in alcuni post in questo blog.
+
 **Docker** è probabilmente il progetto Open Source che ha avuto più impatto nel mondo del Cloud Computing negli ultimi tempi, basti pensare che in meno di 5 anni (Docker è stato rilasciato nel 2013) è diventato uno standard di fatto accettato ed utilizzato da tutti i Big del mondo Cloud Computing, ma già in [meno di 2 anni dal rilascio](https://www.datacenterknowledge.com/archives/2014/08/22/docker-ceo-dockers-impact-data-center-industry-will-huge) era sotto il mirino dei vari cloud provider, per la sua capacità di impacchettare. spostare e distribuire applacazioni tra i vari ambienti Cloud.
 
 Docker è basato sulla tecnologia dei Linux container, che possono essere visti (mi scusino i puristi del cloud ma ho bisogno di un esempio pratico) come delle *Macchine Virtuali Superleggere*. Docker permette di gestire la creazione, distribuzione, condivisione e gestione di Linux Container.
@@ -36,7 +39,7 @@ Il build delle applicazioni Docker è *incrementale*, questo vuol dire che docke
 Per finire, Docker permette di distribuire le immagini tramite Internet con i Container Registry. Questi possono essere utilizzati sia per spostare in modo semplice le applicazioni 
 dal nostro ambiente di test locale all'ambiente di produzione in cloud, ma anche permette di condividere le immagini di progetti in modalità Open (o anche no). Basta fare un giro sul sito [Docker Hub](https://hub.docker.com/) per capire di che parlo. 
 
-### 1.1 Docker per IoT 
+### 1.1 Docker per IoT 
 
 Un piccolo bonus, prima di andare avanti, lo voglio dedicare al mondo IoT, che è stato anche questo influenzato tantissimo dalla tecnologia Linux Container e quindi da Docker.
 
@@ -44,7 +47,7 @@ Come ho già detto, i container molto leggeri con un overhead minimo. Per questo
 
 Per approfondimenti, ho trattato il tema su questo blog nell'articolo [Buildare e usare container Docker per Raspberry Pi](https://ludusrusso.cc/2018/06/29/docker-raspberrypi/)
 
-## 2. docker-compose
+## 2. docker-compose
 
 ![Docker Compose](/assets/imgs/2018-12-12-i-4-tools-per-sviluppare-in-cloud/compose.png)
 
@@ -61,7 +64,7 @@ Lo sviluppo di applicazioni Docker richiede una certa conoscenza del tool linea 
 
 Kuberentes introduce alcuni concetti che richiedono un po' di tempo per essere appresi e digeriti, ma, una volta capiti, ci permettono gestire interamente un'applicazione cloud con uno (o più) file di configurazione e una serie di semplici comandi basati sul tool `kubeclt`.
 
-## 4. Helm
+## 4. Helm
 
 ![Helm](/assets/imgs/2018-12-12-i-4-tools-per-sviluppare-in-cloud/helm.jpeg)
 
