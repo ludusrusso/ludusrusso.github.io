@@ -70,7 +70,7 @@ Kuberentes introduce alcuni concetti che richiedono un po' di tempo per essere a
 
 Per finire, **Helm** è l'ultimo tool che ho iniziato ad utilizzare in questo periodo, ma che,in pochi giorni, ha rivelato tutta la sua potenza. Come viene definito dagli stessi creatori del progetto, Helm è un packet manager per kubernetes, e ci permette di condividere ed utilizzare applicazioni kubernetes in modo semplice e veloce. Il progetto ha permesso di costruire repository di applicazioni *kubernetes-ready*, come [Kubeapps](https://hub.kubeapps.com/), che possiamo installare ed utilizzare sul nostro cluster persone pochi click!
 
-## Conclusioni
+## Conclusioni
 
 Le tecnologie informatiche si evolvono velocemente, le tecnologie web lo fanno molto velocemente e anche il Cloud Computing non è da meno. Lo sviluppo di applicazioni Cloud è cambiato notevolmente in pochissimi anni (se non mesi), e con questo post ho voluto fare una carrellata sulle tecnologie che, a mio pararere, sono le più importanti da conoscere per chi vuole lavorare nel mondo del cloud computing. 
 
