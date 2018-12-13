@@ -13,7 +13,7 @@ tag:
   - Helm
 category: blog
 author: ludusrusso
-description: I tool Open Source più importati per lo sviluppo di software e architetture Cloud nel 2019.
+description: I tool Open Source più importanti per lo sviluppo di software e architetture Cloud nel 2019.
 ---
 
 ![I 4 tool che ogni Sviluppatore Cloud deve conoscere nel 2019](/assets/imgs/2018-12-12-i-4-tools-per-sviluppare-in-cloud/main.png)
