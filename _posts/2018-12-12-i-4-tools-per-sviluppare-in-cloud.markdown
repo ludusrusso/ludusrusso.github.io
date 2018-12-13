@@ -1,5 +1,7 @@
 ---
-title: "I 4 Migliori Tool per sviluppare software in Cloud nel 2019"
+title: "I 4 tool che ogni Sviluppatore Cloud deve conoscere nel 2019"
+redirect_from:
+ - /2018/12/12/i-4-tools-per-sviluppare-in-cloud/
 layout: post
 date: 2018-12-12
 image: /assets/imgs/2018-12-12-i-4-tools-per-sviluppare-in-cloud/main.png
@@ -14,11 +16,11 @@ author: ludusrusso
 description: .
 ---
 
-![I 4 Migliori Tool per sviluppare software in Cloud nel 2019](/assets/imgs/2018-12-12-i-4-tools-per-sviluppare-in-cloud/main.png)
+![I 4 tool che ogni Sviluppatore Cloud deve conoscere nel 2019](/assets/imgs/2018-12-12-i-4-tools-per-sviluppare-in-cloud/main.png)
 
 Da un po' di tempo mi sto dedicando sempre di più allo sviluppo di software in Cloud, e ho costruito e sviluppato una serie di skills su software, tools e strategie per lo sviluppo di software in cloud in modo semplice e veloce.
 
-In questo post, vi voglio raccontare queli che sono (e che saranno il prossimo anno) i tool più importanti che ogni Cloud Developer deve conoscere.
+In questo post, vi voglio raccontare queli che sono i tool più importanti che ogni *Cloud Developer* deve conoscere, e a cosa servono!
 
 ## 1. Docker
 
