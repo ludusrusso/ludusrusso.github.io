@@ -1,12 +1,12 @@
 ---
-title: "10 Days of Code"
+title: "100 Days of Code"
 layout: post
 date: 2018-12-30
 image: /assets/imgs/2018-12-30-100-days-of-code/main.png
 headerImage: true
 read-time: true
 tag:
-  - 10DaysOfCode
+  - 100DaysOfCode
 category: blog
 author: ludusrusso
 description: Ho deciso di partecipare alla challange 10DaysOfCode.
