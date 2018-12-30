@@ -1,0 +1,68 @@
+---
+title: "10 Days of Code"
+redirect_from:
+ - /2018/12/12/i-4-tools-per-sviluppare-in-cloud/
+layout: post
+date: 2018-12-30
+image: /assets/imgs/2018-12-30-100-days-of-code/main.png
+headerImage: true
+read-time: true
+tag:
+  - 10DaysOfCode
+category: blog
+author: ludusrusso
+description: Ho deciso di partecipare alla challange 10DaysOfCode.
+---
+
+**Nota bene**: questo posto non c'entra niente con i *buoni propositi per il 2019*. Non credo moltissimo in queste cose :D. Il fatto che inizi oggi (30 Dicembre 2018) è solamente un puro cosa.
+
+Recentemente mi sono imbattuto nella challenge *100DaysOfCode* e ho deciso di aderirci.
+
+L'idea è molto semplice, devo **codare** (parola bruttisima, ma in questo caso ci sta) almeno un'ora al giorno per 100 giorno di fila. Lo scopo è quello di migliorare le proprie capacità di programmazione, ed anche se nasce per chi vuole imparare a scrivere codice, vedo che viene molto apprezzata dai programmatori più esperti.
+
+Le regole della sfida sono molto semplici. Trovate le [regole originali qui](https://www.100daysofcode.com/), ma ho preferito fare alcune modifiche alle regole.
+
+### Regole oroginali
+
+1. Codare almeno 1 ora ogni giorno per 100 giorni di fila
+2. Twittare i progressi ogni giorno con l'hashtag #100DaysOfCode
+
+### Come ho modificato le regole
+
+1. Codare almeno 1 ora ogni giorno per 100 giorni di fila per progetti personali! **quindi non conterò lo sviluppo che faccio normalmente per lavoro**.
+2. Oltre a twittare sul [mio profilo Twitter](https://twitter.com/ludusrusso), che uso poco (anche se userò questa scusa per ricominciare a twittare), condividerò i progressi anche sulla mia [pagina facebook](https://www.facebook.com/ludus.russo).
+3. Aggiornerò periodicamente questo post con i miei progressi.
+
+## Perchè ho deciso di partecipare a #100DaysOfCode?
+
+Anche se ormai mi posso definire un programmatore abbastanza "esperto" (diciamo *middle developer*), mi rendo conto di non avere mai tempo per approfondire nuove tecnologie e/o darmi a qualche progetto personale. Voglio quindi usare questa sfida per autoconvicermi a trovare il tempo per sperimentare nuove tecnologie e fare qualcosa per me.
+
+## Cosa voglio approfondire in questo tempo
+
+Ci sono un po' di tecnologie che voglio approfondire, ecco qui le mie idee su cosa sviluppare in questi 100 giorni.
+
+### 1. Sviluppo blog siti statici con Hugo
+Chi mi segue dall'inizio sa che mi diverto a smanettare con il codice dietro questo stesso blog. Inizialmente ho usato la scusa del blog per imparare a usare [Puython e Flask](https://ludusrusso.cc/2016/12/22/inauguriamo-il-blog/). In seguito, circa un annetto fa, ho rimodernato il blog sviluppandolo in [Jekyll e GitHub Pages](https://ludusrusso.cc/2017/09/17/nuovo-blog/).
+
+Recentemente ho scoperto il generatore di siti statici [Hugo](https://gohugo.io/),che sembra essere molto più performante di Jekyll. Ho quindi deciso di fare un po' di esperienza con questo nuovo generatore di siti statici.
+
+Farò quindi due cose:
+1. Sviluppare un blog personale per mia madre, che me lo chiede da quasi un anno. Il blog sarà sviluppato in Hugo.
+2. Migrare questo blog ad Hugo
+
+### 2. Hackability
+
+L'associazione [Hackability](http://www.hackability.it/), di cui sono fondatore, ha una grossa necessità di un rinnovo della propria presenza online. Da un po' di tempo cerco il tempo per mettermici, ma un po' per stanchezza ed un po' per pigrizia non lo faccio mai. Spero che questo sia il momento giusto.
+
+### 3. Go
+
+Vorrei portare avanti quache progetto utilizzando il linguaggio di programmazione Go, che da quasi un anno vorrei approfondire ma non trovo mai il tempo. Non so bene che progetto ed in che modo, mi inventerò qualcosa quando sarà il momento. Probabilmente questo punto sarà legato al punto 2.
+
+## Come seguirmi
+
+Potete seguire i mie progrssi in vari modi:
+
+1. Seguite la mia [pagina facebook]()
+2. Seguitemi sul [mio profilo Twitter](https://twitter.com/ludusrusso)
+3. Ho forkato la repo [GitHub ufficciale](https://github.com/ludusrusso/100-days-of-code) su cui annoterò i progressi e le sensazioni
+4. Questo blog ed in particolare questa post.
