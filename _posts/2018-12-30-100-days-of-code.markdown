@@ -9,26 +9,26 @@ tag:
   - 100DaysOfCode
 category: blog
 author: ludusrusso
-description: Ho deciso di partecipare alla challange 10DaysOfCode.
+description: Ho deciso di partecipare alla challange 100DaysOfCode.
 ---
 
-**Nota bene**: questo posto non c'entra niente con i *buoni propositi per il 2019*. Non credo moltissimo in queste cose :D. Il fatto che inizi oggi (30 Dicembre 2018) è solamente un puro cosa.
+**Nota bene**: questo posto non c'entra niente con i *buoni propositi per il 2019*. Non credo moltissimo in queste cose :D. Il fatto che inizi oggi (30 Dicembre 2018) è solamente un puro caso.
 
-Recentemente mi sono imbattuto nella challenge *100DaysOfCode* e ho deciso di aderirci.
+Recentemente mi sono imbattuto nella challenge *100DaysOfCode* e ho deciso di parteciparci.
 
-L'idea è molto semplice, devo **codare** (parola bruttisima, ma in questo caso ci sta) almeno un'ora al giorno per 100 giorno di fila. Lo scopo è quello di migliorare le proprie capacità di programmazione, ed anche se nasce per chi vuole imparare a scrivere codice, vedo che viene molto apprezzata dai programmatori più esperti.
+L'idea è molto semplice, devo **codare** (parola bruttisima, ma in questo caso ci sta) almeno un'ora al giorno per 100 giorno di fila. Lo scopo è quello di migliorare le proprie capacità di programmazione, ed anche se nasce per chi vuole imparare a scrivere codice (non il mio caso), vedo che viene molto apprezzata dai programmatori più esperti.
 
 Le regole della sfida sono molto semplici. Trovate le [regole originali qui](https://www.100daysofcode.com/), ma ho preferito fare alcune modifiche alle regole.
 
-### Regole oroginali
+### Regole originali
 
-1. Codare almeno 1 ora ogni giorno per 100 giorni di fila
-2. Twittare i progressi ogni giorno con l'hashtag #100DaysOfCode
+1. Codare almeno 1 ora ogni giorno per 100 giorni di fila.
+2. Twittare i progressi ogni giorno con l'hashtag #100DaysOfCode.
 
 ### Come ho modificato le regole
 
 1. Codare almeno 1 ora ogni giorno per 100 giorni di fila per progetti personali! **quindi non conterò lo sviluppo che faccio normalmente per lavoro**.
-2. Oltre a twittare sul [mio profilo Twitter](https://twitter.com/ludusrusso), che uso poco (anche se userò questa scusa per ricominciare a twittare), condividerò i progressi anche sulla mia [pagina facebook](https://www.facebook.com/ludus.russo).
+2. Oltre a twittare sul [mio profilo Twitter](https://twitter.com/ludusrusso), che uso poco (anche se userò questa scusa per ricominciare a twittare), condividerò i progressi anche sulla mia [pagina facebook](https://www.facebook.com/ludusrusso.cc/).
 3. Aggiornerò periodicamente questo post con i miei progressi.
 
 ## Perchè ho deciso di partecipare a #100DaysOfCode?
@@ -42,7 +42,7 @@ Ci sono un po' di tecnologie che voglio approfondire, ecco qui le mie idee su co
 ### 1. Sviluppo blog siti statici con Hugo
 Chi mi segue dall'inizio sa che mi diverto a smanettare con il codice dietro questo stesso blog. Inizialmente ho usato la scusa del blog per imparare a usare [Puython e Flask](https://ludusrusso.cc/2016/12/22/inauguriamo-il-blog/). In seguito, circa un annetto fa, ho rimodernato il blog sviluppandolo in [Jekyll e GitHub Pages](https://ludusrusso.cc/2017/09/17/nuovo-blog/).
 
-Recentemente ho scoperto il generatore di siti statici [Hugo](https://gohugo.io/),che sembra essere molto più performante di Jekyll. Ho quindi deciso di fare un po' di esperienza con questo nuovo generatore di siti statici.
+Recentemente ho scoperto il generatore di siti statici [Hugo](https://gohugo.io/), che sembra essere molto più performante di Jekyll. Ho quindi deciso di fare un po' di esperienza con questo nuovo generatore di siti statici.
 
 Farò quindi due cose:
 1. Sviluppare un blog personale per mia madre, che me lo chiede da quasi un anno. Il blog sarà sviluppato in Hugo.
@@ -58,9 +58,9 @@ Vorrei portare avanti quache progetto utilizzando il linguaggio di programmazion
 
 ## Come seguirmi
 
-Potete seguire i mie progrssi in vari modi:
+Potete seguire i mie progressi in vari modi:
 
-1. Seguite la mia [pagina facebook]()
+1. Seguite la mia [pagina facebook](https://www.facebook.com/ludusrusso.cc/)
 2. Seguitemi sul [mio profilo Twitter](https://twitter.com/ludusrusso)
-3. Ho forkato la repo [GitHub ufficciale](https://github.com/ludusrusso/100-days-of-code) su cui annoterò i progressi e le sensazioni
+3. Ho forkato la repo [GitHub ufficiale](https://github.com/ludusrusso/100-days-of-code) su cui annoterò i progressi e le sensazioni
 4. Questo blog ed in particolare questa post.
