@@ -67,3 +67,7 @@ Potete seguire i mie progressi in vari modi:
 2. Seguire il [mio profilo Twitter](https://twitter.com/ludusrusso)
 3. Ho forkato la repo [GitHub ufficiale](https://github.com/ludusrusso/100-days-of-code) su cui annoterò i progressi e le sensazioni
 4. Questo blog ed in particolare questa post.
+
+
+<blockquote class="twitter-tweet" data-lang="it"><p lang="en" dir="ltr"><a href="https://twitter.com/hashtag/100DaysOfCode?src=hash&amp;ref_src=twsrc%5Etfw">#100DaysOfCode</a> <a href="https://twitter.com/hashtag/ludusrusso?src=hash&amp;ref_src=twsrc%5Etfw">#ludusrusso</a> Day 1<br>Started working on a Hugo theme. Setup the development environment and written some simple code for header and footer! I need to understand some low feature of <a href="https://twitter.com/hashtag/Hugo?src=hash&amp;ref_src=twsrc%5Etfw">#Hugo</a>.<a href="https://t.co/hpX1EZn5Xg">https://t.co/hpX1EZn5Xg</a></p>&mdash; ludusrusso (@ludusrusso) <a href="https://twitter.com/ludusrusso/status/1079447404628398086?ref_src=twsrc%5Etfw">30 dicembre 2018</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
