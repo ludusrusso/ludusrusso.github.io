@@ -16,6 +16,9 @@ description: Ho deciso di partecipare alla challange 100DaysOfCode.
 
 Recentemente mi sono imbattuto nella challenge *100DaysOfCode* e ho deciso di parteciparci.
 
+<blockquote class="twitter-tweet" data-lang="it"><p lang="en" dir="ltr">I&#39;m going to start my personal challenge <a href="https://twitter.com/hashtag/100DaysOfCode?src=hash&amp;ref_src=twsrc%5Etfw">#100DaysOfCode</a>!<a href="https://t.co/hpX1EZn5Xg">https://t.co/hpX1EZn5Xg</a></p>&mdash; ludusrusso (@ludusrusso) <a href="https://twitter.com/ludusrusso/status/1079337161806303234?ref_src=twsrc%5Etfw">30 dicembre 2018</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
 L'idea è molto semplice, devo **codare** (parola bruttisima, ma in questo caso ci sta) almeno un'ora al giorno per 100 giorno di fila. Lo scopo è quello di migliorare le proprie capacità di programmazione, ed anche se nasce per chi vuole imparare a scrivere codice (non il mio caso), vedo che viene molto apprezzata dai programmatori più esperti.
 
 Le regole della sfida sono molto semplici. Trovate le [regole originali qui](https://www.100daysofcode.com/), ma ho preferito fare alcune modifiche alle regole.
@@ -33,34 +36,34 @@ Le regole della sfida sono molto semplici. Trovate le [regole originali qui](htt
 
 ## Perchè ho deciso di partecipare a #100DaysOfCode?
 
-Anche se ormai mi posso definire un programmatore abbastanza "esperto" (diciamo *middle developer*), mi rendo conto di non avere mai tempo per approfondire nuove tecnologie e/o darmi a qualche progetto personale. Voglio quindi usare questa sfida per autoconvicermi a trovare il tempo per sperimentare nuove tecnologie e fare qualcosa per me.
+Anche se ormai mi posso definire un programmatore abbastanza "esperto" (diciamo *middle developer*), mi rendo conto di non avere mai tempo per approfondire nuove tecnologie e/o dedicare del tempo a qualche progetto personale. Voglio quindi usare questa sfida per trovare il tempo per sperimentare nuove tecnologie e fare qualcosa per me.
 
 ## Cosa voglio approfondire in questo tempo
 
 Ci sono un po' di tecnologie che voglio approfondire, ecco qui le mie idee su cosa sviluppare in questi 100 giorni.
 
-### 1. Sviluppo blog siti statici con Hugo
-Chi mi segue dall'inizio sa che mi diverto a smanettare con il codice dietro questo stesso blog. Inizialmente ho usato la scusa del blog per imparare a usare [Puython e Flask](https://ludusrusso.cc/2016/12/22/inauguriamo-il-blog/). In seguito, circa un annetto fa, ho rimodernato il blog sviluppandolo in [Jekyll e GitHub Pages](https://ludusrusso.cc/2017/09/17/nuovo-blog/).
+### 1. Sviluppo siti statici con Hugo
+Chi mi segue dall'inizio sa che mi diverto a smanettare con il codice dietro questo stesso blog. Inizialmente ho usato la scusa del blog per imparare a usare [Python e Flask](https://ludusrusso.cc/2016/12/22/inauguriamo-il-blog/). In seguito, circa un annetto fa, ho rimodernato il blog sviluppandolo in [Jekyll e GitHub Pages](https://ludusrusso.cc/2017/09/17/nuovo-blog/).
 
 Recentemente ho scoperto il generatore di siti statici [Hugo](https://gohugo.io/), che sembra essere molto più performante di Jekyll. Ho quindi deciso di fare un po' di esperienza con questo nuovo generatore di siti statici.
 
 Farò quindi due cose:
 1. Sviluppare un blog personale per mia madre, che me lo chiede da quasi un anno. Il blog sarà sviluppato in Hugo.
-2. Migrare questo blog ad Hugo
+2. Migrare questo blog ad Hugo.
 
 ### 2. Hackability
 
-L'associazione [Hackability](http://www.hackability.it/), di cui sono fondatore, ha una grossa necessità di un rinnovo della propria presenza online. Da un po' di tempo cerco il tempo per mettermici, ma un po' per stanchezza ed un po' per pigrizia non lo faccio mai. Spero che questo sia il momento giusto.
+L'associazione [Hackability](http://www.hackability.it/), di cui sono fondatore, ha una grossa necessità di un rinnovo della propria presenza online. Ma un po' per stanchezza ed un po' per pigrizia non lo faccio mai. Spero che questo sia il momento giusto.
 
 ### 3. Go
 
-Vorrei portare avanti quache progetto utilizzando il linguaggio di programmazione Go, che da quasi un anno vorrei approfondire ma non trovo mai il tempo. Non so bene che progetto ed in che modo, mi inventerò qualcosa quando sarà il momento. Probabilmente questo punto sarà legato al punto 2.
+Vorrei portare avanti quache progetto utilizzando il linguaggio di programmazione Go, che da quasi un anno vorrei approfondire ma non trovo mai il tempo. Non ho ben chiaro ancora che progetto sviluppare, mi inventerò qualcosa quando sarà il momento. Probabilmente questo punto sarà legato al punto 2.
 
 ## Come seguirmi
 
 Potete seguire i mie progressi in vari modi:
 
-1. Seguite la mia [pagina facebook](https://www.facebook.com/ludusrusso.cc/)
-2. Seguitemi sul [mio profilo Twitter](https://twitter.com/ludusrusso)
+1. Seguire la mia [pagina facebook](https://www.facebook.com/ludusrusso.cc/)
+2. Seguire il [mio profilo Twitter](https://twitter.com/ludusrusso)
 3. Ho forkato la repo [GitHub ufficiale](https://github.com/ludusrusso/100-days-of-code) su cui annoterò i progressi e le sensazioni
 4. Questo blog ed in particolare questa post.
