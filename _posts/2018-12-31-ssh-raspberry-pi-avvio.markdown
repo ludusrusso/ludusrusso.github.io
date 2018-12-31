@@ -16,7 +16,7 @@ description: Un piccolo trucco per gestire al meglio lo sviluppo su Raspberry Pi
 Per chi lavora e sviluppa su Raspberry Pi, sa bene che utilizzare la GUI del Raspberry per lo sviluppo risulta molto scomodo e lento.
 Il mio workflow abituale consiste, infatti, nello sviluppare [principalmente con Docker](https://ludusrusso.cc/2018/06/29/docker-raspberrypi/) e trasferire le immagini su Raspberry solo per test e quando il sistema è finito.
 
-Mi sono quindi abituato a lavorare senza interfaccia grafica ne monitor, avendo il Raspberry semplicemente connesso (via ethernet o wifi) al router e accedendoci via SSH, utilizzando come sistema operativo principale [Raspbian Lite](https://www.raspberrypi.org/downloads/raspbian/), cioè la versione di Rasbian senza interfaccia grafica installata.
+Mi sono quindi abituato a lavorare senza interfaccia grafica né monitor, avendo il Raspberry semplicemente connesso (via ethernet o wifi) al router e accedendoci via SSH, utilizzando come sistema operativo principale [Raspbian Lite](https://www.raspberrypi.org/downloads/raspbian/), cioè la versione di Rasbian senza interfaccia grafica installata.
 
 Purtroppo sorge continuamento lo stesso problema ogni volta che mi trovo a lavorare su un nuovo progetto: **Come faccio ad accedere via SSH al mio Raspberry Pi con SD appena creata?** Infatti, da ormai qualche anno, l'SSH è disabilitato di default per ragioni di sicurezza su Raspbian, e per abilitarlo risulta necessario trovare un monitor ed una tastiera, accedere al Raspberry ed utilizzare il comando `raspi-config` per abilitare il server SSH.
 
