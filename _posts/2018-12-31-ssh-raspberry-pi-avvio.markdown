@@ -6,7 +6,7 @@ image: /assets/imgs/2018-12-31-ssh-raspberry-pi-avvio/main.png
 headerImage: true
 read-time: true
 tag:
-  - Raspberry PI
+  - Raspberry
   - SSH
 category: blog
 author: ludusrusso
