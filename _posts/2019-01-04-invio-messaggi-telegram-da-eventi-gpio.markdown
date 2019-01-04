@@ -14,11 +14,11 @@ author: ludusrusso
 description: Mandare un messaggio tramite telegram quando il un GPIO del Raspberry cambia stato è possibile, ecco come!
 ---
 
-Il primo post di quest'anno è stato inspirato da una domanda su un [precedente articolo](https://ludusrusso.cc/2017/10/29/bot-telegram-telepot-2/), che mi chiedeva questo:
+Il primo post di quest'anno è stato inspirato da una domanda di un utente su un [precedente articolo](https://ludusrusso.cc/2017/10/29/bot-telegram-telepot-2/), che mi chiedeva questo:
 
 > "ho implementato il bot senza problemi, mando un comando e mi restituisce quando mi serve, vorrei nel frattempo, monitorare un GPIO, il quale se cambia stato, manda un messaggio al bot senza che io abbia fatto esplicita richiesta con un comando, è possibile farlo ? grazie mille"
 
-Dato che l'idea è molto interessante e permette di lavorare su progetti molto utili, ad esempio un allarme fatto in casa, e che (guarda caso) sto giusto lavorando ad un progetto (di cui vi parlerò in futuro) che fa una cosa molto simile a quella richiesta, ho deciso di scrivere un post per spiegare per filo e per segno come fare!.
+Dato che l'idea è molto interessante e permette di lavorare su progetti molto utili, ad esempio un allarme fatto in casa, ho deciso di scrivere un post per spiegare come fare!
 
 Iniziamo quindi, al solito, ad tirare su l'ambinete di sviluppo ed iniziare a lavorare.
 
@@ -27,7 +27,6 @@ Iniziamo quindi, al solito, ad tirare su l'ambinete di sviluppo ed iniziare a la
 Il progetto si basa su Raspberry Pi, quindi sarà necessario avere a disposizione in casa questo computerino. Nel mio caso, ho usato un [Raspberry Pi Model 3B+](https://amzn.to/2R4LoCQ) con relativi componenti necessari e su cui ho installato [Raspbian Lite](https://www.raspberrypi.org/downloads/raspbian/), che come sapete è la mia Distro preferita per Rpi. Ovviamente dovrebbe andare bene qualsiasi Distro e qualsiasi versione del Raspberry.
 
 Vi servirà anche un modo per inviare comandi al GPIO di ingresso che invierà il segnale. Nel mio caso, ho usato un semplice bottone connesso al PIN come descritto più sotto.
-
 
 ## Setup Ambiante di Sviluppo
 
@@ -39,7 +38,7 @@ A questo punto, dobbiamo installare virtualenv con il comando
 python3 -m venv env
 ```
 
-E siamo finalmente pronti a lanciare il nostro ambiente virtuale ed installare le dipendeze:
+E siamo finalmente pronti a lanciare il nostro ambiente virtuale ed installare le dipendenze:
 1. `telepot` per creare il nostro bot,
 2. `RPi.GPIO` per interagire con i GPIO del Raspberry PI.
 
@@ -53,9 +52,9 @@ Notate che, a differenza di quello fatto nei miei [precedenti tutorial](https://
 
 ## Creiamo il BOT
 
-Creiamo un file chiamato `bot.py` (o come preferite) e apriamolo con un qualsiasi editor di testo (io uso `vim`), ma voi potete usare quello che volete.
+Creiamo un file chiamato `bot.py` (o come preferite) e apriamolo con un qualsiasi editor di testo (io uso `vim`, ma voi potete usare quello che volete).
 
-Come punto di partenza, prendiamo il codice che trovate nel mio [precedentee tutorial](https://ludusrusso.cc/2017/04/27/implementiamo-un-bot-telegram-con-python/). Ho dovuto solo modificare la linea `print 'Listening ...'` con `print('Listening ...')` in quanto questa volta usiamo **Python3** invece che **Python2**.
+Come punto di partenza, prendiamo il codice che trovate nel mio [precedente tutorial](https://ludusrusso.cc/2017/04/27/implementiamo-un-bot-telegram-con-python/). Ho dovuto solo modificare la linea `print 'Listening ...'` con `print('Listening ...')` in quanto questa volta usiamo **Python3** invece che **Python2**.
 
 ```python
 import telepot
@@ -89,9 +88,9 @@ Le funzioni di callback, oltre ad essere definite, devono anche essere *registra
 
 > Hey bot! Ogni volta che qualcuno ti scrive un messaggio, chiama gentilmente la funzione `on_chat_message`. Si occuperà lei di generare la risposta.
 
-Perchè ho fatto questa lunga introduzione? Il motivo è semplice, anche il cambio dello stato di un GPIO (in ingresso) del Raspberry Pi è un evento esterno al programma, quindi deve essere gestito in un modo simile :)
+Perchè ho fatto questa lunga premessa? Il motivo è semplice, anche il cambio dello stato di un GPIO (in ingresso) del Raspberry Pi è un evento esterno al programma, quindi deve essere gestito in un modo simile :)
 
-Ed infatti, la libreria `gpiozero` mette a disposizione un modo per registrare una funzione di callback quando lo stato di un GPIO cambia. Questa funzione è la seguente:
+Ed infatti, la libreria `RPi.GPIO` mette a disposizione un modo per registrare una funzione di callback quando lo stato di un GPIO cambia. Questa funzione è la seguente:
 
 ```python
 GPIO.add_event_detect(PIN, EVENT, callback=cfunc)
