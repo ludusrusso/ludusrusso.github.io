@@ -101,8 +101,8 @@ e che prende i seguenti parametri:
    2. `EVENT` è il tipo di evento a cui vogliamo rispondere. Ci sono 3 tipi di eventi:
        - `GPIO.RISING`: risponde all'evento cambio stato da *LOW* a *HIGH*.
        - `GPIO.FALLING`: risponde all'evento cambio stato da *HIGH* a *LOW*.
-       - `GPIO.BOTH`: che risponde indistintamente ad entrambi gli eventi.
-   3. `callback`, cioà il nome della funzione di Callback che dobbiamo chiamare al verificarsi dell'evento.
+       - `GPIO.BOTH`: risponde indistintamente ad entrambi gli eventi.
+   3. `callback`, il nome della funzione di Callback che dobbiamo chiamare al verificarsi dell'evento.
 
 Capito questo, il resto è facile. Per prima cosa, dobbiamo creare una funzione che invia un messaggio tramite il nostro bot. La cosa è molto facile, infatti basta implementare questo:
 
@@ -122,7 +122,7 @@ GPIO.setup(INPIN, GPIO.IN)
 GPIO.add_event_detect(INPIN, GPIO.BOTH, bot_cb)
 ```
 
-Notate che, a differenza del caso normale in cui il bot risponde ad una chat, in questo caso il bot deve conoscere a priori l'id chat a cui mandare il messaggio. Ci sono vari modi per farlo, ma il più semplice è embeddare nel codice il proprio *chat id*. Basta quindi definire la variabile `admin_id = 00000000` (con il proprio chat id) e poi usarla per inviare il messaggio.
+Notate che, a differenza del caso normale in cui il bot risponde ad una chat, in questo caso il bot deve conoscere *a priori* l'id chat a cui mandare il messaggio. Ci sono vari modi per farlo, ma il più semplice è embeddare nel codice il proprio *chat id*. Basta quindi definire la variabile `admin_id = 00000000` (con il proprio chat id) e poi usarla per inviare il messaggio.
 
 Per scoprire il proprio chat id ci sono vari modi, il più immediato è quello di usare uno dei bot disponibili su telegram, come [@chatid_echo_bot](https://t.me/chatid_echo_bot), che vi risponderà con il vostro chat id a qualsiasi messaggio gli invierete.
 
