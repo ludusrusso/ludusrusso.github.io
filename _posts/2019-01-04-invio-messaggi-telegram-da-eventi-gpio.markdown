@@ -7,7 +7,8 @@ headerImage: true
 read-time: true
 tag:
   - Raspberry
-  - SSH
+  - Telegram
+  - GPIO
 category: blog
 author: ludusrusso
 description: Mandare un messaggio tramite telegram quando il un GPIO del Raspberry cambia stato è possibile, ecco come!
