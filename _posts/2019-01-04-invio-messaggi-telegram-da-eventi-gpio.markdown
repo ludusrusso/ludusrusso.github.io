@@ -26,9 +26,8 @@ Iniziamo quindi, al solito, ad tirare su l'ambinete di sviluppo ed iniziare a la
 
 Il progetto si basa su Raspberry Pi, quindi sarà necessario avere a disposizione in casa questo computerino. Nel mio caso, ho usato un [Raspberry Pi Model 3B+](https://amzn.to/2R4LoCQ) con relativi componenti necessari e su cui ho installato [Raspbian Lite](https://www.raspberrypi.org/downloads/raspbian/), che come sapete è la mia Distro preferita per Rpi. Ovviamente dovrebbe andare bene qualsiasi Distro e qualsiasi versione del Raspberry.
 
-Vi servirà anche un modo per inviare comandi al GPIO di ingresso che invierà il segnale. Nel mio caso, ho usato un semplice bottone connesso al PIN come mostrato qui sotto.
+Vi servirà anche un modo per inviare comandi al GPIO di ingresso che invierà il segnale. Nel mio caso, ho usato un semplice bottone connesso al PIN come descritto più sotto.
 
-![Immaggine Connesioni Raspberry Bottone]()
 
 ## Setup Ambiante di Sviluppo
 
