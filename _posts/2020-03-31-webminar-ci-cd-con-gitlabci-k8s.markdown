@@ -40,7 +40,7 @@ interagire in Tempo Reale con noi speaker per mezzo di strumenti digitali!
 
 Il primo evento online di GDG Cloud Milano vede una live code in cui impareremo a sviluppare un’app in Angular da zero e deployare all’interno di Google Kubernetes Engine per mezzo della piattaforma CI/CD Gitlab CI.
 
-👉 Potrete seguire l'evento nel nostro canale Youtube : https://www.youtube.com/channel/UCs2L...
+👉 Potrete seguire l'evento nel nostro [canale Youtube](https://www.youtube.com/channel/UCs2L)
 
 AGENDA
 18:30-18:40 Inizio stream live e introduzione
