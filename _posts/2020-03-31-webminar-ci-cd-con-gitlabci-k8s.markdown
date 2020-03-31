@@ -1,7 +1,7 @@
 ---
 title: "GDG Cloud Milano - Live Code: CI/CD con Gitlab-CI e Kubernetes"
 layout: post
-date: 2020-31-03
+date: 2020-03-31
 image: /assets/imgs/2020-03-31-webminar-ci-cd-con-gitlabci-k8s/main.jpg
 headerImage: true
 read-time: true
