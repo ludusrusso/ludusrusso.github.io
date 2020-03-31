@@ -5,17 +5,16 @@ date: 2018-12-30
 image: /assets/imgs/2018-12-30-100-days-of-code/main.png
 headerImage: true
 read-time: true
-starred: true
 tag:
-  - 100DaysOfCode
+    - 100DaysOfCode
 category: blog
 author: ludusrusso
 description: Ho deciso di partecipare alla challange 100DaysOfCode.
 ---
 
-**Nota bene**: questo posto non c'entra niente con i *buoni propositi per il 2019*. Non credo moltissimo in queste cose :D. Il fatto che inizi oggi (30 Dicembre 2018) è solamente un puro caso.
+**Nota bene**: questo posto non c'entra niente con i _buoni propositi per il 2019_. Non credo moltissimo in queste cose :D. Il fatto che inizi oggi (30 Dicembre 2018) è solamente un puro caso.
 
-Recentemente mi sono imbattuto nella challenge *100DaysOfCode* e ho deciso di parteciparci.
+Recentemente mi sono imbattuto nella challenge _100DaysOfCode_ e ho deciso di parteciparci.
 
 <blockquote class="twitter-tweet" data-lang="it"><p lang="en" dir="ltr">I&#39;m going to start my personal challenge <a href="https://twitter.com/hashtag/100DaysOfCode?src=hash&amp;ref_src=twsrc%5Etfw">#100DaysOfCode</a>!<a href="https://t.co/hpX1EZn5Xg">https://t.co/hpX1EZn5Xg</a></p>&mdash; ludusrusso (@ludusrusso) <a href="https://twitter.com/ludusrusso/status/1079337161806303234?ref_src=twsrc%5Etfw">30 dicembre 2018</a></blockquote>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
@@ -37,18 +36,20 @@ Le regole della sfida sono molto semplici. Trovate le [regole originali qui](htt
 
 ## Perchè ho deciso di partecipare a #100DaysOfCode?
 
-Anche se ormai mi posso definire un programmatore abbastanza "esperto" (diciamo *middle developer*), mi rendo conto di non avere mai tempo per approfondire nuove tecnologie e/o dedicare del tempo a qualche progetto personale. Voglio quindi usare questa sfida per trovare il tempo per sperimentare nuove tecnologie e fare qualcosa per me.
+Anche se ormai mi posso definire un programmatore abbastanza "esperto" (diciamo _middle developer_), mi rendo conto di non avere mai tempo per approfondire nuove tecnologie e/o dedicare del tempo a qualche progetto personale. Voglio quindi usare questa sfida per trovare il tempo per sperimentare nuove tecnologie e fare qualcosa per me.
 
 ## Cosa voglio approfondire in questo tempo
 
 Ci sono un po' di tecnologie che voglio approfondire, ecco qui le mie idee su cosa sviluppare in questi 100 giorni.
 
 ### 1. Sviluppo siti statici con Hugo
+
 Chi mi segue dall'inizio sa che mi diverto a smanettare con il codice dietro questo stesso blog. Inizialmente ho usato la scusa del blog per imparare a usare [Python e Flask](https://ludusrusso.cc/2016/12/22/inauguriamo-il-blog/). In seguito, circa un annetto fa, ho rimodernato il blog sviluppandolo in [Jekyll e GitHub Pages](https://ludusrusso.cc/2017/09/17/nuovo-blog/).
 
 Recentemente ho scoperto il generatore di siti statici [Hugo](https://gohugo.io/), che sembra essere molto più performante di Jekyll. Ho quindi deciso di fare un po' di esperienza con questo nuovo generatore di siti statici.
 
 Farò quindi due cose:
+
 1. Sviluppare un blog personale per mia madre, che me lo chiede da quasi un anno. Il blog sarà sviluppato in Hugo.
 2. Migrare questo blog ad Hugo.
 
@@ -68,7 +69,6 @@ Potete seguire i mie progressi in vari modi:
 2. Seguire il [mio profilo Twitter](https://twitter.com/ludusrusso)
 3. Ho forkato la repo [GitHub ufficiale](https://github.com/ludusrusso/100-days-of-code) su cui annoterò i progressi e le sensazioni
 4. Questo blog ed in particolare questa post.
-
 
 <blockquote class="twitter-tweet" data-lang="it"><p lang="en" dir="ltr"><a href="https://twitter.com/hashtag/100DaysOfCode?src=hash&amp;ref_src=twsrc%5Etfw">#100DaysOfCode</a> <a href="https://twitter.com/hashtag/ludusrusso?src=hash&amp;ref_src=twsrc%5Etfw">#ludusrusso</a> Day 1<br>Started working on a Hugo theme. Setup the development environment and written some simple code for header and footer! I need to understand some low feature of <a href="https://twitter.com/hashtag/Hugo?src=hash&amp;ref_src=twsrc%5Etfw">#Hugo</a>.<a href="https://t.co/hpX1EZn5Xg">https://t.co/hpX1EZn5Xg</a></p>&mdash; ludusrusso (@ludusrusso) <a href="https://twitter.com/ludusrusso/status/1079447404628398086?ref_src=twsrc%5Etfw">30 dicembre 2018</a></blockquote>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>

@@ -12,6 +12,7 @@ tag:
     - GDG Cloud Milano
 category: blog
 author: ludusrusso
+starred: true
 description: Il primo WebMeetup di GDG Cloud Milano è dedicato al mondo Kuberntes e Continuos Integration!
 ---
 
