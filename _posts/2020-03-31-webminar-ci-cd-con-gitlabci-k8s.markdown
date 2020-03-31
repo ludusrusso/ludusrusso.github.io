@@ -33,7 +33,7 @@ Platform.
 
 Potete seguire l'evento oggi dalle 18:30 cliccando sulla locandina qui in basso:
 
-[![Diretta Streaming](2020-03-31-webminar-ci-cd-con-gitlabci-k8s)](https://youtu.be/IBNwrk24BLk)
+[![Diretta Streaming](/assets/imgs/2020-03-31-webminar-ci-cd-con-gitlabci-k8s/main.jpg)](https://youtu.be/IBNwrk24BLk)
 
 Vi lascio l'agenta, e vi aspetto numero alla live, dove sarà possibile anche
 interagire in Tempo Reale con noi speaker per mezzo di strumenti digitali!
