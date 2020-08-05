@@ -68,8 +68,6 @@ Possiamo quindi creare la nostra applicazione Angular, nel nostro workspace, dig
 ng new <nome progetto>
 ```
 
-[![asciicast](https://asciinema.org/a/aMKnWHeicTOAWuoEvzieR6RPh.svg)](https://asciinema.org/a/aMKnWHeicTOAWuoEvzieR6RPh)
-
 <script id="asciicast-aMKnWHeicTOAWuoEvzieR6RPh" src="https://asciinema.org/a/aMKnWHeicTOAWuoEvzieR6RPh.js" async></script>
 
 Apriamo il progetto appena creato con un editor di testo (io uso VSCode ormai) ed installiamo (tramite il tool `ng add`) [Angular Material](https://material.angular.io/) per avere una UI leggermente carina in modo semplice.
@@ -78,7 +76,7 @@ Apriamo il progetto appena creato con un editor di testo (io uso VSCode ormai) e
 $ ng add @angular/material
 ```
 
-[![asciicast](https://asciinema.org/a/6Wd52K6z8yHc743OV3Q9xZlp1.svg)](https://asciinema.org/a/6Wd52K6z8yHc743OV3Q9xZlp1)
+<script id="asciicast-6Wd52K6z8yHc743OV3Q9xZlp1" src="https://asciinema.org/a/6Wd52K6z8yHc743OV3Q9xZlp1.js" async></script>
 
 Seguiamo completiamo il wizard che angular ci propone.
 
@@ -90,7 +88,7 @@ $ ng add @angular/fire
 
 Notare che il wizard che appare ci chiederà di selezionare un progetto firebase. Scegliamo il nostro e andiamo avanti!
 
-[![asciicast](https://asciinema.org/a/6Be0gm8tXsJMSXQokSV20nK5a.svg)](https://asciinema.org/a/6Be0gm8tXsJMSXQokSV20nK5a)
+<script id="asciicast-6Be0gm8tXsJMSXQokSV20nK5a" src="https://asciinema.org/a/6Be0gm8tXsJMSXQokSV20nK5a.js" async></script>
 
 Fatto! Come vedete è stato semplicissimo! Tutto pronto per il deploy!
 
