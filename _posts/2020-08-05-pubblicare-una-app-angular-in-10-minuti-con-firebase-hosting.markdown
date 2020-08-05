@@ -206,7 +206,7 @@ $ ng deploy
 
 per deployare la nostra applicazione.
 
-[![asciicast](https://asciinema.org/a/wjSdIKxgFJ8DsiGzkTKb5xAiS.svg)](https://asciinema.org/a/wjSdIKxgFJ8DsiGzkTKb5xAiS)
+<script id="asciicast-wjSdIKxgFJ8DsiGzkTKb5xAiS" src="https://asciinema.org/a/wjSdIKxgFJ8DsiGzkTKb5xAiS.js" async></script>
 
 Questo comando, compila la nostra app in produzione e la deploya su firebase! Se tutto va liscio senza errori, alla fine del processo avremo l'url con cui raggiungere la nostra app! Nel mio caso [https://fir-10-minutes.web.app](https://fir-10-minutes.web.app)!
 
