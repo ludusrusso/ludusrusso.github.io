@@ -70,6 +70,8 @@ ng new <nome progetto>
 
 [![asciicast](https://asciinema.org/a/aMKnWHeicTOAWuoEvzieR6RPh.svg)](https://asciinema.org/a/aMKnWHeicTOAWuoEvzieR6RPh)
 
+<script id="asciicast-aMKnWHeicTOAWuoEvzieR6RPh" src="https://asciinema.org/a/aMKnWHeicTOAWuoEvzieR6RPh.js" async></script>
+
 Apriamo il progetto appena creato con un editor di testo (io uso VSCode ormai) ed installiamo (tramite il tool `ng add`) [Angular Material](https://material.angular.io/) per avere una UI leggermente carina in modo semplice.
 
 ```bash
@@ -145,8 +147,22 @@ A questo punto, mettiamo un po' di contenuti dentro `app.component.html`
     </h1>
 
     <mat-card-actions align="center">
-        <a href="" mat-raised-button color="primary"> GitHub repo </a>
-        <a href="" mat-raised-button color="primary"> Blog Post </a>
+        <a
+            href="https://github.com/ludusrusso/firebase-10-minutes"
+            target="_blank"
+            mat-raised-button
+            color="primary"
+        >
+            GitHub repo
+        </a>
+        <a
+            href="https://ludusrusso.cc/2020/03/31/pubblicare-una-app-angular-in-10-minuti-con-firebase-hosting/"
+            target="_blank"
+            mat-raised-button
+            color="primary"
+        >
+            Blog Post
+        </a>
     </mat-card-actions>
 
     <mat-card-footer>
@@ -204,4 +220,4 @@ Come avete visto, il processo di deploy di Firebase è veramente semplice, ed in
 
 Ovviamente firebase è molto di più! Voi cosa ne pensate? Lo usate già?
 
-PS: Trovate [a questo link]() la repo del progetto su github!
+PS: Trovate [a questo link](https://github.com/ludusrusso/firebase-10-minutes) la repo del progetto su github!
