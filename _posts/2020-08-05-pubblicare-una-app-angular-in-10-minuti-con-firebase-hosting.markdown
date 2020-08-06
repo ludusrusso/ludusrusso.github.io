@@ -78,7 +78,7 @@ $ ng add @angular/material
 
 <script id="asciicast-6Wd52K6z8yHc743OV3Q9xZlp1" src="https://asciinema.org/a/6Wd52K6z8yHc743OV3Q9xZlp1.js" async></script>
 
-Seguiamo completiamo il wizard che angular ci propone.
+Seguiamo e completiamo il wizard che angular ci propone.
 
 A questo punto possiamo installare [`@angular/fire`](https://github.com/angular/angularfire), la libreria angular ufficiale di Firebase.
 
@@ -208,7 +208,7 @@ per deployare la nostra applicazione.
 
 <script id="asciicast-wjSdIKxgFJ8DsiGzkTKb5xAiS" src="https://asciinema.org/a/wjSdIKxgFJ8DsiGzkTKb5xAiS.js" async></script>
 
-Questo comando, compila la nostra app in produzione e la deploya su firebase! Se tutto va liscio senza errori, alla fine del processo avremo l'url con cui raggiungere la nostra app! Nel mio caso [https://fir-10-minutes.web.app](https://fir-10-minutes.web.app)!
+Questo comando compila la nostra app in produzione e la deploya su firebase! Se tutto va liscio senza errori, alla fine del processo avremo l'url con cui raggiungere la nostra app! Nel mio caso [https://fir-10-minutes.web.app](https://fir-10-minutes.web.app)!
 
 ![Creare app Firebase](/assets/imgs/2020-08-05-pubblicare-una-app-angular-in-10-minuti-con-firebase-hosting/app.png)
 
