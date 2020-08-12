@@ -1,8 +1,8 @@
 ---
-title: "Firebase Hosting: dalla creazione del progetto ad sito online in 10 minuti"
+title: "Firebase Hosting: dalla creazione del progetto al sito online in 10 minuti"
 layout: post
 date: 2020-03-31
-image: /assets/imgs/2020-08-05-pubblicare-una-app-angular-in-10-minuti-con-firebase-hosting/main.jpeg
+image: /assets/imgs/2020-08-05-pubblicare-una-app-angular-in-10-minuti-con-firebase-hosting/main.png
 headerImage: true
 read-time: true
 tag:
