@@ -4,14 +4,14 @@ layout: post
 date: 2018-06-29
 image: /assets/imgs/2018-06-28-docker-raspberrypi/main.jpg
 redirect_from:
- - /2018/06/11/docker-raspberrypi/
+    - /2018/06/11/docker-raspberrypi/
 headerImage: true
 tag:
-  - Docker
-  - Embedded Linux
-  - Raspberry
-  - Robot Open Source
-  - ROS
+    - Docker
+    - Embedded Linux
+    - Raspberry
+    - Robot Open Source
+    - ROS
 category: blog
 author: ludusrusso
 description: "In questa guida vediamo come buildare ed utilizzare Docker su Raspberry Pi (ed in generale sistemi Linux Embedded) per velocizzare la produzione di applicazioni Linux Embedded"
@@ -44,7 +44,7 @@ Oltre all'utilizzo di Docker vero e proprio, vedremo anche come si usa **docker-
 
 Come già accennato, l'installazione di Docker su Rasperry è un processo diventato molto semplice grazie al team di Docker. Questa procedura è stata testata dal sottoscritto su Raspberry Pi model 2 e 3 (compreso 3+). Purtroppo non funziona su Rasperry Pi Zero (almeno secondo la mie esperienza di qualche mese fa).
 
-In particolare, per questo tutorial ho utilizzato il sistema operativo Raspbian Lite (potete scaricare l'ultima versione [questo link](https://www.raspberrypi.org/downloads/raspbian/)). La differenza rispetto a Raspbian originale consiste nel fatto che questa immagine non monta l'interfaccia grafica, ed è quindi una versione più *leggera* (da qui il nome *lite*). La mia scelta deriva semplicemente dal fatto che, dovendo spesso lavorare con Robot o comunque dispositivi IoT che non hanno uno schermo, preferisco avere un OS alleggerito dall'interfaccia grafica. Nulla vieta di eseguire questo stesso tutorial su altre versioni di Raspbian o in generale su altri OS Linux compatibili.
+In particolare, per questo tutorial ho utilizzato il sistema operativo Raspbian Lite (potete scaricare l'ultima versione [questo link](https://www.raspberrypi.org/downloads/raspbian/)). La differenza rispetto a Raspbian originale consiste nel fatto che questa immagine non monta l'interfaccia grafica, ed è quindi una versione più _leggera_ (da qui il nome _lite_). La mia scelta deriva semplicemente dal fatto che, dovendo spesso lavorare con Robot o comunque dispositivi IoT che non hanno uno schermo, preferisco avere un OS alleggerito dall'interfaccia grafica. Nulla vieta di eseguire questo stesso tutorial su altre versioni di Raspbian o in generale su altri OS Linux compatibili.
 
 ### Installazione di Docker
 
@@ -84,7 +84,7 @@ Che, se tutto è andato bene, mostrerà l'output come in figura.
 
 A questo punto, possiamo procedere ad installa Docker compose, un tool (scritto in Python) molto utile per gestire macchine docker in modo semplice e veloce.
 
-Per installarlo, basta digitare il comando 
+Per installarlo, basta digitare il comando
 
 ```bash
 $ sudo pip install docker-compose
@@ -98,14 +98,14 @@ $ sudo apt-get install python-pip
 
 ## Cross Build di Docker su computer Intel
 
-La **Cross Compilazione** o **Cross Build** è un concetto un po' complesso, che provo a spiegare qui: l'idea è quella di creare un *eseguibile* (o in questo caso un *container*) pensato per funzionare su un'architettura hardware diversa rispetto a quella in cui è viene eseguita il build. Nel nostro caso, in particolare, quello che ci interessa è creare container docker per Raspberry Pi (quindi architettura ARM) su un computer classico, solitamente dotato di architettura Intel.
+La **Cross Compilazione** o **Cross Build** è un concetto un po' complesso, che provo a spiegare qui: l'idea è quella di creare un _eseguibile_ (o in questo caso un _container_) pensato per funzionare su un'architettura hardware diversa rispetto a quella in cui è viene eseguita il build. Nel nostro caso, in particolare, quello che ci interessa è creare container docker per Raspberry Pi (quindi architettura ARM) su un computer classico, solitamente dotato di architettura Intel.
 
 Il crossbuild è utile per due motivi:
 
 1. Quando la nostra macchina target è poco performante, e quindi un build diretto sarebbe enormemente lento. Il Raspberry Pi è una macchina che, specialmente nelle versioni 3 e 3+, ha ottenuto potenze di calcolo non indifferenti. Ciò non toglie che un computer consumer è comunque più veloce in questo tipo di processi:
 2. Quando (e questo è il motivo principale per cui preferisco preferisco fare il cross build) lavorare direttamente sulla macchina target è scomodo perchè non abbiamo a disposizione un buon ambiente di sviluppo.
 
-Prima di procedere, ricordiamoci che docker ha un metodo di build piramidale. Quando si vuole creare un nuovo container, solitamente quello che si fa è partire da un container già esistente che viene customizzato come descritto nel *Dockerfile*. Se vogliamo creare un container con target ARM, dobbiamo quindi partire da un container già creato per ARM.
+Prima di procedere, ricordiamoci che docker ha un metodo di build piramidale. Quando si vuole creare un nuovo container, solitamente quello che si fa è partire da un container già esistente che viene customizzato come descritto nel _Dockerfile_. Se vogliamo creare un container con target ARM, dobbiamo quindi partire da un container già creato per ARM.
 
 ### Container per Architetture arm32v7
 
@@ -115,7 +115,7 @@ Se, per esempio, ci interessa scaricare `ubuntu:16.04` per Raspberry Pi, useremo
 
 ### Cross Build di container per architettura arm32v7
 
-> Nota: Ho testato questa procedura sia su macOS che su Linux, non ho avuto modo di usarla sotto Windows, che comunque sconsiglio perchè notorialmente ha un bel po' di problemi nello sviluppo. 
+> Nota: Ho testato questa procedura sia su macOS che su Linux, non ho avuto modo di usarla sotto Windows, che comunque sconsiglio perchè notorialmente ha un bel po' di problemi nello sviluppo.
 
 Una volta ottenuta la nostra immagine di partenza, il prossimo passo è quella di poter lanciare il container sulla nostra macchina in emulazione. Per farlo, usiamo il progetto **qemu**, e per fortuna anche in questo caso docker ci fornisce dei tools per configurarlo al meglio.
 
@@ -133,7 +133,7 @@ Però non funzionerà il container (o la classe di container) che ci interessa (
 
 ![Errore di Qemu nel docker](/assets/imgs/2018-06-28-docker-raspberrypi/qemuerror.png)
 
-Questo non è un problema quando vi interessa solo usare un container linux base: in questo caso potete spulciare la libreria **multiarch** e trovere tantissimi container già pronti all'uso. 
+Questo non è un problema quando vi interessa solo usare un container linux base: in questo caso potete spulciare la libreria **multiarch** e trovere tantissimi container già pronti all'uso.
 
 Diventa un problema, invece, quando ci interessa utilizzare container basati su `arm32v7/ubuntu:16.04` (o simili), come ad esempio tutti i container ufficiali di ROS.
 
@@ -156,7 +156,7 @@ FROM  arm32v7/ubuntu:16.04
 COPY ./qemu-arm-static /usr/bin/qemu-arm-static
 ```
 
-Dove la prima riga `FROM  arm32v7/ubuntu:16.04` dice di creare la nuova immagine a partire da `arm32v7/ubuntu:16.04`, mentre la seconda è quella che si occupa (effettivamente) di eseguire la registrazione. 
+Dove la prima riga `FROM arm32v7/ubuntu:16.04` dice di creare la nuova immagine a partire da `arm32v7/ubuntu:16.04`, mentre la seconda è quella che si occupa (effettivamente) di eseguire la registrazione.
 
 A questo punto, buildiamo il tutto e testiamo se tutto funziona:
 
@@ -169,16 +169,16 @@ E come vedete, adesso l'immagine adesso viene eseguita correttamente.
 
 ![Qemu registrato nel docker](/assets/imgs/2018-06-28-docker-raspberrypi/qemuregistered.png)
 
-## Build e Deploy con Docker Compose 
+## Build e Deploy con Docker Compose
 
-Una volta abilitata la fase di cross compilazione, non ci resta altro che trovare un modo per passare l'immagine dal nostro computer verso il raspberry in cui vogliamo che questa venga eseguita. 
+Una volta abilitata la fase di cross compilazione, non ci resta altro che trovare un modo per passare l'immagine dal nostro computer verso il raspberry in cui vogliamo che questa venga eseguita.
 
 Ovviamente, ci sono diversi modi per farlo: il modo più semplice che ho trovato è quello di usare il progetto **dockehub** per condividere le immagini (utilissimo a meno che non volete creare delle immagini private) e **docker-compose** per il build e il deploy.
 
-
-Come avete visto se avete smanettato un po' con docker, la gestione da linea di comando di docker è un po' pesantuccia, ed ci troviamo spesso a dover scrivere comandi molto lunghi su shell. L'errore e i typos sono quindi un grosso problema che spesso ci costringono a riscrivere molte volte lo stesso comando. Docker-compose è un progetto che, sebbene porti tantissimi vantaggi nella gestione dei container, utilizzo spesso perchè semplifica enormemente la gestione da linea di comando di docker. 
+Come avete visto se avete smanettato un po' con docker, la gestione da linea di comando di docker è un po' pesantuccia, ed ci troviamo spesso a dover scrivere comandi molto lunghi su shell. L'errore e i typos sono quindi un grosso problema che spesso ci costringono a riscrivere molte volte lo stesso comando. Docker-compose è un progetto che, sebbene porti tantissimi vantaggi nella gestione dei container, utilizzo spesso perchè semplifica enormemente la gestione da linea di comando di docker.
 
 Vi ricordo che per installare docker-compose basta eseguire il comando:
+
 ```bash
 $ sudo pip install docker-compose
 ```
@@ -197,7 +197,7 @@ Come visto su, scarichiamo il file `qemu-arm-static` e registriamo il file all'i
 # Dockerfile
 
 # ...
-RUN apt-get update 
+RUN apt-get update
 RUN apt-get install python3 -y
 ```
 
@@ -228,7 +228,7 @@ COPY ./hello.py /hello.py
 CMD ["/hello.py"]
 ```
 
-Il file `Dockerfile` è quindi 
+Il file `Dockerfile` è quindi
 
 ```
 # Dockerfile
@@ -236,7 +236,7 @@ Il file `Dockerfile` è quindi
 FROM  arm32v7/ubuntu:16.04
 COPY ./qemu-arm-static /usr/bin/qemu-arm-static
 
-RUN apt-get update 
+RUN apt-get update
 RUN apt-get install python3 -y
 
 COPY ./hello.py /hello.py
@@ -255,7 +255,7 @@ services:
     build: .
 ```
 
-Queste poche linee dicono che noi vogliamo creare un'immagine (in docker-compose sono chiamati **servizi**) che chiamiamo `arm-ubuntu` (attenzione, questo non è un tag docker, come vedremo dopo, ma solo un nome arbistrario che noi stiamo dando). 
+Queste poche linee dicono che noi vogliamo creare un'immagine (in docker-compose sono chiamati **servizi**) che chiamiamo `arm-ubuntu` (attenzione, questo non è un tag docker, come vedremo dopo, ma solo un nome arbistrario che noi stiamo dando).
 Diamo anche informazioni a docker-compose che il `Dockerfile` per eseguire il build del container si trova nella cartella corrente (da qui `build: .`).
 
 A questo punto, possiamo eseguire il build con il comando
@@ -264,7 +264,7 @@ A questo punto, possiamo eseguire il build con il comando
 docker-compose build arm-ubuntu
 ```
 
-e, una volta conclusa questa fase, lanciare il container con il comando 
+e, una volta conclusa questa fase, lanciare il container con il comando
 
 ```bash
 docker-compose run arm-ubuntu
@@ -291,7 +291,7 @@ Una volta loggati, dobbiamo creare una nuova repository cliccando sul tasto in a
 
 ![Dockerhub pagina iniziale](/assets/imgs/2018-06-28-docker-raspberrypi/dockerhub-main.png)
 
-Diamo un nome ed una descrizione alla nostra immagine, e quindi clicchiamo sul tasto `create`. 
+Diamo un nome ed una descrizione alla nostra immagine, e quindi clicchiamo sul tasto `create`.
 
 ![Dockerhub creare immagine](/assets/imgs/2018-06-28-docker-raspberrypi/dockerhub-create.png)
 
@@ -303,7 +303,7 @@ Ora torniamo nel nostro terminale, per prima cosa dobbiamo loggarci su docker hu
 
 ![Dockerhub Login](/assets/imgs/2018-06-28-docker-raspberrypi/dockerhub-login.png)
 
-Ora, dobbiamo taggare la nostra immagine con il tag ottenuto da dockerhub. Per farlo, aggiungiamo la riga 
+Ora, dobbiamo taggare la nostra immagine con il tag ottenuto da dockerhub. Per farlo, aggiungiamo la riga
 
 ```
 image: <tag immagine da dockerhub>
@@ -341,9 +341,16 @@ Come vedrete, docker si accorge che l'immagine non esise in locale sul Raspberry
 ![Dockerhub Download](/assets/imgs/2018-06-28-docker-raspberrypi/dockerhub-download.png)
 ![Dockerhub Run](/assets/imgs/2018-06-28-docker-raspberrypi/dockerhub-run.png)
 
-
 ## Conclusioni
 
 Si conclude qui questo tutorial, che sarà poi alla base del prossimo video (a breve sul mio canale YouTube) in cui vedremo come configurare un nuovo Raspberry Pi e usare Docker con ROS per iniziare a svilupparci delle applicazioni un po' più complesse.
 
 Nell'attesa chiedo, come al soluto, quali sono le vostre impressioni in merito e cosa pensate di fare con questa tecnologia!
+
+## Update Agosto 2020
+
+Nell'ultimo anno le cose si sono molto semplificate. In particolare Docker sta lavorando all'integrazione di immagini multi architettura che semplificano notevolmente quanto spiegato soprato.
+
+Ho realizzato un video dove la nuova funzionalità viene descritta!
+
+<iframe width="100%" height="400px" src="https://www.youtube.com/watch?v=bY3X3Sc5s9A&t=31s" frameborder="0" allowfullscreen></iframe>
