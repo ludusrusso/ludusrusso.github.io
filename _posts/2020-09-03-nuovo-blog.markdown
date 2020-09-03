@@ -1,7 +1,7 @@
 ---
 title: "Introduzione a ludusrusso.space"
 layout: post
-date: 2020-03-31
+date: 2020-09-03
 image: /assets/imgs/2020-09-03-nuovo-blog.markdown/main.png
 headerImage: true
 read-time: true
