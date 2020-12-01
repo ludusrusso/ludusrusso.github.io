@@ -1,5 +1,5 @@
 ---
-title: "Introduzione a ludusrusso.space"
+title: "Migriamo il blog su GatsbyJS"
 layout: post
 date: 2020-12-01
 image: /assets/imgs/2020-12-01-migriamo-blog-su-gatsby-js.markdown/main.png
@@ -14,7 +14,7 @@ starred: true
 description: Questo blog è ormai diventato un po' anzianotto! Quindi ho deciso di riprendo ed aggiornarlo un pochettino con le nuove tenconologie che nel frattempo ho scoperto!
 ---
 
-[![/assets/imgs/2020-12-01-migriamo-blog-su-gatsby-js.markdown/main.png](image)](https://www.youtube.com/watch?v=nkTc6roP7jA)
+[![image](/assets/imgs/2020-12-01-migriamo-blog-su-gatsby-js.markdown/main.png)](https://www.youtube.com/watch?v=nkTc6roP7jA)
 
 Questo blog è ormai diventato un po' anzianotto!
 Quindi ho deciso di riprendo ed aggiornarlo un pochettino con le nuove tenconologie che nel frattempo ho scoperto!
