@@ -24,4 +24,6 @@ Voglio prendere il mio blog e migrarlo su GatsbyJS! E voglio farlo in streaming.
 
 Non so come andrà, e probabilmente sarà un disastro! Ma credo che sarà divertente! Chi si vuole aggiungere, e magari aiutarmi, è ben accetto!
 
+Vi aspetto Giovedì 3 Dicembre alle ore 18:00 su YouTube!
+
 Per seguirlo basta cliccare qui: https://www.youtube.com/watch?v=nkTc6roP7jA
