@@ -1,5 +1,5 @@
 ---
-title: "Migriamo il blog su GatsbyJS"
+title: "Kubernetes dei Poveri"
 layout: post
 date: 2020-12-01
 image: /assets/imgs/2020-12-05-k8s-dei-poveri.markdown/main.png
