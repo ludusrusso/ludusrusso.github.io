@@ -105,11 +105,11 @@ Per dimostrare perchè funziona dobbiamo ricorarci che un numero vicino ad una p
 
 Quindi possiamo scrivere la moltiplicazione come: $(10^k + n) \cdot (10^k + m)$ che possiamo svolegere:
 
-$(10^k + n) \cdot (10^k + m) = 10^{2k} + 10^kn + 10^km + n\cdot m = 10^{2k} + 10^k (n \cdot m) + (n + m)$
+$(10^k + n) \cdot (10^k + m) = 10^{2k} + 10^kn + 10^km + n\cdot m = 10^{2k} + 10^k (n + m) + (n \cdot m)$
 
 Da qui ci siamo quasi. La regola numero (3) è visibilissima nell'ultimo addendo $(n+m)$ mentre la regola numero 2 non è ancora chiara. Per farla venire fuori basta riscrivere la prima parte del risultato del prodotto $10^{2k} + 10^k (n \cdot m)$ mettendo in evidenza un $10^k$.
 
-$10^{2k} + 10^k (n \cdot m) = 10^k ((10^k + n) + m)$, e notiamo subito che il $10^k + n$ è il numero originale.
+$10^{2k} + 10^k (n + m) = 10^k ((10^k + n) + m)$, e notiamo subito che il $10^k + n$ è il numero originale.
 
 ## Conclusioni
 
